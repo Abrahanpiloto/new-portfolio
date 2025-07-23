@@ -2,28 +2,33 @@ import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { Link as RouterLink } from "react-router-dom";
+import Switch from "./Switch";
 
 const HoverImageLinks = () => {
   return (
-    <section className="bg-neutral-950 p-4 py-12 md:p-8 min-h-screen">
+    <section className="bg-neutral-950 p-4 py-8 md:p-8 min-h-screen">
+      <div className="flex justify-end px-4">
+        <Switch />
+      </div>
+
       <div className="mx-auto max-w-5xl">
         <Link
           heading="Abrahan"
           subheading="Acerca de mi"
           imgSrc="/yo.jpg"
-          href="#"
+          href="/sobre-mi"
         />
         <Link
           heading="Trabajos"
           subheading="Conoce algunos de mis trabajos mas recientes"
           imgSrc="/trabajos.jpg"
-          href="#"
+          href="/proyectos"
         />
         <Link
           heading="Testimonios"
           subheading="Lo que los clientes dicen de mi"
           imgSrc="/testimonios.jpg"
-          href="#"
+          href="/testimonios"
         />
         {/* <Link
           heading="Careers"
@@ -35,7 +40,7 @@ const HoverImageLinks = () => {
           heading="Contactame"
           subheading="¿Te gustaría trabajar conmigo?"
           imgSrc="/contactame.png"
-          href="#"
+          href="/contacto"
         />
       </div>
     </section>
@@ -71,14 +76,15 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
   };
 
   return (
-    <motion.a
-      href={href}
+    <motion.div
+      // href={href}
       ref={ref}
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
+      className="group relative flex items-center justify-between border-b-1 border-yellow-100 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
     >
+      <RouterLink to={href} className="absolute inset-0 z-20" />
       <div>
         <motion.span
           variants={{
@@ -90,7 +96,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-4xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
+          className="relative z-10 block text-4xl font-bold text-neutral-400 transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -144,7 +150,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       >
         <FiArrowRight className="text-5xl text-neutral-50" />
       </motion.div>
-    </motion.a>
+    </motion.div>
   );
 };
 
