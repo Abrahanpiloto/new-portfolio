@@ -10,9 +10,9 @@ const AboutMe = () => {
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6 lg:gap-16 max-w-6xl">
         <div className="lg:w-1/2">
           <h1 className="lg:text-6xl text-4xl font-bold mb-4 text-center lg:text-left">
-            ¡Hola! Soy Abrahan <span>👋</span>
+            ¡Hola!<span>👋</span> <br /> Soy Abrahan
           </h1>
-
+          <br />
           <p className="max-w-md text-center lg:text-left leading-relaxed text-lg">
             Soy desarrollador frontend. Me apasiona crear interfaces atractivas,
             rápidas y funcionales. Además de programar, disfruto diseñar
@@ -22,10 +22,11 @@ const AboutMe = () => {
             soluciones. Estoy siempre en constante investigación y aprendizaje,
             afrontando retos y experiencias, y dispuesto a aprender e
             implementar nuevas herramientas tecnológicas. <br />
-            <br />
-            Considero que algunas de mis habilidades blandas son: curiosidad,
-            perseverancia, resolución de conflictos, empatía, honestidad,
-            puntualidad, entre otras.
+            <p>
+              Considero que algunas de mis habilidades blandas son: curiosidad,
+              perseverancia, resolución de conflictos, empatía, honestidad,
+              puntualidad, entre otras.
+            </p>
           </p>
         </div>
 
