@@ -7,7 +7,7 @@ import Switch from "./Switch";
 const HoverImageLinks = () => {
   return (
     <section className="dark:bg-neutral-950 p-4 py-8 md:p-8 min-h-screen  bg-yellow-50 transition-colors duration-500">
-      <div className="flex justify-end px-4">
+      <div className="flex justify-end">
         <Switch />
       </div>
 
