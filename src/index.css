@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+/* 1. Sobrescribimos el dark variant para que responda a la clase .dark */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 2. Luego cargamos los estilos base, componentes y utilidades */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

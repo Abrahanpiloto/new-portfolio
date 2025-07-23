@@ -6,7 +6,7 @@ import Switch from "./Switch";
 
 const HoverImageLinks = () => {
   return (
-    <section className="bg-neutral-950 p-4 py-8 md:p-8 min-h-screen">
+    <section className="dark:bg-neutral-950 p-4 py-8 md:p-8 min-h-screen  bg-yellow-50 transition-colors duration-500">
       <div className="flex justify-end px-4">
         <Switch />
       </div>
@@ -82,7 +82,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-1 border-yellow-100 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
+      className="group relative flex items-center justify-between border-b-1 dark:border-yellow-100 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
     >
       <RouterLink to={href} className="absolute inset-0 z-20" />
       <div>
@@ -96,7 +96,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-4xl font-bold text-neutral-400 transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
+          className="relative z-10 block text-4xl font-bold dark:text-neutral-400 transition-colors duration-500 dark:group-hover:text-neutral-50 md:text-6xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -112,7 +112,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-base text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
+        <span className="relative z-10 mt-2 block text-base dark:text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
           {subheading}
         </span>
       </div>
