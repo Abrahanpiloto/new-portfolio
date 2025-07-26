@@ -33,7 +33,7 @@ const Card = ({ image, title, description, link, code }) => {
 const StyledWrapper = styled.div`
   .card {
     position: relative;
-    width: 350px;
+    width: 100%;
     aspect-ratio: 16/9;
     background-color: #ffffff;
     border-radius: 10px;

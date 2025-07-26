@@ -31,7 +31,7 @@ const WorksPage = () => {
       <div className="absolute top-4 right-6 font-bold dark:hover:text-amber-200 hover:text-blue-600">
         <Link to="/">Inicio</Link>
       </div>
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl lg:text-5xl font-bold mb-12 text-center">
           Algunos de mis trabajos
         </h1>
