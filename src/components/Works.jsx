@@ -1,7 +1,5 @@
-// import React from "react";
 import { Link } from "react-router-dom";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { useRef } from "react";
+import Card from "./Card";
 
 const projects = [
   {
@@ -38,29 +36,17 @@ const WorksPage = () => {
           Algunos de mis trabajos
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12">
           {projects.map((project, index) => (
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={index}
-              className="bg-white dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer border border-gray-200"
-            >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-contain"
+            <div key={index} className="flex justify-center">
+              <Card
+                image={project.image}
+                title={project.title}
+                description={project.description}
+                link={project.link}
+                code={project.code}
               />
-              <div className="p-4">
-                <h2 className="text-xl dark:text-white font-semibold mb-2 text-center">
-                  {project.title}
-                </h2>
-                <p className="text-sm text-neutral-700 dark:text-neutral-300 text-center">
-                  {project.description}
-                </p>
-              </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
