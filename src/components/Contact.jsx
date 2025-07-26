@@ -9,7 +9,7 @@ import {
 
 const Contact = () => {
   return (
-    <section className="min-h-screen bg-yellow-50 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 px-4 py-12 flex flex-col items-center">
+    <section className="min-h-screen bg-yellow-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 px-4 py-12 flex flex-col items-center">
       {/* Botón de volver al inicio */}
       <div className="absolute top-4 right-6 font-bold dark:hover:text-amber-200 hover:text-blue-600">
         <Link to="/">Inicio</Link>

@@ -29,7 +29,7 @@ const FormEmail = () => {
   };
 
   return (
-    <section className="min-h-screen bg-yellow-50 dark:bg-neutral-900 px-4 py-12 text-neutral-900 dark:text-neutral-100 flex items-center justify-center">
+    <section className="min-h-screen bg-yellow-50 dark:bg-neutral-950 px-4 py-12 text-neutral-900 dark:text-neutral-100 flex items-center justify-center">
       <div className="w-full max-w-xl bg-white dark:bg-neutral-800 p-8 rounded-xl shadow-lg transition-colors duration-500 border border-gray">
         {/* Botón de cerrar */}
 

@@ -7,10 +7,11 @@ import Workspage from "./pages/Workspage";
 import Contactpage from "./pages/Contactpage";
 import Testimonialspage from "./pages/Testimonialspage";
 import EmailPage from "./pages/EmailPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre-mi" element={<Aboutmepage />} />
@@ -19,7 +20,8 @@ function App() {
         <Route path="/testimonios" element={<Testimonialspage />} />
         <Route path="/form-email" element={<EmailPage />} />
       </Routes>
-    </>
+      <Footer />
+    </div>
   );
 }
 
