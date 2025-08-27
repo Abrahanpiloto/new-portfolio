@@ -1,6 +1,6 @@
 import React from "react";
 import Aboutme from "../components/Aboutme";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const Aboutmepage = () => {
   return (

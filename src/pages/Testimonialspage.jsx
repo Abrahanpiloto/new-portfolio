@@ -1,6 +1,6 @@
 import React from "react";
 import Testimony from "../components/Testimony";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const Testimonialspage = () => {
   return (

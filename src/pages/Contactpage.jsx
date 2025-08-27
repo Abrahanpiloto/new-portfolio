@@ -1,6 +1,6 @@
 import React from "react";
 import Contact from "../components/Contact";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const Contactpage = () => {
   return (
