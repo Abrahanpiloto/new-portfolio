@@ -12,7 +12,6 @@ const Footer = () => {
           >
             Abrahan Piloto
           </span>{" "}
-          ❤️
         </p>
       </div>
     </footer>
