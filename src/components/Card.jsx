@@ -129,6 +129,7 @@ const StyledWrapper = styled.div`
       flex-direction: column;
       aspect-ratio: auto;
       height: auto;
+      padding: 6px;
     }
 
     .card_image {
