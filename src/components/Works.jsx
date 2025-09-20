@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import Card from "./Card";
+import React from "react";
 
 const projects = [
   {
-    title: "Saas Flowinggo",
+    title: "Flowinggo Sass",
     description:
       "Un producto Sass, realice su landingpage usando React y Tailwindcss, con base en un Figma proporcionado por el cliente.",
     image: "/flowinggo.png",
@@ -15,6 +16,7 @@ const projects = [
       "Ecommerce completo realizado en React, Tailwindcss y Supabase como base de datos",
     image: "/valenciana.png",
     link: "https://valencianastore.netlify.app",
+    ad: "Ecommerce actualmente en construcción",
   },
   {
     title: "LinkBridge",
@@ -38,15 +40,25 @@ const WorksPage = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12">
           {projects.map((project, index) => (
-            <div key={index} className="flex justify-center">
-              <Card
-                image={project.image}
-                title={project.title}
-                description={project.description}
-                link={project.link}
-                code={project.code}
-              />
-            </div>
+            <React.Fragment key={index}>
+              <div className="flex justify-center">
+                <Card
+                  image={project.image}
+                  title={project.title}
+                  description={project.description}
+                  link={project.link}
+                  code={project.code}
+                  ad={project.ad}
+                />
+              </div>
+              {/* {index === 1 && (
+                <div className="col-span-1 sm:col-span-2 lg:col-span-3 flex justify-center">
+                  <span className="text-sm text-red-600 font-semibold mt-2 italic">
+                    Ecommerce actualmente en construcción
+                  </span>
+                </div>
+              )} */}
+            </React.Fragment>
           ))}
         </div>
       </div>

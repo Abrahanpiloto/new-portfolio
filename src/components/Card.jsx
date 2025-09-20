@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Card = ({ image, title, description, link, code }) => {
+const Card = ({ image, title, description, link, code, ad }) => {
   return (
     <StyledWrapper>
       <div className="card">
@@ -16,14 +16,7 @@ const Card = ({ image, title, description, link, code }) => {
           >
             Ir al sitio
           </a>
-          {/* <a
-            href={code}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card__button secondary"
-          >
-            Ver codigo
-          </a> */}
+          <p className="ad">{ad}</p>
         </div>
       </div>
     </StyledWrapper>
@@ -32,11 +25,12 @@ const Card = ({ image, title, description, link, code }) => {
 
 const StyledWrapper = styled.div`
   .card {
+    padding: 6px;
     position: relative;
     width: 100%;
     aspect-ratio: 16/9;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +64,7 @@ const StyledWrapper = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     background-color: #ffffff;
     transform: rotateX(-90deg);
@@ -83,8 +77,9 @@ const StyledWrapper = styled.div`
   }
 
   .card__title {
-    margin: 0;
-    font-size: 20px;
+    margin-top: 18px;
+    // margin: 0;
+    font-size: 16px;
     color: #000000;
     font-weight: 700;
   }
@@ -94,21 +89,34 @@ const StyledWrapper = styled.div`
   }
 
   .card__description {
-    margin: 10px 10px 10px 10px;
+    margin: 8px 8px 8px 0px;
     font-size: 12px;
     color: #777;
-    line-height: 1.4;
+    line-height: 1.2;
   }
 
   .card__button {
     // margin-top: 35px;
-    margin-left: 15px;
-    padding: 10px;
-    border-radius: 8px;
+    // margin-left: 15px;
+    padding: 6px;
+    border-radius: 5px;
     background: #777;
     border: none;
     color: white;
     cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .card__button:hover {
+    background: blue;
+  }
+
+  .ad {
+    color: blue;
+    line-height: 1;
+    margin-top: 8px;
+    font-size: 12px;
   }
 
   .secondary {
