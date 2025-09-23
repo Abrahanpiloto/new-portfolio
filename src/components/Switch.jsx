@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { updateThemeColor } from "../utils/themeColor";
 
 const Switch = () => {
-  const [isDark, setIsDark] = useState(
-    localStorage.getItem("theme") === "dark"
-  );
+  const [isDark, setIsDark] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme === "dark" || savedTheme === null;
+  });
 
   const toggleTheme = () => {
     const newTheme = isDark ? "light" : "dark";
