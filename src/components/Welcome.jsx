@@ -14,7 +14,7 @@ const HoverImageLinks = () => {
       <div className="mx-auto max-w-5xl">
         <Link
           heading="Abrahan"
-          subheading="Acerca de mi"
+          subheading="Ayudo a negocios a conseguir más clientes y crecer con sitios web modernos, rápidos y atractivos."
           imgSrc="/yo.jpg"
           href="/sobre-mi"
         />
