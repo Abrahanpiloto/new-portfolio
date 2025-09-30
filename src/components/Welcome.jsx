@@ -14,7 +14,7 @@ const HoverImageLinks = () => {
       <div className="mx-auto max-w-5xl">
         <Link
           heading="Abrahan"
-          subheading="Ayudo a negocios a conseguir más clientes y crecer con sitios web modernos, rápidos y atractivos."
+          subheading="Acerca de mi"
           imgSrc="/yo.jpg"
           href="/sobre-mi"
         />
@@ -112,7 +112,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-base dark:text-neutral-500 transition-colors duration-500 dark:group-hover:text-yellow-300 group-hover:text-blue-600">
+        <span className="relative z-10 mt-2 block text-lg dark:text-neutral-500 transition-colors duration-500 dark:group-hover:text-blue-500 group-hover:text-blue-600">
           {subheading}
         </span>
       </div>

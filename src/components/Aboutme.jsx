@@ -14,19 +14,14 @@ const AboutMe = () => {
           </h1>
           <br />
           <p className="max-w-md text-center lg:text-left leading-relaxed text-lg">
-            Soy desarrollador frontend. Me apasiona crear interfaces atractivas,
-            rápidas y funcionales. Además de programar, disfruto diseñar
-            experiencias que conecten con las personas. Este portafolio es una
-            muestra de mis habilidades, dedicación y amor por el detalle. Me
-            encanta la tecnología y el desarrollo de aplicaciones que ofrezcan
-            soluciones. Estoy siempre en constante investigación y aprendizaje,
-            afrontando retos y experiencias, y dispuesto a aprender e
-            implementar nuevas herramientas tecnológicas. <br />
-            <p>
-              Considero que algunas de mis habilidades blandas son: curiosidad,
-              perseverancia, resolución de conflictos, empatía, honestidad,
-              puntualidad, entre otras.
-            </p>
+            Soy desarrollador web freelance. Ayudo a negocios y emprendedores a
+            destacar en internet con sitios rápidos, seguros y efectivos. Me
+            gusta que tu web no solo sea bonita o funcional, sino que cuente tu
+            historia: quién eres, qué ofreces y por qué tus clientes deberían
+            elegirte. Cada proyecto es una oportunidad de transformar una idea
+            en una experiencia digital que conecte con tu audiencia, genere
+            confianza y convierta visitantes en clientes. <br />
+            <p></p>
           </p>
         </div>
 
