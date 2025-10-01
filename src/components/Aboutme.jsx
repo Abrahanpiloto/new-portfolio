@@ -12,7 +12,7 @@ const AboutMe = () => {
           <h1 className="lg:text-5xl text-3xl font-bold mb-4 text-center lg:text-left">
             ¡Hola!<span>👋</span> <br /> Soy{" "}
             <span
-              className="text-[#36A0CA] text-7xl"
+              className="text-[#36A0CA] text-6xl"
               style={{ fontFamily: "Dancing Script, cursive" }}
             >
               Abrahan
