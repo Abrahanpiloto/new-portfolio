@@ -8,7 +8,7 @@ const Footer = () => {
           Creado por{" "}
           <span
             style={{ fontFamily: "Dancing Script, cursive" }}
-            className="text-xl text-blue-500 dark:text-blue-500 font-bold"
+            className="text-xl text-blue-500 dark:text-[#36A0CA] font-bold"
           >
             Abrahan Piloto
           </span>{" "}

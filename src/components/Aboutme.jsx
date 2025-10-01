@@ -9,10 +9,16 @@ const AboutMe = () => {
       </div>
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6 lg:gap-16 max-w-6xl">
         <div className="lg:w-1/2">
-          <h1 className="lg:text-6xl text-4xl font-bold mb-4 text-center lg:text-left">
-            ¡Hola!<span>👋</span> <br /> Soy Abrahan
+          <h1 className="lg:text-5xl text-4xl font-bold mb-4 text-center lg:text-left">
+            ¡Hola!<span>👋</span> <br /> Soy{" "}
+            <span
+              className="text-[#36A0CA] text-7xl"
+              style={{ fontFamily: "Dancing Script, cursive" }}
+            >
+              Abrahan
+            </span>
           </h1>
-          <br />
+          {/* <br /> */}
           <p className="max-w-md text-center lg:text-left leading-relaxed text-lg">
             Soy desarrollador web freelance. Ayudo a negocios y emprendedores a
             destacar en internet con sitios rápidos, seguros y efectivos. Me
