@@ -9,7 +9,7 @@ const AboutMe = () => {
       </div>
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6 lg:gap-16 max-w-6xl">
         <div className="lg:w-1/2">
-          <h1 className="lg:text-5xl text-4xl font-bold mb-4 text-center lg:text-left">
+          <h1 className="lg:text-5xl text-3xl font-bold mb-4 text-center lg:text-left">
             ¡Hola!<span>👋</span> <br /> Soy{" "}
             <span
               className="text-[#36A0CA] text-7xl"
@@ -36,7 +36,7 @@ const AboutMe = () => {
           <img
             src="/yo.jpg"
             alt="Foto de Abrahan"
-            className="w-60 h-60 lg:w-90 lg:h-80 rounded-full lg:rounded-sm object-cover border-2 border-neutral-100 dark:border-neutral-100 lg:rotate-[15deg] dark:shadow-[0_10px_30px_rgba(255,255,255,0.1)]"
+            className="w-50 h-50 lg:w-90 lg:h-80 rounded-full lg:rounded-sm object-cover border-2 border-neutral-100 dark:border-neutral-100 lg:rotate-[15deg] dark:shadow-[0_10px_30px_rgba(255,255,255,0.1)]"
           />
         </div>
       </div>
