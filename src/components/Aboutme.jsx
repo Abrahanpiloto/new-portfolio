@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-    <section className="min-h-screen bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4 py-12 flex items-center justify-center">
+    <section className="min-h-screen bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4  flex items-center justify-center">
       <div className="absolute top-4 right-6 font-bold dark:hover:text-amber-200 hover:text-blue-600">
         <Link to="/">Inicio</Link>
       </div>
@@ -21,11 +21,11 @@ const AboutMe = () => {
           {/* <br /> */}
           <p className="max-w-md text-center lg:text-left leading-relaxed text-lg">
             Soy desarrollador web freelance. Ayudo a negocios y emprendedores a
-            destacar en internet con sitios rápidos, seguros y efectivos. Me
-            gusta que tu web no solo sea bonita o funcional, sino que cuente tu
-            historia: quién eres, qué ofreces y por qué tus clientes deberían
-            elegirte. Cada proyecto es una oportunidad de transformar una idea
-            en una experiencia digital que conecte con tu audiencia, genere
+            destacar en internet con sitios rápidos, seguros y efectivos. <br />{" "}
+            Me gusta que tu web no solo sea bonita o funcional, sino que cuente
+            tu historia: quién eres, qué ofreces y por qué tus clientes deberían
+            elegirte. <br /> Cada proyecto es una oportunidad de transformar una
+            idea en una experiencia digital que conecte con tu audiencia, genere
             confianza y convierta visitantes en clientes. <br />
             <p></p>
           </p>
