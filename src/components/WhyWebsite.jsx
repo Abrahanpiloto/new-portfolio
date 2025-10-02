@@ -3,7 +3,7 @@ import React from "react";
 
 const WhyWebsite = () => {
   return (
-    <section className="min-h-screen bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4  flex items-center justify-center">
+    <section className="min-h-screen bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4 py-16 flex items-center justify-center">
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-center gap-6 lg:gap-8 max-w-6xl">
         <div className="lg:w-1/2">
           <h1 className="lg:text-4xl text-3xl font-bold mb-4 text-center lg:text-left">
