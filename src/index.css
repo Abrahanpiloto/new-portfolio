@@ -7,3 +7,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@theme {
+  @keyframes slide-in-left {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Definir las variables --animate- que usarás */
+  --animate-slide-in-left: slide-in-left 1s ease-out forwards;
+  --animate-slide-in-right: slide-in-right 1s ease-out forwards;
+}
+/* Estado inicial oculto */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
