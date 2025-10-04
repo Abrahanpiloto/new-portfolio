@@ -5,6 +5,7 @@ import {
   FaLinkedin,
   FaFileDownload,
   FaEnvelope,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const Contact = () => {
@@ -30,6 +31,7 @@ const Contact = () => {
           className="flex items-center gap-3 bg-white dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition dark:hover:bg-neutral-700"
         >
           <FaGithub className="text-2xl" />
+
           <span>GitHub</span>
         </a>
 

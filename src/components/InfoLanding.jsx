@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonCta from "./ButtonCta";
 
 const InfoLanding = () => {
   return (

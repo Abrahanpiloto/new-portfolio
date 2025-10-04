@@ -23,9 +23,12 @@ const AboutMe = () => {
             Soy desarrollador web freelance. Ayudo a negocios y emprendedores a
             destacar en internet con sitios rápidos, seguros y efectivos. <br />{" "}
             Me gusta que tu web no solo sea bonita o funcional, sino que cuente
-            tu historia: quién eres, qué ofreces y por qué tus clientes deberían
-            elegirte. <br /> Cada proyecto es una oportunidad de transformar una
-            idea en una experiencia digital que conecte con tu audiencia, genere
+            tu historia:{" "}
+            <span className="text-[#36A0CA] ">
+              quién eres, qué ofreces y por qué tus clientes deberían elegirte.
+            </span>{" "}
+            <br /> Cada proyecto es una oportunidad de transformar una idea en
+            una experiencia digital que conecte con tu audiencia, genere
             confianza y convierta visitantes en clientes. <br />
             <p></p>
           </p>
