@@ -8,7 +8,7 @@ const InfoWebsite = () => {
           <h1 className="lg:text-4xl text-3xl mb-4 text-center lg:text-left lg:mt-28">
             🌐 Sitio web{" "}
             <span
-              className="text-[#36A0CA] text-5xl"
+              className="text-[#36A0CA] text-4xl"
               style={{ fontFamily: "Dancing Script, cursive" }}
             >
               Tu casa digital
