@@ -7,7 +7,7 @@ const WhyWebsite = () => {
   return (
     <section
       // ref={ref}
-      className=" bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4 py-6 flex items-center justify-center"
+      className=" bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4 lg:pb-0 pb-4 flex items-center justify-center"
     >
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-center gap-6 lg:gap-8 max-w-6xl">
         {/* Imagen a la derecha */}

@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import {
   FaGithub,
   FaLinkedin,
   FaFileDownload,
   FaEnvelope,
-  FaWhatsapp,
 } from "react-icons/fa";
+import ButtonCta from "./ButtonCta";
 
 const Contact = () => {
   return (
@@ -17,12 +18,10 @@ const Contact = () => {
       </div>
 
       {/* Título */}
-      <h1 className="text-3xl lg:text-5xl font-bold mb-12 text-center">
-        Contacto
-      </h1>
+      <h1 className="text-3xl lg:text-5xl  mb-12 text-center">Contacto</h1>
 
       {/* Botones de contacto */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex gap-6  p-8 rounded">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex gap-6 mb-8 p-8 rounded">
         {/* GitHub */}
         <a
           href="https://github.com/Abrahanpiloto"
@@ -65,6 +64,7 @@ const Contact = () => {
           <span>LinkedIn</span>
         </a>
       </div>
+      <ButtonCta />
     </section>
   );
 };

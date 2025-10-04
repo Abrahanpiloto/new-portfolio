@@ -3,7 +3,7 @@ import ButtonCta from "./ButtonCta";
 
 const InfoLanding = () => {
   return (
-    <section className=" bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4 pb-16 flex items-center justify-center">
+    <section className=" bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4 pb-8 flex items-center justify-center">
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-center gap-6 lg:gap-8 max-w-6xl">
         {/* Imagen a la izquierda */}
 

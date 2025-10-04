@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Card from "./Card";
 import React from "react";
+import ButtonCta from "./ButtonCta";
 
 const projects = [
   {
@@ -38,7 +39,7 @@ const WorksPage = () => {
           Algunos de mis trabajos
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12 mb-12">
           {projects.map((project, index) => (
             <React.Fragment key={index}>
               <div className="flex justify-center">
@@ -62,6 +63,7 @@ const WorksPage = () => {
           ))}
         </div>
       </div>
+      <ButtonCta />
     </section>
   );
 };
