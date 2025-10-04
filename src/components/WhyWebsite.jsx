@@ -19,10 +19,10 @@ const WhyWebsite = () => {
           />
         </div>
         <div className="lg:w-1/2 mt-10  animate-[var(--animate-slide-in-left)]">
-          <h1 className="lg:text-4xl text-3xl font-bold mb-4 text-center lg:text-left lg:mt-16">
+          <h1 className="lg:text-4xl text-3xl mb-4 text-center lg:text-left lg:mt-16">
             ¿Porque deberías estar en{" "}
             <span
-              className="text-[#36A0CA] text-6xl"
+              className="text-[#36A0CA] text-5xl"
               style={{ fontFamily: "Dancing Script, cursive" }}
             >
               internet

@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-    <section className="overflow-x-hidden pt-12 bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4  flex items-center justify-center">
+    <section className="overflow-x-hidden overflow-y-hidden pt-12 bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4  flex items-center justify-center">
       <div className="absolute top-4 right-6 font-bold dark:hover:text-amber-200 hover:text-blue-600">
         <Link to="/">Inicio</Link>
       </div>
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6 lg:gap-16 max-w-6xl">
         <div className="lg:w-1/2 animate-[var(--animate-slide-in-left)]">
-          <h1 className="lg:text-5xl text-3xl font-bold mb-4 text-center lg:text-left">
+          <h1 className="lg:text-5xl text-3xl mb-4 text-center lg:text-left">
             ¡Hola!<span>👋</span> <br /> Soy{" "}
             <span
-              className="text-[#36A0CA] text-6xl"
+              className="text-[#36A0CA] text-5xl"
               style={{ fontFamily: "Dancing Script, cursive" }}
             >
               Abrahan
@@ -32,7 +32,7 @@ const AboutMe = () => {
         </div>
 
         {/* Imagen a la derecha */}
-        <div className="lg:w-1/2 flex justify-center lg:mt-30 animate-[var(--animate-slide-in-right)]">
+        <div className="lg:w-1/2 flex justify-center lg:mt-16 animate-[var(--animate-slide-in-right)]">
           <img
             src="/yo.jpg"
             alt="Foto de Abrahan"

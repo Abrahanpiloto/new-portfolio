@@ -7,7 +7,7 @@ const InfoLanding = () => {
         {/* Imagen a la izquierda */}
 
         <div className="lg:w-1/2">
-          <h1 className="lg:mt-22 lg:text-4xl text-3xl font-bold mb-4 text-center lg:text-left">
+          <h1 className="lg:mt-22 lg:text-4xl text-3xl  mb-4 text-center lg:text-left">
             🎯 Landing page <br />
             <span
               className="text-[#36A0CA] text-4xl"

@@ -13,7 +13,7 @@ const InfoEcommerce = () => {
           />
         </div>
         <div className="lg:w-1/2">
-          <h1 className="lg:text-4xl text-3xl font-bold mb-4 text-center lg:text-left lg:mt-26">
+          <h1 className="lg:text-4xl text-3xl mb-4 text-center lg:text-left lg:mt-26">
             🛒 Ecommerce <br />
             <span
               className="text-[#36A0CA] text-4xl"
