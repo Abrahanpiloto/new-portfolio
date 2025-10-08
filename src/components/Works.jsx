@@ -29,7 +29,7 @@ const projects = [
   {
     title: "Invitación",
     description:
-      "Tarjeta de invitación digital, para cualquier evento: boda, bautizos, cumpleaños, inauguracion, excursiones, 15 años, etc. Tiene registro de confirmación de asistencia, codigo de vestimenta, mapa para llegar, fecha, hora, etc",
+      "Tarjeta de invitación digital, cualquier evento: boda, bautizos, cumpleaños, inauguracion, excursiones, 15 años, etc. Tiene registro de confirmación de asistencia, codigo de vestimenta, mapa para llegar, fecha, hora, etc",
     image: "/invitacion.png",
     link: "https://invitacion-miboda.vercel.app/",
   },
