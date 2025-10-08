@@ -152,7 +152,7 @@ const StyledWrapper = styled.div`
     }
 
     .card__description {
-      font-size: 0.9rem;
+      font-size: 1.3rem;
       margin-bottom: 1rem;
     }
 
