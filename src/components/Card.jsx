@@ -25,7 +25,7 @@ const Card = ({ image, title, description, link, code, ad }) => {
 
 const StyledWrapper = styled.div`
   .card {
-    padding: 6px;
+    padding: 4px;
     position: relative;
     width: 100%;
     aspect-ratio: 16/9;
@@ -38,6 +38,7 @@ const StyledWrapper = styled.div`
     perspective: 1000px;
     box-shadow: 0 0 0 5px #ffffff80;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    min-height: 260px; /* altura base */
   }
 
   .card svg {
@@ -90,7 +91,7 @@ const StyledWrapper = styled.div`
 
   .card__description {
     margin: 8px 8px 8px 0px;
-    font-size: 12px;
+    font-size: 14px;
     color: #777;
     line-height: 1.2;
   }
@@ -98,7 +99,7 @@ const StyledWrapper = styled.div`
   .card__button {
     // margin-top: 35px;
     // margin-left: 15px;
-    padding: 6px;
+    padding: 6px 36px;
     border-radius: 5px;
     background: #777;
     border: none;
