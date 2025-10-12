@@ -16,7 +16,7 @@ const projects = [
     description:
       "Ecommerce completo realizado en React, Tailwindcss y Supabase como base de datos",
     image: "/valenciana.png",
-    link: "https://tiendastro.vercel.app",
+    link: "https://tienda-react-ligera.vercel.app",
     ad: "Ecommerce actualmente en construcción",
   },
   {
