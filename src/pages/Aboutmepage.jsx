@@ -9,7 +9,7 @@ import ButtonCta from "../components/ButtonCta";
 
 const Aboutmepage = () => {
   return (
-    <div className="py-16  bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100">
+    <div className="py-16  bg-[#FCF9F5] dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100">
       <Aboutme />
       <WhyWebsite />
       <InfoWebsite />

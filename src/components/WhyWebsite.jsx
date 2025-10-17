@@ -7,7 +7,7 @@ const WhyWebsite = () => {
   return (
     <section
       // ref={ref}
-      className=" bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4 lg:pb-0 pb-4 flex items-center justify-center"
+      className=" bg-[#FCF9F5] dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4 lg:pb-0 pb-4 flex items-center justify-center"
     >
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-center gap-6 lg:gap-8 max-w-6xl">
         {/* Imagen a la derecha */}
@@ -37,12 +37,12 @@ const WhyWebsite = () => {
               Si tu marca no está online, pierdes oportunidades;{" "}
             </span>
             si lo está de la manera correcta, inspiras confianza, conectas y
-            vendes. <br /> La clave está en elegir la forma adecuada: ¿un{" "}
+            vendes. <br /> La clave está en elegir la forma adecuada: un{" "}
             <span className="text-[#36A0CA]">sitio web</span> para mostrar quién
-            eres?, ¿un <span className="text-[#36A0CA]">ecommerce</span> para
-            vender 24/7?, ¿o una{" "}
+            eres, un <span className="text-[#36A0CA]">ecommerce</span> para
+            vender 24/7, o una{" "}
             <span className="text-[#36A0CA]">landing page</span> para captar
-            clientes rápido?
+            clientes rápido
           </p>
         </div>
       </div>
