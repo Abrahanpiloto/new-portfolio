@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 
 const Testimony = () => {
   return (
-    <section className="min-h-screen bg-yellow-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 px-4 py-12">
+    <section className="min-h-screen bg-[#FCF9F5] dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 px-4 py-12">
       {/* Botón de volver al inicio */}
       <div className="absolute top-4 right-6 font-bold dark:hover:text-amber-200 hover:text-blue-600">
         <Link to="/">Inicio</Link>
@@ -16,7 +16,7 @@ const Testimony = () => {
       </h1>
 
       {/* Testimonio */}
-      <div className="max-w-2xl mx-auto bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-6 md:p-8 transition-colors duration-500 border border-gray-200">
+      <div className="max-w-2xl mx-auto bg-gray-200 dark:bg-neutral-800 rounded-xl shadow-lg p-6 md:p-8 transition-colors duration-500 border border-gray-200">
         {/* Parte superior: imagen, info y estrellas */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
           {/* Foto + nombre y cargo */}

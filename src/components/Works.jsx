@@ -37,7 +37,7 @@ const projects = [
 
 const WorksPage = () => {
   return (
-    <section className="min-h-screen bg-yellow-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4 py-12">
+    <section className="min-h-screen bg-[#FCF9F5] dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4 py-12">
       <div className="absolute top-4 right-6 font-bold dark:hover:text-amber-200 hover:text-blue-600">
         <Link to="/">Inicio</Link>
       </div>

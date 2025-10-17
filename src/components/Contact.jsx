@@ -11,7 +11,7 @@ import ButtonCta from "./ButtonCta";
 
 const Contact = () => {
   return (
-    <section className="min-h-screen bg-yellow-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 px-4 py-12 flex flex-col items-center">
+    <section className="min-h-screen bg-[#FCF9F5] dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 px-4 py-12 flex flex-col items-center">
       {/* Botón de volver al inicio */}
       <div className="absolute top-4 right-6 font-bold dark:hover:text-amber-200 hover:text-blue-600">
         <Link to="/">Inicio</Link>
@@ -27,7 +27,7 @@ const Contact = () => {
           href="https://github.com/Abrahanpiloto"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 bg-white dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition dark:hover:bg-neutral-700"
+          className="flex items-center gap-3 bg-gray-200 dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition dark:hover:bg-neutral-700"
         >
           <FaGithub className="text-2xl" />
 
@@ -38,7 +38,7 @@ const Contact = () => {
         <a
           href="/abrahan_piloto_cv.pdf" // asegúrate de poner este archivo en la carpeta `public`
           download
-          className="flex items-center gap-3 bg-white dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition dark:hover:bg-neutral-700"
+          className="flex items-center gap-3 bg-gray-200 dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition dark:hover:bg-neutral-700"
         >
           <FaFileDownload className="text-2xl" />
           <span>Descargar CV</span>
@@ -47,7 +47,7 @@ const Contact = () => {
         {/* Enviar Email */}
         <Link
           to="/form-email"
-          className="flex items-center gap-3 bg-white dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition dark:hover:bg-neutral-700"
+          className="flex items-center gap-3 bg-gray-200 dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition dark:hover:bg-neutral-700"
         >
           <FaEnvelope className="text-2xl" />
           <span>Enviar Email</span>
@@ -58,7 +58,7 @@ const Contact = () => {
           href="https://www.linkedin.com/in/abrahan-piloto-a683a0129"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 bg-white dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition dark:hover:bg-neutral-700"
+          className="flex items-center gap-3 bg-gray-200 dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition dark:hover:bg-neutral-700"
         >
           <FaLinkedin className="text-2xl" />
           <span>LinkedIn</span>
