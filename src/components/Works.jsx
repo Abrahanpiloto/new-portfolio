@@ -19,13 +19,13 @@ const projects = [
     link: "https://tienda-react-ligera.vercel.app",
     ad: "Ecommerce actualmente en construcción",
   },
-  {
-    title: "LinkBridge",
-    description:
-      "Es una app estilo LinkTree desarrollada en React y Tailwindcss, con base de datos y autenticacion con cuenta de Google en Firebase, totalmente funcional y en linea para uso publico.",
-    image: "/linkbridge.png",
-    link: "https://linkbridge.netlify.app",
-  },
+  // {
+  //   title: "LinkBridge",
+  //   description:
+  //     "Es una app estilo LinkTree desarrollada en React y Tailwindcss, con base de datos y autenticacion con cuenta de Google en Firebase, totalmente funcional y en linea para uso publico.",
+  //   image: "/linkbridge.png",
+  //   link: "https://linkbridge.netlify.app",
+  // },
   {
     title: "Invitación",
     description:
