@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom";
-import Card from "./Card";
+import Card2 from "./Card2";
 import React from "react";
 import ButtonCta from "./ButtonCta";
 
 const projects = [
   {
-    title: "Flowinggo Sass",
+    title: "Sitio web",
     description:
       "Un producto Sass, realice su landingpage usando React y Tailwindcss, con base en un Figma proporcionado por el cliente.",
     image: "/flowinggo.png",
     link: "https://flowinggo.com/home",
   },
   {
-    title: "Valenciana Ecommerce",
+    title: "Ecommerce (tienda online)",
     description:
-      "Ecommerce completo realizado en React, Tailwindcss y Supabase como base de datos",
+      "Un ecommerce moderno y optimizado, diseñado para negocios que quieren vender en línea sin complicaciones. Permite gestionar productos, categorías y pedidos fácilmente, con una interfaz rápida, adaptable a cualquier dispositivo y lista para integrarse con pasarelas de pago. Ideal para emprendedores que buscan tener su tienda online profesional en poco tiempo.",
     image: "/valenciana.png",
     link: "https://tienda-react-ligera.vercel.app",
     ad: "Ecommerce actualmente en construcción",
@@ -27,9 +27,9 @@ const projects = [
   //   link: "https://linkbridge.netlify.app",
   // },
   {
-    title: "Invitación",
+    title: "Tarjeta de Invitación Digital",
     description:
-      "Tarjeta de invitación digital, cualquier evento: boda, bautizos, cumpleaños, inauguracion, excursiones, 15 años, etc. Tiene registro de confirmación de asistencia, codigo de vestimenta, mapa para llegar, fecha, hora, etc",
+      "Tarjeta de invitación para cualquier evento: boda, bautizos, cumpleaños, inauguracion, excursiones, 15 años, etc. Tiene registro de confirmación de asistencia, codigo de vestimenta, mapa para llegar, fecha, hora, etc",
     image: "/invitacion.png",
     link: "https://invitacion-miboda.vercel.app/",
   },
@@ -50,7 +50,7 @@ const WorksPage = () => {
           {projects.map((project, index) => (
             <React.Fragment key={index}>
               <div className="flex justify-center">
-                <Card
+                <Card2
                   image={project.image}
                   title={project.title}
                   description={project.description}
