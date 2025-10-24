@@ -16,7 +16,7 @@ const Card = ({ image, title, description, link, ad }) => {
       </div>
 
       {/* Contenido */}
-      <div className="flex flex-col justify-between p-6">
+      <div className="flex flex-col justify-end p-6">
         <div>
           <h2 className="lg:text-2xl text-lg mb-3">{title}</h2>
           <p className="text-gray-700 dark:text-gray-300 mb-6 text-md">
@@ -30,16 +30,17 @@ const Card = ({ image, title, description, link, ad }) => {
             </span>
           )}
         </div>
-
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-xl transition-colors w-fit"
-        >
-          <FaExternalLinkAlt className="text-sm" />
-          Ir al sitio
-        </a>
+        <div className="flex justify-end">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-xl transition-colors w-fit"
+          >
+            <FaExternalLinkAlt className="text-sm" />
+            Ir al sitio
+          </a>
+        </div>
       </div>
     </div>
   );
