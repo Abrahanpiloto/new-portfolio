@@ -19,7 +19,7 @@ const Card = ({ image, title, description, link, ad }) => {
       <div className="flex flex-col justify-between p-6">
         <div>
           <h2 className="lg:text-2xl text-lg mb-3">{title}</h2>
-          <p className="text-gray-700 dark:text-gray-300 mb-6 text-sm">
+          <p className="text-gray-700 dark:text-gray-300 mb-6 text-md">
             {description}
           </p>
 
