@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Sitio web",
     description:
-      "Un producto Sass, realice su landingpage usando React y Tailwindcss, con base en un Figma proporcionado por el cliente.",
+      "Para el SaaS Flowinggo desarrollé su sitio web a partir de un diseño en Figma entregado por el cliente. Sin embargo, también puedo crear sitios completos desde cero, guiando a emprendedores o marcas que no tienen diseño ni experiencia previa. Solo necesitas tu idea: yo me encargo del resto.",
     image: "/flowinggo.png",
     link: "https://flowinggo.com/home",
   },
