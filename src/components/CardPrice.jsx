@@ -1,10 +1,25 @@
 import React from "react";
 import { FaExternalLinkAlt, FaCheck } from "react-icons/fa";
-import { MdConstruction } from "react-icons/md";
+import { MdConstruction, MdAccessTime } from "react-icons/md";
+import { BsWhatsapp } from "react-icons/bs";
 
-const CardPrice = ({ image, title, description, link, ad, included = [] }) => {
+const CardPrice = ({
+  image,
+  title,
+  description,
+  link,
+  ad,
+  included = [],
+  label,
+}) => {
   return (
-    <div className="bg-white dark:bg-neutral-900 shadow-lg dark:shadow-gray-500 overflow-hidden flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full">
+    <div className="bg-white dark:bg-neutral-900 shadow-lg dark:shadow-gray-500 flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full relative">
+      {/* ----- Etiqueta superior (nuevo) ----- */}
+      {label && (
+        <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-300 dark:bg-yellow-400 dark:text-black font-bold px-9 py-2  text-xl whitespace-nowrap z-10 shadow-md">
+          {label}
+        </span>
+      )}
       {/* ----- Imagen ----- */}
       <div className="w-full h-56 sm:h-64 md:h-72">
         <img
@@ -18,7 +33,7 @@ const CardPrice = ({ image, title, description, link, ad, included = [] }) => {
       {/* ----- Contenido ------ */}
       <div className="flex flex-col justify-end p-6">
         <div>
-          <h2 className="lg:text-2xl text-lg mb-3">{title}</h2>
+          <h2 className="lg:text-2xl text-xl text-blue-500 mb-3">{title}</h2>
           <p className="text-gray-700 dark:text-gray-300 mb-6 text-md">
             {description}
           </p>
@@ -45,15 +60,22 @@ const CardPrice = ({ image, title, description, link, ad, included = [] }) => {
           )}
         </div>
         <div className="flex justify-end">
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-xl transition-colors w-fit"
-          >
-            <FaExternalLinkAlt className="text-sm" />
-            Ir al sitio
-          </a>
+          {link ? (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-sm transition-colors w-fit"
+            >
+              <BsWhatsapp className="text-xl" />
+              Lo quiero, conversemos
+            </a>
+          ) : (
+            <div className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-600 font-semibold text-lg">
+              <MdAccessTime className="text-2xl" />
+              Próximamente...
+            </div>
+          )}
         </div>
       </div>
     </div>

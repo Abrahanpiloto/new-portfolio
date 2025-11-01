@@ -1,20 +1,13 @@
 import React from "react";
 import Aboutme from "../components/Aboutme";
 import { Analytics } from "@vercel/analytics/react";
-import WhyWebsite from "../components/WhyWebsite";
-import InfoWebsite from "../components/InfoWebsite";
-import InfoEcommerce from "../components/InfoEcommerce";
-import InfoLanding from "../components/InfoLanding";
+
 import ButtonCta from "../components/ButtonCta";
 
 const Aboutmepage = () => {
   return (
-    <div className="py-16  bg-[#FCF9F5] dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100">
+    <div className="py-16 bg-[#FCF9F5] min-h-screen dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100">
       <Aboutme />
-      <WhyWebsite />
-      <InfoWebsite />
-      <InfoEcommerce />
-      <InfoLanding />
       <ButtonCta />
       <Analytics />
     </div>

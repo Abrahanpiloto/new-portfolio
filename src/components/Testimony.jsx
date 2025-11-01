@@ -6,14 +6,12 @@ const Testimony = () => {
   return (
     <section className="min-h-screen bg-[#FCF9F5] dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 px-4 py-12">
       {/* Botón de volver al inicio */}
-      <div className="absolute top-4 right-6 font-bold dark:hover:text-amber-200 hover:text-blue-600">
+      <div className="absolute text-xl top-4 right-6 font-bold dark:hover:text-amber-200 hover:text-blue-600">
         <Link to="/">Inicio</Link>
       </div>
 
       {/* Título */}
-      <h1 className="text-3xl lg:text-5xl font-bold mb-12 text-center">
-        Testimonios
-      </h1>
+      <h1 className="text-3xl lg:text-5xl mb-12 text-center">Testimonios</h1>
 
       {/* Testimonio */}
       <div className="max-w-2xl mx-auto bg-gray-200 dark:bg-neutral-800 rounded-xl shadow-lg p-6 md:p-8 transition-colors duration-500 border border-gray-200">
