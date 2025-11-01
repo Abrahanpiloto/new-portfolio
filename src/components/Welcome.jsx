@@ -14,28 +14,29 @@ const HoverImageLinks = () => {
       <div className="mx-auto max-w-5xl">
         <Link
           heading="Abrahan"
-          subheading="Acerca de mi"
+          subheading="Acerca de mí"
           imgSrc="/yo.jpg"
           href="/sobre-mi"
         />
         <Link
+          heading="Servicios"
+          subheading="Lo que hago y precios"
+          imgSrc="/pizarras-precios.jpg"
+          href="/servicios"
+        />
+        <Link
           heading="Trabajos"
-          subheading="Conoce algunos de mis trabajos mas recientes"
+          subheading="Conoce algunos de mis trabajos más recientes"
           imgSrc="/trabajos.jpg"
           href="/proyectos"
         />
         <Link
           heading="Testimonios"
-          subheading="Lo que los clientes dicen de mi"
+          subheading="Lo que los clientes dicen de mí"
           imgSrc="/testimonios.jpg"
           href="/testimonios"
         />
-        {/* <Link
-          heading="Careers"
-          subheading="We want cool people"
-          imgSrc="/imgs/random/5.jpg"
-          href="#"
-        /> */}
+
         <Link
           heading="Contactame"
           subheading="¿Te gustaría trabajar conmigo?"
@@ -130,7 +131,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
         }}
         transition={{ type: "spring" }}
         src={imgSrc}
-        className="absolute z-0 h-44 w-32 rounded-lg object-contain md:h-48 md:w-64"
+        className="absolute z-0 h-44 w-62 rounded-lg object-contain md:h-48 md:w-64"
         alt={`Image representing a link for ${heading}`}
       />
 
