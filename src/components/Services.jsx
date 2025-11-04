@@ -15,7 +15,7 @@ const Services = () => {
         "Integración con redes sociales",
         "Hosting + dominio 1 año",
       ],
-      price: "",
+      price: "700",
       image: "/infolanding.jpg",
       label: "Landing page",
       link: "https://wa.me/51916058633?text=Hola%20Abrahan,%20quiero%20impulsar%20mi%20negocio%20",
@@ -79,6 +79,7 @@ const Services = () => {
                   code={service.code}
                   ad={service.ad}
                   label={service.label}
+                  price={service.price}
                 />
               </div>
             </React.Fragment>

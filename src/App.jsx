@@ -1,6 +1,6 @@
 import Welcome from "./components/Welcome";
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useLocation, Routes, Route } from "react-router-dom";
 import Aboutmepage from "./pages/Aboutmepage";
 import Home from "./pages/Home";
 import ServicesPage from "./pages/ServicesPage";
@@ -9,8 +9,14 @@ import Contactpage from "./pages/Contactpage";
 import Testimonialspage from "./pages/Testimonialspage";
 import EmailPage from "./pages/EmailPage";
 import Footer from "./components/Footer";
+import { sendPageView } from "./analytics";
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    sendPageView(location.pathname + location.search);
+  }, [location]);
   return (
     <div>
       <Routes>

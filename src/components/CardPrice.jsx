@@ -11,6 +11,7 @@ const CardPrice = ({
   ad,
   included = [],
   label,
+  price,
 }) => {
   return (
     <div className="bg-white dark:bg-neutral-900 shadow-lg dark:shadow-gray-500 flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full relative">
@@ -37,6 +38,7 @@ const CardPrice = ({
           <p className="text-gray-700 dark:text-gray-300 mb-6 text-md">
             {description}
           </p>
+
           {/* Listado de características */}
           {included.length > 0 && (
             <ul className="space-y-2 mb-6">
@@ -51,6 +53,8 @@ const CardPrice = ({
               ))}
             </ul>
           )}
+          {/* -----Precio ------ */}
+          {price.length > 0 && <p>S/ {price}</p>}
 
           {ad && (
             <span className="text-xs text-red-600 dark:text-red-400 italic mb-4 flex items-center gap-1">
