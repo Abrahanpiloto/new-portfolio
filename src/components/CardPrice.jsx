@@ -2,6 +2,7 @@ import React from "react";
 import { FaExternalLinkAlt, FaCheck } from "react-icons/fa";
 import { MdConstruction, MdAccessTime } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
+import { LuDot } from "react-icons/lu";
 
 const CardPrice = ({
   image,
@@ -10,8 +11,10 @@ const CardPrice = ({
   link,
   ad,
   included = [],
+  useCases = [],
   label,
   price,
+  priceUsd,
 }) => {
   return (
     <div className="bg-white dark:bg-neutral-900 shadow-lg dark:shadow-gray-500 flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full relative">
@@ -41,20 +44,51 @@ const CardPrice = ({
 
           {/* Listado de características */}
           {included.length > 0 && (
-            <ul className="space-y-2 mb-6">
-              {included.map((item, index) => (
-                <li
-                  key={index}
-                  className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400"
-                >
-                  <FaCheck className="text-green-500 text-xs flex-shrink-0" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+            <>
+              <p className="font-bold mb-2">Incluye:</p>
+              <ul className="space-y-2 mb-6">
+                {included.map((item, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400"
+                  >
+                    <FaCheck className="text-green-500 text-xs flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </>
           )}
-          {/* -----Precio ------ */}
-          {price.length > 0 && <p>S/ {price}</p>}
+
+          {/* -------Casos de uso ------ */}
+          {useCases.length > 0 && (
+            <>
+              <p className="font-bold mb-2">Casos de uso:</p>
+              <ul className="space-y-2 mb-6">
+                {useCases.map((item, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400"
+                  >
+                    <LuDot className="text-2xl" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+          {/* -----Precios ------ */}
+          {price && (
+            <p className="text-xl font-bold text-blue-600 flex flex-col gap-1">
+              S/ {price}
+              {priceUsd && (
+                <span className="text-sm text-gray-600 font-medium">
+                  O si prefieres pagar en dólares:{" "}
+                  <span className="font-semibold">USD {priceUsd}</span>
+                </span>
+              )}
+            </p>
+          )}
 
           {ad && (
             <span className="text-xs text-red-600 dark:text-red-400 italic mb-4 flex items-center gap-1">
@@ -63,13 +97,13 @@ const CardPrice = ({
             </span>
           )}
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-center">
           {link ? (
             <a
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-sm transition-colors w-fit"
+              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-sm transition-colors w-fit mt-4"
             >
               <BsWhatsapp className="text-xl" />
               Lo quiero, conversemos
