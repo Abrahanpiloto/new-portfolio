@@ -7,33 +7,68 @@ const Services = () => {
     {
       title: "",
       description:
-        "Su objetivo: convertir visitas en clientes. Sin distracciones, guía al usuario hacia una acción clara como comprar, registrarse o agendar. Es ideal para campañas de marketing (Facebook, Instagram o Tiktok), lanzamientos o promociones, porque convierte cada clic en una oportunidad real. A diferencia de un sitio web completo, la landing concentra toda la atención en un mensaje directo y un llamado a la acción poderoso. Es el espacio perfecto para mostrar una oferta irresistible y medir resultados de manera inmediata.",
+        "Página única diseñada estratégicamente para destacar una oferta específica y guiar al visitante hacia una acción clave, como comprar o dejar sus datos. Ideal para campañas, lanzamientos y captar nuevos clientes de forma rápida y efectiva.",
       included: [
-        "Diseño 100% responsivo",
-        "Optimización SEO básica",
+        "Diseño original (no plantilla)",
+        "Adaptado a los colores y logo de tu marca",
+        "Diseño adaptable a todos los dispositivos",
+        "Optimización SEO estándar",
         "Formulario de contacto",
         "Integración con redes sociales (boton de WhatsApp)",
-        "Hosting ilimitado",
-        "Dominio 1 año",
+        "Dominio y servidor/alojamiento por 1 año",
+        "Certificado SSL",
+      ],
+      useCases: [
+        "Registro en un webinar o evento presencial",
+        "Reservar una asesoría/mentoría",
+        "Cotizar un servicio",
+        "Solicitar contacto",
+        "Descargar un recurso (lead magnet)",
+        "Inscribirse a un curso",
+        "Anotarse a una lista de espera",
       ],
       price: "700",
+      priceUsd: "220",
       image: "/infolanding.jpg",
       label: "Landing page",
       link: "https://wa.me/51916058633?text=Hola%20Abrahan,%20quiero%20impulsar%20mi%20negocio%20",
     },
     {
       title: "",
+
       description:
-        "Imagina que un cliente escucha hablar de ti y te busca en internet. Si no encuentra nada sólido y consistente, la confianza se rompe. Pero si llega a tu sitio web, ve tu historia, tus servicios, testimonios y cómo contactarte, sentirá que tu negocio es real y confiable. Un sitio web es esa casa digital que abre la puerta a nuevas oportunidades.",
+        "Imagina que un cliente escucha hablar de ti y te busca en internet. Si no encuentra nada sólido y consistente, la confianza se rompe. Pero si llega a tu sitio web, ve tu historia, tus servicios, testimonios, tus valores y cómo contactarte, sentirá que tu negocio es real y confiable. Un sitio web es esa casa digital que abre la puerta a nuevas oportunidades.",
+
       included: [
-        "Hasta 5 secciones personalizadas",
-        "Diseño responsivo",
-        "SEO avanzado",
-        "Blog integrado",
-        "Formulario avanzado",
-        "Hosting + dominio 1 año",
+        "Diseño original (no plantilla)",
+        "Adaptado a los colores y logo de tu marca",
+        "Hasta 7 secciones personalizadas",
+        "Diseño adaptable a todos los dispositivos",
+        "Optimización SEO estándar",
+        "Formulario de contacto",
+        "Integración con redes sociales (boton de WhatsApp)",
+        "Dominio y servidor/alojamiento por 1 año",
+        "Certificado SSL",
       ],
-      price: "",
+
+      useCases: [
+        "Presentar información completa del negocio o marca",
+        "Mostrar galería de imágenes/videos, portafolio de trabajos o proyectos",
+        "Exponer servicios, precios o planes",
+        "Generar confianza con testimonios y reseñas",
+        "Tener un canal de contacto formal",
+        "Posicionarse en Google (SEO)",
+        "Publicar contenido (blog) para atraer tráfico",
+        "Mostrar ubicación física del negocio",
+        "Reservar citas o consultas",
+        "Centralizar información de redes sociales",
+        "Mostrar historia, imágenes, valores y misión",
+        "Exponer preguntas frecuentes (FAQ)",
+        "Fortalecer branding e imagen profesional",
+      ],
+
+      price: "1400",
+      priceUsd: "420",
       image: "/service-sitio-web.jpg",
       label: "Sitio web",
       link: "https://wa.me/51916058633?text=Hola%20Abrahan,%20quiero%20impulsar%20mi%20negocio%20",
@@ -41,17 +76,18 @@ const Services = () => {
     {
       title: "",
       description:
-        "Piensa en la última vez que alguien quiso comprarte fuera de horario. Con un ecommerce, esa venta no se pierde porque tu tienda sigue funcionando aunque tú duermas. Es como tener un local abierto las 24 horas, sin gastos de alquiler extra, listo para atender a cualquier cliente desde cualquier lugar. Con un ecommerce puedes mostrar en detalle todo lo que vendes.",
+        "Piensa en la última vez que alguien quiso comprarte fuera de horario. Con un ecommerce, esa venta no se pierde porque tu tienda sigue funcionando aunque tú duermas. Es como tener un local abierto las 24 horas todo el año, sin gastos de alquiler extra, listo para atender a cualquier cliente desde cualquier lugar. Con un ecommerce puedes mostrar en detalle todo lo que vendes.",
       included: [
         "Hasta 150 o más productos",
+        "Diseño claro, agradable e intuitivo, para una experiencia de compra superior",
         "Pasarela de pago (Mercado pago, PayPal, ó locales según el país.)",
         "Gestor de inventario",
-        "Diseño responsivo",
+        "Diseño adaptable a todos los dispositivos",
         "100% administrable por su dueño",
-        "SEO para productos",
-        "Hosting + dominio 1 año",
+        "Dominio y servidor/alojamiento por 1 año",
       ],
       price: "",
+      priceUsd: "",
       note: "proximamente",
       image: "/ecommerce.jpg",
       label: "Ecommerce (tienda virtual)",
@@ -76,11 +112,13 @@ const Services = () => {
                   title={service.title}
                   description={service.description}
                   included={service.included}
+                  useCases={service.useCases}
                   link={service.link}
                   code={service.code}
                   ad={service.ad}
                   label={service.label}
                   price={service.price}
+                  priceUsd={service.priceUsd}
                 />
               </div>
             </React.Fragment>
