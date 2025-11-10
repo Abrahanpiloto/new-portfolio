@@ -12,6 +12,13 @@ const projects = [
     link: "https://flowinggo.com/home",
   },
   {
+    title: "Sitio web",
+    description:
+      "Sitio web para un salón de belleza, muestra el trabajo, ubicación, redes sociales, canales de contacto, etc. Ideal para mostrar tu negocio, emprendimiento o empresa, que haces, cuales son tus servicios o productos... Tu eliges que quieres en tu sitio!",
+    image: "/peluqueria.png",
+    link: "https://bella-salon.netlify.app",
+  },
+  {
     title: "Ecommerce (tienda online)",
     description:
       "Un ecommerce moderno y optimizado, diseñado para negocios que quieren vender en línea sin complicaciones. Permite gestionar productos, categorías y pedidos fácilmente, con una interfaz rápida, adaptable a cualquier dispositivo y lista para integrarse con pasarelas de pago. Ideal para emprendedores que buscan tener su tienda online profesional en poco tiempo.",
