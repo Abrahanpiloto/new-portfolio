@@ -4,7 +4,7 @@ import { MdConstruction } from "react-icons/md";
 
 const Card = ({ image, title, description, link, ad }) => {
   return (
-    <div className="bg-white dark:bg-neutral-900 shadow-lg rounded-2xl overflow-hidden flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full">
+    <div className="bg-white dark:bg-neutral-900 shadow-lg rounded-2xl overflow-hidden flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full border-1">
       {/* Imagen */}
       <div className="w-full h-56 sm:h-64 md:h-72">
         <img
