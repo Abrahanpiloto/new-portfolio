@@ -12,7 +12,7 @@ const AboutMe = () => {
           <h1 className="lg:text-5xl text-3xl mb-4 text-center lg:text-left">
             ¡Hola!<span>👋</span> <br /> Soy{" "}
             <span
-              className="text-[#36A0CA] text-5xl font-bold"
+              className="text-[#FF5500] text-5xl font-bold"
               style={{ fontFamily: "Dancing Script, cursive" }}
             >
               Abrahan
@@ -24,7 +24,7 @@ const AboutMe = () => {
             destacar en internet con sitios rápidos, seguros y efectivos. <br />{" "}
             Me gusta que tu web no solo sea bonita o funcional, sino que cuente
             tu historia:{" "}
-            <span className="text-[#36A0CA] ">
+            <span className="font-bold">
               quién eres, qué ofreces y por qué tus clientes deberían elegirte.
             </span>{" "}
             <br /> Cada proyecto es una oportunidad de transformar una idea en
