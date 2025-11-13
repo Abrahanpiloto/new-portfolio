@@ -20,7 +20,7 @@ const CardPrice = ({
     <div className="bg-white dark:bg-neutral-900 shadow-lg dark:shadow-gray-500 flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full relative">
       {/* ----- Etiqueta superior (nuevo) ----- */}
       {label && (
-        <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-300 dark:bg-yellow-400 dark:text-black font-bold px-9 py-2  text-xl whitespace-nowrap z-10 shadow-md">
+        <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-300 dark:bg-[#FF5500] dark:text-white px-9 py-2  text-xl whitespace-nowrap z-10 shadow-md">
           {label}
         </span>
       )}
@@ -79,7 +79,7 @@ const CardPrice = ({
           )}
           {/* -----Precios ------ */}
           {price && (
-            <p className="text-xl font-bold text-blue-600 flex flex-col gap-1">
+            <p className="text-xl text-[#FF5500] flex flex-col gap-1">
               S/ {price}
               {priceUsd && (
                 <span className="text-sm text-gray-600 font-medium">

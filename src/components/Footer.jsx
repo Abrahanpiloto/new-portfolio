@@ -10,7 +10,7 @@ const Footer = () => {
           Creado por{" "}
           <span
             style={{ fontFamily: "Dancing Script, cursive" }}
-            className="text-xl text-blue-500 dark:text-[#36A0CA] font-bold"
+            className="text-xl text-[#FF5500] dark:text-[#FF5500] font-bold"
           >
             Abrahan Piloto
           </span>{" "}
@@ -23,7 +23,7 @@ const Footer = () => {
             aria-label="Instagram"
             className="transition-colors"
           >
-            <SiInstagram className="text-xl hover:text-blue-500 cursor-pointer" />
+            <SiInstagram className="text-xl hover:text-[#FF5500] cursor-pointer" />
           </a>
           <a
             href="https://www.threads.net/@abrahan.freelancer"
@@ -32,7 +32,7 @@ const Footer = () => {
             aria-label="Threads"
             className="transition-colors"
           >
-            <FaThreads className="text-xl hover:text-blue-500 cursor-pointer" />
+            <FaThreads className="text-xl hover:text-[#FF5500] cursor-pointer" />
           </a>
         </div>
       </div>

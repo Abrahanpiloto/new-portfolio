@@ -50,8 +50,8 @@
 /* ---------- Cambio de colores de la barra scroll ------- */
 /* Para Firefox: thumb amarillo, track negro */
 html {
-  scrollbar-color: #fbbf24 #000000; /* Primer color: thumb (amarillo) | Segundo: track (negro) */
-  scrollbar-width: thin; /* Opcional: hace la barra más delgada */
+  scrollbar-color: #ff5500 #000000; /* Primer color: thumb (amarillo) | Segundo: track (negro) */
+  /* Opcional: hace la barra más delgada */
 }
 
 /* Para Chrome, Edge, Brave, Safari, etc. (WebKit/Chromium) */
@@ -64,10 +64,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fbbf24; /* Amarillo para la parte que se mueve (usa Tailwind: yellow-400) */
+  background: #ff5500; /* Amarillo para la parte que se mueve (usa Tailwind: yellow-400) */
   border-radius: 4px; /* Bordes redondeados opcionales */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f59e0b; /* Amarillo más oscuro al hover (yellow-500) para feedback */
+  background: #ff5500; /* Amarillo más oscuro al hover (yellow-500) para feedback */
 }
