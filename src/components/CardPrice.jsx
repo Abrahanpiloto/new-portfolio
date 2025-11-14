@@ -17,10 +17,10 @@ const CardPrice = ({
   priceUsd,
 }) => {
   return (
-    <div className="bg-white dark:bg-neutral-900 shadow-lg dark:shadow-gray-500 flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full relative">
+    <div className=" bg-neutral-900 shadow-lg dark:shadow-gray-500 flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full relative">
       {/* ----- Etiqueta superior (nuevo) ----- */}
       {label && (
-        <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-300 dark:bg-[#FF5500] dark:text-white px-9 py-2  text-xl whitespace-nowrap z-10 shadow-md">
+        <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-[#FF5500] text-white px-9 py-2  text-xl whitespace-nowrap z-10 shadow-md">
           {label}
         </span>
       )}
@@ -37,10 +37,8 @@ const CardPrice = ({
       {/* ----- Contenido ------ */}
       <div className="flex flex-col justify-end p-6">
         <div>
-          <h2 className="lg:text-2xl text-xl text-blue-500 mb-3">{title}</h2>
-          <p className="text-gray-700 dark:text-gray-300 mb-6 text-md">
-            {description}
-          </p>
+          <h2 className="lg:text-2xl text-xl mb-3">{title}</h2>
+          <p className="text-gray-300 mb-6 text-md">{description}</p>
 
           {/* Listado de características */}
           {included.length > 0 && (
@@ -50,7 +48,7 @@ const CardPrice = ({
                 {included.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400"
+                    className="flex items-center gap-2 text-sm text-gray-400"
                   >
                     <FaCheck className="text-green-500 text-xs flex-shrink-0" />
                     <span>{item}</span>
@@ -68,7 +66,7 @@ const CardPrice = ({
                 {useCases.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400"
+                    className="flex items-center gap-2 text-sm text-gray-400"
                   >
                     <LuDot className="text-2xl" />
                     <span>{item}</span>
