@@ -4,13 +4,13 @@ import { FaThreads } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="fixed bottom-0 left-0 right-0 z-50 bg-[#FCF9F5] dark:bg-neutral-950 text-neutral-800 dark:text-neutral-200 py-2 px-4">
+    <footer className="fixed bottom-0 left-0 right-0 z-50  bg-neutral-950 py-2 px-4">
       <div className="max-w-6xl mx-auto flex justify-center gap-4 items-center text-center ">
-        <p className="mb-2 md:mb-0">
+        <p className="mb-2 md:mb-0 text-white">
           Creado por{" "}
           <span
             style={{ fontFamily: "Dancing Script, cursive" }}
-            className="text-xl text-[#FF5500] dark:text-[#FF5500] font-bold"
+            className="text-xl text-[#FF5500] font-bold"
           >
             Abrahan Piloto
           </span>{" "}
