@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-    <section className="overflow-x-hidden overflow-y-hidden pt-12 bg-[#FCF9F5] dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4  flex items-center justify-center">
-      <div className="absolute text-xl top-4 right-6 font-bold dark:hover:text-amber-200 hover:text-blue-600">
+    <section className="overflow-x-hidden overflow-y-hidden pt-12  bg-neutral-950  text-neutral-100 px-4  flex items-center justify-center">
+      <div className="absolute text-xl top-4 right-6 font-bold hover:text-amber-200 text-white">
         <Link to="/">Inicio</Link>
       </div>
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6 lg:gap-16 max-w-6xl">
