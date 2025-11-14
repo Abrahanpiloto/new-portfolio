@@ -81,7 +81,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-1 dark:border-yellow-100 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
+      className="group relative flex items-center justify-between border-b-1 border-[#FF5500] py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
     >
       <RouterLink to={href} className="absolute inset-0 z-20" />
       <div>
