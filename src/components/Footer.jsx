@@ -23,7 +23,7 @@ const Footer = () => {
             aria-label="Instagram"
             className="transition-colors"
           >
-            <SiInstagram className="text-xl hover:text-[#FF5500] cursor-pointer" />
+            <SiInstagram className="text-xl text-white hover:text-[#FF5500] cursor-pointer" />
           </a>
           <a
             href="https://www.threads.net/@abrahan.freelancer"
@@ -32,7 +32,7 @@ const Footer = () => {
             aria-label="Threads"
             className="transition-colors"
           >
-            <FaThreads className="text-xl hover:text-[#FF5500] cursor-pointer" />
+            <FaThreads className="text-xl text-white hover:text-[#FF5500] cursor-pointer" />
           </a>
         </div>
       </div>
