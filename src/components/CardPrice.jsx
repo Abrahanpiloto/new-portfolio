@@ -20,7 +20,7 @@ const CardPrice = ({
     <div className=" bg-neutral-900 shadow-lg dark:shadow-gray-500 flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full relative">
       {/* ----- Etiqueta superior (nuevo) ----- */}
       {label && (
-        <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-[#FF5500] text-white px-9 py-2  text-xl whitespace-nowrap z-10 shadow-md">
+        <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-amber-200 text-black px-9 py-2  text-xl whitespace-nowrap z-10 shadow-md">
           {label}
         </span>
       )}
@@ -75,9 +75,10 @@ const CardPrice = ({
               </ul>
             </>
           )}
+
           {/* -----Precios ------ */}
           {price && (
-            <p className="text-xl text-[#FF5500] flex flex-col gap-1">
+            <p className="text-xl text-amber-200 flex flex-col gap-1">
               S/ {price}
               {priceUsd && (
                 <span className="text-sm text-gray-600 font-medium">
@@ -89,7 +90,7 @@ const CardPrice = ({
           )}
 
           {ad && (
-            <span className="text-xs text-red-600 dark:text-red-400 italic mb-4 flex items-center gap-1">
+            <span className="text-xs text-red-400 italic mb-4 flex items-center gap-1">
               {ad}
               <MdConstruction className="text-xl text-white" />
             </span>
