@@ -5,14 +5,14 @@ import ButtonCta from "./ButtonCta";
 
 const projects = [
   {
-    title: "Sitio web",
+    title: "Saas, sitio web",
     description:
       "Para el SaaS Flowinggo desarrollé su sitio web a partir de un diseño en Figma entregado por el cliente. Sin embargo, también puedo crear sitios completos desde cero, guiando a emprendedores o marcas que no tienen diseño ni experiencia previa. Solo necesitas tu idea: yo me encargo del resto.",
     image: "/flowinggo.png",
     link: "https://flowinggo.com/home",
   },
   {
-    title: "Sitio web",
+    title: "Salón de belleza, sitio web ",
     description:
       "Sitio web para un salón de belleza, muestra el trabajo, ubicación, redes sociales, canales de contacto, etc. Ideal para mostrar tu negocio, emprendimiento o empresa, que haces, cuales son tus servicios o productos... Tu eliges que quieres en tu sitio!",
     image: "/peluqueria.png",
@@ -34,7 +34,7 @@ const projects = [
   //   link: "https://linkbridge.netlify.app",
   // },
   {
-    title: "Tarjeta de Invitación Digital",
+    title: "Boda, tarjeta de Invitación Digital",
     description:
       "Tarjeta de invitación para cualquier evento: boda, bautizos, cumpleaños, inauguracion, excursiones, 15 años, etc. Tiene registro de confirmación de asistencia, codigo de vestimenta, mapa para llegar, fecha, hora, etc",
     image: "/invitacion.png",

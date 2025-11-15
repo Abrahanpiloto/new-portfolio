@@ -18,13 +18,11 @@ const Card = ({ image, title, description, link, ad }) => {
       {/* Contenido */}
       <div className="flex flex-col justify-end p-6">
         <div>
-          <h2 className="lg:text-2xl text-lg mb-3">{title}</h2>
-          <p className="text-gray-700 dark:text-gray-300 mb-6 text-md">
-            {description}
-          </p>
+          <h2 className="lg:text-2xl text-amber-200 text-xl mb-3">{title}</h2>
+          <p className="text-gray-300 mb-6 text-md">{description}</p>
 
           {ad && (
-            <span className="text-xs text-red-600 dark:text-red-400 italic mb-4 flex items-center gap-1">
+            <span className="text-xs text-red-400 italic mb-4 flex items-center gap-1">
               {ad}
               <MdConstruction className="text-xl text-white" />
             </span>
