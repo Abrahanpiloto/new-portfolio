@@ -50,7 +50,7 @@
 /* ---------- Cambio de colores de la barra scroll ------- */
 /* Para Firefox: thumb amarillo, track negro */
 html {
-  scrollbar-color: #ff5500 #000000; /* Primer color: thumb (amarillo) | Segundo: track (negro) */
+  scrollbar-color: #fff6b4 #000000; /* Primer color: thumb (amarillo) | Segundo: track (negro) */
   /* Opcional: hace la barra más delgada */
 }
 

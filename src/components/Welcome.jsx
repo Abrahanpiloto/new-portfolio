@@ -2,7 +2,7 @@ import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { Link as RouterLink } from "react-router-dom";
-import Switch from "./Switch";
+// import Switch from "./Switch";
 
 const HoverImageLinks = () => {
   return (
@@ -81,7 +81,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-1 border-[#FF5500] py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
+      className="group relative flex items-center justify-between border-b-1 border-amber-300 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
     >
       <RouterLink to={href} className="absolute inset-0 z-20" />
       <div>
@@ -95,7 +95,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-4xl font-bold text-white transition-colors duration-500 dark:group-hover:text-neutral-50 md:text-6xl"
+          className="relative z-10 block text-4xl font-bold text-neutral-200 transition-colors duration-500 dark:group-hover:text-neutral-50 md:text-6xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -111,7 +111,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-lg text-white transition-colors duration-500 dark:group-hover:text-[#FF5500] group-hover:text-blue-600">
+        <span className="relative z-10 mt-2 block text-lg text-white transition-colors duration-500 group-hover:text-amber-200">
           {subheading}
         </span>
       </div>
@@ -147,7 +147,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
         transition={{ type: "spring" }}
         className="relative z-10 p-4"
       >
-        <FiArrowRight className="text-5xl text-[#FF5500]" />
+        <FiArrowRight className="text-5xl text-neutral-200" />
       </motion.div>
     </motion.div>
   );
