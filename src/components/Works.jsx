@@ -1,83 +1,35 @@
 import { Link } from "react-router-dom";
-import Card2 from "./Card2";
 import React from "react";
-import ButtonCta from "./ButtonCta";
-
-const projects = [
-  {
-    title: "Saas, sitio web",
-    description:
-      "Para el SaaS Flowinggo desarrollé su sitio web a partir de un diseño en Figma entregado por el cliente. Sin embargo, también puedo crear sitios completos desde cero, guiando a emprendedores o marcas que no tienen diseño ni experiencia previa. Solo necesitas tu idea: yo me encargo del resto.",
-    image: "/flowinggo.png",
-    link: "https://flowinggo.com/home",
-  },
-  {
-    title: "Salón de belleza, sitio web ",
-    description:
-      "Sitio web para un salón de belleza, muestra el trabajo, ubicación, redes sociales, canales de contacto, etc. Ideal para mostrar tu negocio, emprendimiento o empresa, que haces, cuales son tus servicios o productos... Tu eliges que quieres en tu sitio!",
-    image: "/peluqueria.png",
-    link: "https://bella-salon.netlify.app",
-  },
-  {
-    title: "Ecommerce (tienda online)",
-    description:
-      "Un ecommerce moderno y optimizado, diseñado para negocios que quieren vender en línea sin complicaciones. Permite gestionar productos, categorías y pedidos fácilmente, con una interfaz rápida, adaptable a cualquier dispositivo y lista para integrarse con pasarelas de pago. Ideal para emprendedores que buscan tener su tienda online profesional en poco tiempo.",
-    image: "/valenciana.png",
-    link: "https://tienda-react-ligera.vercel.app",
-    ad: "Ecommerce actualmente en construcción",
-  },
-  // {
-  //   title: "LinkBridge",
-  //   description:
-  //     "Es una app estilo LinkTree desarrollada en React y Tailwindcss, con base de datos y autenticacion con cuenta de Google en Firebase, totalmente funcional y en linea para uso publico.",
-  //   image: "/linkbridge.png",
-  //   link: "https://linkbridge.netlify.app",
-  // },
-  {
-    title: "Boda, tarjeta de Invitación Digital",
-    description:
-      "Tarjeta de invitación para cualquier evento: boda, bautizos, cumpleaños, inauguracion, excursiones, 15 años, etc. Tiene registro de confirmación de asistencia, codigo de vestimenta, mapa para llegar, fecha, hora, etc",
-    image: "/invitacion.png",
-    link: "https://invitacion-miboda.vercel.app/",
-  },
-];
 
 const WorksPage = () => {
   return (
-    <section className="min-h-screen bg-neutral-950 text-neutral-100 px-4 py-12">
-      <div className="absolute top-4 right-6 font-bold text-xl dark:hover:text-amber-200 hover:text-blue-600">
+    <section className="min-h-screen bg-neutral-950 text-neutral-100">
+      <div className="absolute top-4 right-6 font-bold text-xl dark:hover:text-amber-200 hover:text-blue-600 z-10">
         <Link to="/">Inicio</Link>
       </div>
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl lg:text-5xl mb-12 text-center">
-          Algunos de mis trabajos
-        </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 gap-y-12 mb-12">
-          {projects.map((project, index) => (
-            <React.Fragment key={index}>
-              <div className="flex justify-center">
-                <Card2
-                  image={project.image}
-                  title={project.title}
-                  description={project.description}
-                  link={project.link}
-                  code={project.code}
-                  ad={project.ad}
-                />
-              </div>
-              {/* {index === 1 && (
-                <div className="col-span-1 sm:col-span-2 lg:col-span-3 flex justify-center">
-                  <span className="text-sm text-red-600 font-semibold mt-2 italic">
-                    Ecommerce actualmente en construcción
-                  </span>
-                </div>
-              )} */}
-            </React.Fragment>
-          ))}
+      <div className="flex flex-col lg:flex-row min-h-screen">
+        <div className="lg:w-2/5 h-[50vh] lg:h-screen">
+          <img
+            src="/wait3.jpg"
+            alt="Próximamente"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        <div className="lg:w-3/4 flex flex-col items-center justify-center px-8 py-12">
+          {/* <h1 className="text-3xl lg:text-5xl mb-8 text-center">
+            Algunos de mis trabajos
+          </h1> */}
+          <h2 className="text-2xl lg:text-7xl mb-4 text-amber-200">
+            Próximamente...
+          </h2>
+          <p className="text-gray-400 text-lg max-w-md text-center mb-8 italic">
+            Estoy preparando nuevos proyectos para mostrarte. ¡Vuelve pronto!
+          </p>
+          {/* <ButtonCta /> */}
         </div>
       </div>
-      <ButtonCta />
     </section>
   );
 };
