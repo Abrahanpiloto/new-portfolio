@@ -1,0 +1,19 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - link "Inicio" [ref=e7] [cursor=pointer]:
+      - /url: /
+    - generic [ref=e8]:
+      - img "Próximamente" [ref=e10]
+      - generic [ref=e11]:
+        - heading "Próximamente..." [level=2] [ref=e12]
+        - paragraph [ref=e13]: Estoy preparando nuevos proyectos para mostrarte. ¡Vuelve pronto!
+  - contentinfo [ref=e14]:
+    - generic [ref=e15]:
+      - paragraph [ref=e16]: Creado por Abrahan Piloto
+      - generic [ref=e17]:
+        - link "Instagram" [ref=e18] [cursor=pointer]:
+          - /url: https://www.instagram.com/abrahan.freelancer
+          - img [ref=e19]
+        - link "Threads" [ref=e21] [cursor=pointer]:
+          - /url: https://www.threads.net/@abrahan.freelancer
+          - img [ref=e22]

@@ -1,0 +1,30 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - link "Inicio" [ref=e7] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - heading "¡Hola!👋 Soy Abrahan" [level=1] [ref=e10]:
+            - text: ¡Hola!👋
+            - text: Soy Abrahan
+          - paragraph [ref=e11]:
+            - text: Soy desarrollador web freelance. Ayudo a negocios y emprendedores a destacar en internet con sitios rápidos, seguros y efectivos.
+            - text: "Me gusta que tu web no solo sea bonita o funcional, sino que cuente tu historia: quién eres, qué ofreces y por qué tus clientes deberían elegirte."
+            - text: Cada proyecto es una oportunidad de transformar una idea en una experiencia digital que conecte con tu audiencia, genere confianza y convierta visitantes en clientes.
+            - paragraph
+        - img "Foto de Abrahan" [ref=e13]
+    - link "Hablemos de tu negocio" [ref=e14] [cursor=pointer]:
+      - /url: https://wa.me/51916058633?text=Hola%20Abrahan,%20quiero%20impulsar%20mi%20negocio%20
+      - img [ref=e15]
+      - generic [ref=e17]: Hablemos de tu negocio
+  - contentinfo [ref=e18]:
+    - generic [ref=e19]:
+      - paragraph [ref=e20]: Creado por Abrahan Piloto
+      - generic [ref=e21]:
+        - link "Instagram" [ref=e22] [cursor=pointer]:
+          - /url: https://www.instagram.com/abrahan.freelancer
+          - img [ref=e23]
+        - link "Threads" [ref=e25] [cursor=pointer]:
+          - /url: https://www.threads.net/@abrahan.freelancer
+          - img [ref=e26]

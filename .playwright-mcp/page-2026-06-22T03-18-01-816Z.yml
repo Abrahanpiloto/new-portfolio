@@ -1,0 +1,26 @@
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - heading "Escríbeme a mi em@il" [level=1] [ref=e7]
+    - generic [ref=e8]:
+      - button "X" [ref=e9] [cursor=pointer]:
+        - generic [ref=e10]: X
+      - generic [ref=e11]:
+        - generic [ref=e12]: Tu nombre
+        - textbox "Tu nombre" [ref=e13]
+      - generic [ref=e14]:
+        - generic [ref=e15]: Tu correo
+        - textbox "Tu correo" [ref=e16]
+      - generic [ref=e17]:
+        - generic [ref=e18]: Mensaje
+        - textbox "Mensaje" [ref=e19]
+      - button "Enviar mensaje" [ref=e20] [cursor=pointer]
+  - contentinfo [ref=e21]:
+    - generic [ref=e22]:
+      - paragraph [ref=e23]: Creado por Abrahan Piloto
+      - generic [ref=e24]:
+        - link "Instagram" [ref=e25] [cursor=pointer]:
+          - /url: https://www.instagram.com/abrahan.freelancer
+          - img [ref=e26]
+        - link "Threads" [ref=e28] [cursor=pointer]:
+          - /url: https://www.threads.net/@abrahan.freelancer
+          - img [ref=e29]

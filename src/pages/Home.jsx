@@ -1,5 +1,5 @@
 import React from "react";
-import Welcome from "../components/Welcome";
+import Welcome from "../components/WelcomeTest";
 import { Analytics } from "@vercel/analytics/react";
 
 const Home = () => {

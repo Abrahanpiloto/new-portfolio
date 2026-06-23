@@ -1,0 +1,36 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - link "Inicio" [ref=e7] [cursor=pointer]:
+      - /url: /
+    - heading "Contacto" [level=1] [ref=e8]
+    - generic [ref=e9]:
+      - link "GitHub" [ref=e10] [cursor=pointer]:
+        - /url: https://github.com/Abrahanpiloto
+        - img [ref=e11]
+        - generic [ref=e13]: GitHub
+      - link "Descargar CV" [ref=e14] [cursor=pointer]:
+        - /url: /abrahan_piloto_cv.pdf
+        - img [ref=e15]
+        - generic [ref=e17]: Descargar CV
+      - link "Enviar Email" [ref=e18] [cursor=pointer]:
+        - /url: /form-email
+        - img [ref=e19]
+        - generic [ref=e21]: Enviar Email
+      - link "LinkedIn" [ref=e22] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/abrahan-piloto-a683a0129
+        - img [ref=e23]
+        - generic [ref=e25]: LinkedIn
+    - link "Hablemos de tu negocio" [ref=e26] [cursor=pointer]:
+      - /url: https://wa.me/51916058633?text=Hola%20Abrahan,%20quiero%20impulsar%20mi%20negocio%20
+      - img [ref=e27]
+      - generic [ref=e29]: Hablemos de tu negocio
+  - contentinfo [ref=e30]:
+    - generic [ref=e31]:
+      - paragraph [ref=e32]: Creado por Abrahan Piloto
+      - generic [ref=e33]:
+        - link "Instagram" [ref=e34] [cursor=pointer]:
+          - /url: https://www.instagram.com/abrahan.freelancer
+          - img [ref=e35]
+        - link "Threads" [ref=e37] [cursor=pointer]:
+          - /url: https://www.threads.net/@abrahan.freelancer
+          - img [ref=e38]
