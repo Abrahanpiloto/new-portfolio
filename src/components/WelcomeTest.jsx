@@ -22,14 +22,14 @@ const HeroSection = () => {
               transition={{ duration: 0.6 }}
               className="text-amber-200 font-mono text-sm tracking-widest uppercase mb-4"
             >
-              Desarrollador Web Freelance
+              Desarrollo de software a medida.
             </motion.p>
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-7xl font-bold text-neutral-100 leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-100 leading-tight"
             >
               La forma más fácil de{" "}
               <span className="text-amber-200">crear tu presencia digital</span>
@@ -62,10 +62,10 @@ const HeroSection = () => {
                 <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
               </RouterLink>
               <RouterLink
-                to="/proyectos"
+                to="/servicios"
                 className="group inline-flex items-center gap-2 px-6 py-3 border border-neutral-600 text-neutral-200 font-medium rounded-lg hover:border-amber-200/50 hover:text-amber-200 transition-colors"
               >
-                Ver proyectos
+                Servicios
                 <FiExternalLink className="group-hover:translate-x-1 transition-transform" />
               </RouterLink>
             </motion.div>

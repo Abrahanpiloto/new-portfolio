@@ -11,10 +11,10 @@ const FormEmail = () => {
 
     emailjs
       .sendForm(
-        "service_qhnc4fg", // ← Reemplaza con tu ID
-        "template_dpe1mh5", // ← Tu plantilla
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        "Ke85iBjYo2ZYbgvGC" // ← Tu public key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       )
       .then(
         () => {
@@ -24,7 +24,7 @@ const FormEmail = () => {
         (error) => {
           alert("Ocurrió un error al enviar 😢");
           console.error(error);
-        }
+        },
       );
   };
 
@@ -33,7 +33,7 @@ const FormEmail = () => {
       <div className="w-full max-w-xl bg-white dark:bg-neutral-800 p-8 rounded-xl shadow-lg transition-colors duration-500 border border-gray">
         {/* Botón de cerrar */}
 
-        <h1 className="text-3xl font-bold mb-6 text-center">
+        <h1 className="text-3xl text-amber-200 mb-6 text-center">
           Escríbeme a mi em@il
         </h1>
 
