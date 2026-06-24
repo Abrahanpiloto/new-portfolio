@@ -9,7 +9,7 @@ const InfoWebsite = () => {
             🌐 Sitio web{" "}
             <span
               className="text-[#36A0CA] text-4xl"
-              style={{ fontFamily: "Dancing Script, cursive" }}
+              style={{ fontFamily: "'Google Sans Code', sans-serif" }}
             >
               Tu casa digital
             </span>{" "}

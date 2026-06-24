@@ -29,7 +29,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-100 leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl text-neutral-100 leading-tight"
             >
               La forma más fácil de{" "}
               <span className="text-amber-200">crear tu presencia digital</span>
@@ -94,7 +94,7 @@ const HeroSection = () => {
             </motion.div>
           </div>
 
-          <div className="flex-shrink-0 w-full max-w-xs lg:max-w-sm lg:-translate-x-40 lg:-translate-y-[100px]">
+          <div className="hidden lg:block flex-shrink-0 w-full max-w-sm lg:-translate-x-40 lg:-translate-y-[100px]">
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
@@ -125,7 +125,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
@@ -140,7 +140,7 @@ const HeroSection = () => {
         >
           <FiArrowDown className="text-amber-200/60 text-xl" />
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };

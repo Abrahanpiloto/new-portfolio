@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Google Sans Code';
+  src: url('/fonts/GoogleSansCode-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Google Sans Code';
+  src: url('/fonts/GoogleSansCode-Italic-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* 1. Sobrescribimos el dark variant para que responda a la clase .dark */
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -9,6 +24,8 @@
 @tailwind utilities;
 
 @theme {
+  --font-family-sans: 'Google Sans Code', sans-serif;
+
   @keyframes slide-in-left {
     from {
       transform: translateX(-30%);
@@ -50,6 +67,7 @@
 /* ---------- Cambio de colores de la barra scroll ------- */
 /* Para Firefox: thumb amarillo, track negro */
 html {
+  font-family: var(--font-family-sans);
   scrollbar-color: #fff6b4 #000000; /* Primer color: thumb (amarillo) | Segundo: track (negro) */
   /* Opcional: hace la barra más delgada */
 }

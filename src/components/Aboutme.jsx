@@ -13,7 +13,7 @@ const AboutMe = () => {
             ¡Hola!<span>👋</span> <br /> Soy{" "}
             <span
               className="text-amber-200 text-5xl font-bold"
-              style={{ fontFamily: "Dancing Script, cursive" }}
+              style={{ fontFamily: "'Google Sans Code', sans-serif" }}
             >
               Abrahan
             </span>

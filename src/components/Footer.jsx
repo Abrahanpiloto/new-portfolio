@@ -9,7 +9,7 @@ const Footer = () => {
         <p className="mb-2 md:mb-0 text-white">
           Creado por{" "}
           <span
-            style={{ fontFamily: "Dancing Script, cursive" }}
+            style={{ fontFamily: "'Google Sans Code', sans-serif" }}
             className="text-xl text-amber-200 font-bold"
           >
             Abrahan Piloto

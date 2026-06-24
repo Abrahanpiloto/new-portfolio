@@ -6,7 +6,7 @@ import { Link as RouterLink } from "react-router-dom";
 
 const HoverImageLinks = () => {
   return (
-    <section className="bg-neutral-950 p-4 py-8 md:p-8 min-h-screen transition-colors duration-500">
+    <section className="bg-neutral-950 p-4 py-8 md:p-8 min-h-screen transition-colors duration-500 font-sans">
       <div className="flex justify-end">{/* <Switch /> */}</div>
 
       <div className="mx-auto max-w-5xl">

@@ -1,0 +1,126 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - paragraph [ref=e9]: Desarrollo de software a medida.
+          - heading "La forma más fácil de crear tu presencia digital" [level=1] [ref=e10]
+          - paragraph [ref=e11]: Sitios web modernos, rápidos y seguros que ayudan a tu negocio a destacar en internet y convertir visitantes en clientes.
+          - generic [ref=e12]:
+            - link "Contáctame" [ref=e13] [cursor=pointer]:
+              - /url: /contacto
+              - text: Contáctame
+              - img [ref=e14]
+            - link "Servicios" [ref=e16] [cursor=pointer]:
+              - /url: /servicios
+              - text: Servicios
+              - img [ref=e17]
+          - generic [ref=e21]:
+            - paragraph [ref=e22]: Clientes que confían
+            - generic [ref=e23]:
+              - generic [ref=e24]: TechCorp
+              - generic [ref=e25]: StartupX
+              - generic [ref=e26]: DigitalHub
+              - generic [ref=e27]: WebPro
+        - generic [ref=e30]:
+          - img "Proyecto destacado" [ref=e37]
+          - img "Proyecto móvil" [ref=e57]
+      - generic [ref=e59]:
+        - generic [ref=e60]: Scroll
+        - img [ref=e62]
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - link [ref=e67] [cursor=pointer]:
+          - /url: /servicios
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e70]: S
+            - generic [ref=e71]: e
+            - generic [ref=e72]: r
+            - generic [ref=e73]: v
+            - generic [ref=e74]: i
+            - generic [ref=e75]: c
+            - generic [ref=e76]: i
+            - generic [ref=e77]: o
+            - generic [ref=e78]: s
+          - generic [ref=e79]: Lo que hago y precios
+        - img "Image representing a link for Servicios"
+        - img [ref=e81]
+      - generic [ref=e83]:
+        - link [ref=e84] [cursor=pointer]:
+          - /url: /proyectos
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - generic [ref=e87]: T
+            - generic [ref=e88]: r
+            - generic [ref=e89]: a
+            - generic [ref=e90]: b
+            - generic [ref=e91]: a
+            - generic [ref=e92]: j
+            - generic [ref=e93]: o
+            - generic [ref=e94]: s
+          - generic [ref=e95]: Conoce algunos de mis trabajos más recientes
+        - img "Image representing a link for Trabajos"
+        - img [ref=e97]
+      - generic [ref=e99]:
+        - link [ref=e100] [cursor=pointer]:
+          - /url: /testimonios
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - generic [ref=e103]: T
+            - generic [ref=e104]: e
+            - generic [ref=e105]: s
+            - generic [ref=e106]: t
+            - generic [ref=e107]: i
+            - generic [ref=e108]: m
+            - generic [ref=e109]: o
+            - generic [ref=e110]: "n"
+            - generic [ref=e111]: i
+            - generic [ref=e112]: o
+            - generic [ref=e113]: s
+          - generic [ref=e114]: Lo que los clientes dicen de mí
+        - img "Image representing a link for Testimonios"
+        - img [ref=e116]
+      - generic [ref=e118]:
+        - link [ref=e119] [cursor=pointer]:
+          - /url: /contacto
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e122]: C
+            - generic [ref=e123]: o
+            - generic [ref=e124]: "n"
+            - generic [ref=e125]: t
+            - generic [ref=e126]: a
+            - generic [ref=e127]: c
+            - generic [ref=e128]: t
+            - generic [ref=e129]: a
+            - generic [ref=e130]: m
+            - generic [ref=e131]: e
+          - generic [ref=e132]: ¿Te gustaría trabajar conmigo?
+        - img "Image representing a link for Contactame"
+        - img [ref=e134]
+      - generic [ref=e136]:
+        - link [ref=e137] [cursor=pointer]:
+          - /url: /sobre-mi
+        - generic [ref=e138]:
+          - generic [ref=e139]:
+            - generic [ref=e140]: A
+            - generic [ref=e141]: b
+            - generic [ref=e142]: r
+            - generic [ref=e143]: a
+            - generic [ref=e144]: h
+            - generic [ref=e145]: a
+            - generic [ref=e146]: "n"
+          - generic [ref=e147]: Acerca de mí
+        - img "Image representing a link for Abrahan"
+        - img [ref=e149]
+  - contentinfo [ref=e151]:
+    - generic [ref=e152]:
+      - paragraph [ref=e153]: Creado por Abrahan Piloto
+      - generic [ref=e154]:
+        - link "Instagram" [ref=e155] [cursor=pointer]:
+          - /url: https://www.instagram.com/abrahan.freelancer
+          - img [ref=e156]
+        - link "Threads" [ref=e158] [cursor=pointer]:
+          - /url: https://www.threads.net/@abrahan.freelancer
+          - img [ref=e159]
