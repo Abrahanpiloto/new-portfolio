@@ -1,34 +1,98 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Liberation Mono';
-  src: url('/fonts/LiberationMono-Regular.ttf') format('truetype');
+  font-family: 'LT Wave Mono';
+  src: url('/fonts/LTWaveMono-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Liberation Mono';
-  src: url('/fonts/LiberationMono-Bold.ttf') format('truetype');
+  font-family: 'LT Wave Mono';
+  src: url('/fonts/LTWaveMono-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Liberation Mono';
-  src: url('/fonts/LiberationMono-Italic.ttf') format('truetype');
+  font-family: 'LT Wave Mono';
+  src: url('/fonts/LTWaveMono-Italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Liberation Mono';
-  src: url('/fonts/LiberationMono-BoldItalic.ttf') format('truetype');
+  font-family: 'LT Wave Mono';
+  src: url('/fonts/LTWaveMono-BoldItalic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LT Wave';
+  src: url('/fonts/LTWave-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LT Wave';
+  src: url('/fonts/LTWave-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LT Wave';
+  src: url('/fonts/LTWave-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LT Wave';
+  src: url('/fonts/LTWave-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LT Wave';
+  src: url('/fonts/LTWave-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LT Wave';
+  src: url('/fonts/LTWave-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LT Wave';
+  src: url('/fonts/LTWave-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LT Wave';
+  src: url('/fonts/LTWave-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -41,7 +105,8 @@
 @tailwind utilities;
 
 @theme {
-  --font-mono-liberation: 'Liberation Mono', ui-monospace, monospace;
+  --font-mono-liberation: 'LT Wave Mono', ui-monospace, monospace;
+  --font-lt-wave: 'LT Wave', ui-sans-serif, sans-serif;
 
   @keyframes slide-in-left {
     from {

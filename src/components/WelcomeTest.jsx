@@ -7,7 +7,7 @@ import "react-device-frameset/styles/marvel-devices.min.css";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-neutral-950 flex items-center overflow-hidden px-4">
+    <section className="relative min-h-screen bg-[#21262A] flex items-center overflow-hidden px-4">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#FF4100]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-[#FF4100]/5 rounded-full blur-3xl" />
@@ -29,7 +29,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-7xl text-neutral-100 leading-tight font-mono-liberation font-bold"
+              className="text-4xl sm:text-5xl lg:text-7xl text-neutral-100 leading-tight font-lt-wave font-bold"
             >
               La forma más fácil de{" "}
               <span className="text-[#FF4100]">crear tu presencia digital</span>
@@ -147,7 +147,7 @@ const HeroSection = () => {
 
 const HoverImageLinks = () => {
   return (
-    <section className="bg-neutral-950 p-4 py-8 md:p-8 min-h-screen transition-colors duration-500">
+    <section className="bg-[#21262A] p-4 py-8 md:p-8 min-h-screen transition-colors duration-500">
       <div className="flex justify-end" />
 
       <div className="mx-auto max-w-5xl">
@@ -250,7 +250,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-lg text-white transition-colors duration-500 group-hover:text-[#FF4100]">
+        <span className="relative z-10 mt-2 block text-md text-white transition-colors duration-500 group-hover:text-[#FF4100] font-mono">
           {subheading}
         </span>
       </div>
