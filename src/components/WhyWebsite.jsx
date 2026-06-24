@@ -23,7 +23,6 @@ const WhyWebsite = () => {
             ¿Porque deberías estar en{" "}
             <span
               className="text-[#36A0CA] text-5xl"
-              style={{ fontFamily: "'Google Sans Code', sans-serif" }}
             >
               internet
             </span>{" "}

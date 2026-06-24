@@ -6,14 +6,9 @@ const Footer = () => {
   return (
     <footer className="bg-neutral-950 py-2 px-4">
       <div className="max-w-6xl mx-auto flex justify-center gap-4 items-center text-center ">
-        <p className="mb-2 md:mb-0 text-white">
+        <p className="mb-2 md:mb-0 text-white text-md">
           Creado por{" "}
-          <span
-            style={{ fontFamily: "'Google Sans Code', sans-serif" }}
-            className="text-xl text-amber-200 font-bold"
-          >
-            Abrahan Piloto
-          </span>{" "}
+          <span className="text-md text-[#FF4100]">Abrahan Piloto</span>{" "}
         </p>
         <div className="flex gap-4 ">
           <a
@@ -23,7 +18,7 @@ const Footer = () => {
             aria-label="Instagram"
             className="transition-colors"
           >
-            <SiInstagram className="text-xl text-white hover:text-amber-300 cursor-pointer" />
+            <SiInstagram className="text-lg text-white hover:text-[#FF6B33] cursor-pointer" />
           </a>
           <a
             href="https://www.threads.net/@abrahan.freelancer"
@@ -32,7 +27,7 @@ const Footer = () => {
             aria-label="Threads"
             className="transition-colors"
           >
-            <FaThreads className="text-xl text-white hover:text-amber-300 cursor-pointer" />
+            <FaThreads className="text-xl text-white hover:text-[#FF6B33] cursor-pointer" />
           </a>
         </div>
       </div>

@@ -11,7 +11,7 @@ const ThemeToggle = () => {
       {showHomeLink && (
         <Link
           to="/"
-          className="font-bold text-neutral-900 transition hover:text-blue-600 dark:text-neutral-100 dark:hover:text-amber-200"
+          className="font-bold text-neutral-900 transition hover:text-blue-600 dark:text-neutral-100 dark:hover:text-[#FF4100]"
         >
           Inicio
         </Link>

@@ -17,7 +17,6 @@ const InfoEcommerce = () => {
             🛒 Ecommerce <br />
             <span
               className="text-[#36A0CA] text-4xl"
-              style={{ fontFamily: "'Google Sans Code', sans-serif" }}
             >
               Tu tienda abierta 24/7
             </span>{" "}

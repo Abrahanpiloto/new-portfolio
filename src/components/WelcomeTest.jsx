@@ -9,8 +9,8 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen bg-neutral-950 flex items-center overflow-hidden px-4">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-amber-300/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#FF4100]/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-[#FF4100]/5 rounded-full blur-3xl" />
       </div>
 
       <div className="mx-auto max-w-6xl w-full relative z-10">
@@ -20,7 +20,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-amber-200 font-mono text-sm tracking-widest uppercase mb-4"
+              className="text-[#FF4100] font-mono text-sm tracking-widest uppercase mb-4"
             >
               Desarrollo de software a medida.
             </motion.p>
@@ -29,10 +29,10 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl text-neutral-100 leading-tight"
+              className="text-4xl sm:text-5xl lg:text-7xl text-neutral-100 leading-tight font-mono-liberation font-bold"
             >
               La forma más fácil de{" "}
-              <span className="text-amber-200">crear tu presencia digital</span>
+              <span className="text-[#FF4100]">crear tu presencia digital</span>
             </motion.h1>
 
             <motion.p
@@ -56,14 +56,14 @@ const HeroSection = () => {
             >
               <RouterLink
                 to="/contacto"
-                className="group inline-flex items-center gap-2 px-6 py-3 bg-amber-200 text-neutral-950 font-semibold rounded-lg hover:bg-amber-300 transition-colors"
+                className="group inline-flex items-center gap-2 px-6 py-3 bg-[#FF4100] text-white font-semibold rounded-lg hover:bg-[#FF6B33] transition-colors"
               >
                 Contáctame
                 <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
               </RouterLink>
               <RouterLink
                 to="/servicios"
-                className="group inline-flex items-center gap-2 px-6 py-3 border border-neutral-600 text-neutral-200 font-medium rounded-lg hover:border-amber-200/50 hover:text-amber-200 transition-colors"
+                className="group inline-flex items-center gap-2 px-6 py-3 border border-neutral-600 text-neutral-200 font-medium rounded-lg hover:border-[#FF4100]/50 hover:text-[#FF4100] transition-colors"
               >
                 Servicios
                 <FiExternalLink className="group-hover:translate-x-1 transition-transform" />
@@ -80,7 +80,7 @@ const HeroSection = () => {
                 Clientes que confían
               </p>
               <div className="flex flex-wrap gap-6 items-center justify-center lg:justify-start">
-                {["TechCorp", "StartupX", "DigitalHub", "WebPro"].map(
+                {["FlowingGo", "PixelDev", "TodoMercados", "UnoLink"].map(
                   (name) => (
                     <span
                       key={name}
@@ -138,7 +138,7 @@ const HeroSection = () => {
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          <FiArrowDown className="text-amber-200/60 text-xl" />
+          <FiArrowDown className="text-[#FF4100]/60 text-xl" />
         </motion.div>
       </motion.div> */}
     </section>
@@ -220,7 +220,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-1 border-amber-300 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
+      className="group relative flex items-center justify-between border-b-1 border-[#FF6B33] py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
     >
       <RouterLink to={href} className="absolute inset-0 z-20" />
       <div>
@@ -250,7 +250,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-lg text-white transition-colors duration-500 group-hover:text-amber-200">
+        <span className="relative z-10 mt-2 block text-lg text-white transition-colors duration-500 group-hover:text-[#FF4100]">
           {subheading}
         </span>
       </div>

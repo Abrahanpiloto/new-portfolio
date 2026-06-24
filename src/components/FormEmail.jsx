@@ -33,7 +33,7 @@ const FormEmail = () => {
       <div className="w-full max-w-xl bg-white dark:bg-neutral-800 p-8 rounded-xl shadow-lg transition-colors duration-500 border border-gray">
         {/* Botón de cerrar */}
 
-        <h1 className="text-3xl text-amber-200 mb-6 text-center">
+        <h1 className="text-3xl text-[#FF4100] mb-6 text-center">
           Escríbeme a mi em@il
         </h1>
 

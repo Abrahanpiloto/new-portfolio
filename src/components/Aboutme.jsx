@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AboutMe = () => {
   return (
     <section className="overflow-x-hidden overflow-y-hidden pt-12  bg-neutral-950  text-neutral-100 px-4  flex items-center justify-center">
-      <div className="absolute text-xl top-4 right-6 font-bold hover:text-amber-200 text-white">
+      <div className="absolute text-xl top-4 right-6 font-bold hover:text-[#FF4100] text-white">
         <Link to="/">Inicio</Link>
       </div>
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6 lg:gap-16 max-w-6xl">
@@ -12,8 +12,7 @@ const AboutMe = () => {
           <h1 className="lg:text-5xl text-3xl mb-4 text-center lg:text-left">
             ¡Hola!<span>👋</span> <br /> Soy{" "}
             <span
-              className="text-amber-200 text-5xl font-bold"
-              style={{ fontFamily: "'Google Sans Code', sans-serif" }}
+              className="text-[#FF4100] text-5xl font-bold"
             >
               Abrahan
             </span>

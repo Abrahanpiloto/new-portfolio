@@ -18,7 +18,7 @@ const Card = ({ image, title, description, link, ad }) => {
       {/* Contenido */}
       <div className="flex flex-col justify-end p-6">
         <div>
-          <h2 className="lg:text-2xl text-amber-200 text-xl mb-3">{title}</h2>
+          <h2 className="lg:text-2xl text-[#FF4100] text-xl mb-3">{title}</h2>
           <p className="text-gray-300 mb-6 text-md">{description}</p>
 
           {ad && (

@@ -1,16 +1,33 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Google Sans Code';
-  src: url('/fonts/GoogleSansCode-Variable.ttf') format('truetype');
-  font-weight: 100 900;
+  font-family: 'Liberation Mono';
+  src: url('/fonts/LiberationMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Google Sans Code';
-  src: url('/fonts/GoogleSansCode-Italic-Variable.ttf') format('truetype');
-  font-weight: 100 900;
+  font-family: 'Liberation Mono';
+  src: url('/fonts/LiberationMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Liberation Mono';
+  src: url('/fonts/LiberationMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Liberation Mono';
+  src: url('/fonts/LiberationMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
@@ -24,7 +41,7 @@
 @tailwind utilities;
 
 @theme {
-  --font-family-sans: 'Google Sans Code', sans-serif;
+  --font-mono-liberation: 'Liberation Mono', ui-monospace, monospace;
 
   @keyframes slide-in-left {
     from {
@@ -67,7 +84,7 @@
 /* ---------- Cambio de colores de la barra scroll ------- */
 /* Para Firefox: thumb amarillo, track negro */
 html {
-  font-family: var(--font-family-sans);
+  font-family: var(--font-sans);
   scrollbar-color: #fff6b4 #000000; /* Primer color: thumb (amarillo) | Segundo: track (negro) */
   /* Opcional: hace la barra más delgada */
 }

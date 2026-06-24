@@ -95,7 +95,7 @@ const Services = () => {
   ];
   return (
     <section className="min-h-screen bg-neutral-950 text-white  px-4 py-12">
-      <div className="absolute top-4 right-6 font-bold text-xl dark:hover:text-amber-200 hover:text-blue-600">
+      <div className="absolute top-4 right-6 font-bold text-xl dark:hover:text-[#FF4100] hover:text-blue-600">
         <Link to="/">Inicio</Link>
       </div>
       <div className="max-w-6xl mx-auto">

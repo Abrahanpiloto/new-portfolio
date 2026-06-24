@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <section className="min-h-screen bg-neutral-950 text-neutral-100 px-4 py-12 flex flex-col items-center">
       {/* Botón de volver al inicio */}
-      <div className="absolute top-4 right-6 font-bold text-xl dark:hover:text-amber-200 hover:text-blue-600">
+      <div className="absolute top-4 right-6 font-bold text-xl dark:hover:text-[#FF4100] hover:text-blue-600">
         <Link to="/">Inicio</Link>
       </div>
 

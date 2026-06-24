@@ -6,7 +6,7 @@ const Testimony = () => {
   return (
     <section className="min-h-screen bg-neutral-950 text-neutral-100 px-4 py-12">
       {/* Botón de volver al inicio */}
-      <div className="absolute text-xl top-4 right-6 font-bold dark:hover:text-amber-200 hover:text-blue-600">
+      <div className="absolute text-xl top-4 right-6 font-bold dark:hover:text-[#FF4100] hover:text-blue-600">
         <Link to="/">Inicio</Link>
       </div>
 
