@@ -3,7 +3,7 @@ import ButtonCta from "./ButtonCta";
 
 const InfoLanding = () => {
   return (
-    <section className=" bg-[#FCF9F5] dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 px-4 pb-8 flex items-center justify-center">
+    <section className="bg-[#E8E8E8] dark:bg-[#21262A] text-neutral-800 dark:text-neutral-100 px-4 pb-8 flex items-center justify-center">
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-center gap-6 lg:gap-8 max-w-6xl">
         {/* Imagen a la izquierda */}
 
@@ -35,7 +35,7 @@ const InfoLanding = () => {
           <img
             src="/infolanding.jpg"
             alt="website"
-            className="w-100 h-60 lg:w-140 lg:h-80  lg:rounded-sm object-cover dark:border-neutral-100  dark:shadow-[0_10px_30px_rgba(255,255,255,0.1)]"
+            className="w-100 h-60 lg:w-140 lg:h-80 lg:rounded-sm object-cover border-2 border-neutral-200 dark:border-neutral-100 shadow-[0_10px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_30px_rgba(255,255,255,0.1)]"
           />
         </div>
       </div>

@@ -6,7 +6,7 @@ import { Link as RouterLink } from "react-router-dom";
 
 const HoverImageLinks = () => {
   return (
-    <section className="bg-neutral-950 p-4 py-8 md:p-8 min-h-screen transition-colors duration-500 font-sans">
+    <section className="bg-[#E8E8E8] dark:bg-[#21262A] p-4 py-8 md:p-8 min-h-screen transition-colors duration-500 font-sans">
       <div className="flex justify-end">{/* <Switch /> */}</div>
 
       <div className="mx-auto max-w-5xl">
@@ -95,7 +95,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-4xl font-bold text-neutral-200 transition-colors duration-500 dark:group-hover:text-neutral-50 md:text-6xl"
+          className="relative z-10 block text-4xl font-bold text-neutral-800 dark:text-neutral-200 transition-colors duration-500 dark:group-hover:text-neutral-50 md:text-6xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -111,7 +111,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-lg text-white transition-colors duration-500 group-hover:text-[#FF4100]">
+        <span className="relative z-10 mt-2 block text-lg text-neutral-900 dark:text-white transition-colors duration-500 group-hover:text-[#FF4100]">
           {subheading}
         </span>
       </div>
@@ -147,7 +147,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
         transition={{ type: "spring" }}
         className="relative z-10 p-4"
       >
-        <FiArrowRight className="text-5xl text-neutral-200" />
+        <FiArrowRight className="text-5xl text-neutral-800 dark:text-neutral-200" />
       </motion.div>
     </motion.div>
   );

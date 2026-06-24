@@ -7,7 +7,7 @@ import "react-device-frameset/styles/marvel-devices.min.css";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-[#21262A] flex items-center overflow-hidden px-4">
+    <section className="relative min-h-screen bg-[#E8E8E8] dark:bg-[#21262A] flex items-center overflow-hidden px-4">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#FF4100]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-[#FF4100]/5 rounded-full blur-3xl" />
@@ -29,7 +29,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-7xl text-neutral-100 leading-tight font-lt-wave font-bold"
+              className="text-4xl sm:text-5xl lg:text-7xl text-neutral-800 dark:text-neutral-100 leading-tight font-lt-wave font-bold"
             >
               La forma más fácil de{" "}
               <span className="text-[#FF4100]">crear tu presencia digital</span>
@@ -39,10 +39,10 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-6 text-lg lg:text-xl text-neutral-300 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+              className="mt-6 text-lg lg:text-xl text-neutral-600 dark:text-neutral-300 max-w-xl mx-auto lg:mx-0 leading-relaxed"
             >
               Sitios web modernos, rápidos y seguros que ayudan a tu negocio a{" "}
-              <span className="text-neutral-100 font-semibold">
+              <span className="text-neutral-900 dark:text-neutral-100 font-semibold">
                 destacar en internet
               </span>{" "}
               y convertir visitantes en clientes.
@@ -63,7 +63,7 @@ const HeroSection = () => {
               </RouterLink>
               <RouterLink
                 to="/servicios"
-                className="group inline-flex items-center gap-2 px-6 py-3 border border-neutral-600 text-neutral-200 font-medium rounded-lg hover:border-[#FF4100]/50 hover:text-[#FF4100] transition-colors"
+                className="group inline-flex items-center gap-2 px-6 py-3 border border-neutral-600 text-neutral-800 dark:text-neutral-100 font-medium rounded-lg hover:border-[#FF4100]/50 hover:text-[#FF4100] transition-colors"
               >
                 Servicios
                 <FiExternalLink className="group-hover:translate-x-1 transition-transform" />
@@ -76,7 +76,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mt-12 pt-8 border-t border-neutral-800"
             >
-              <p className="text-xs text-neutral-500 tracking-widest uppercase mb-4">
+              <p className="text-xs text-neutral-800 dark:text-neutral-100 tracking-widest uppercase mb-4">
                 Clientes que confían
               </p>
               <div className="flex flex-wrap gap-6 items-center justify-center lg:justify-start">
@@ -84,7 +84,7 @@ const HeroSection = () => {
                   (name) => (
                     <span
                       key={name}
-                      className="text-sm text-neutral-400 font-medium"
+                      className="text-sm text-neutral-800 dark:text-neutral-100 font-medium"
                     >
                       {name}
                     </span>
@@ -147,7 +147,7 @@ const HeroSection = () => {
 
 const HoverImageLinks = () => {
   return (
-    <section className="bg-[#21262A] p-4 py-8 md:p-8 min-h-screen transition-colors duration-500">
+    <section className="bg-[#E8E8E8] dark:bg-[#21262A] p-4 py-8 md:p-8 min-h-screen transition-colors duration-500">
       <div className="flex justify-end" />
 
       <div className="mx-auto max-w-5xl">
@@ -234,7 +234,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-4xl font-bold text-neutral-200 transition-colors duration-500 dark:group-hover:text-neutral-50 md:text-6xl"
+          className="relative z-10 block text-4xl font-bold text-neutral-800 dark:text-neutral-200 transition-colors duration-500 dark:group-hover:text-neutral-50 md:text-6xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -250,7 +250,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-md text-white transition-colors duration-500 group-hover:text-[#FF4100] font-mono">
+        <span className="relative z-10 mt-2 block text-md text-neutral-900 dark:text-white transition-colors duration-500 group-hover:text-[#FF4100] font-mono">
           {subheading}
         </span>
       </div>
@@ -286,7 +286,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
         transition={{ type: "spring" }}
         className="relative z-10 p-4"
       >
-        <FiArrowRight className="text-5xl text-neutral-200" />
+        <FiArrowRight className="text-5xl text-neutral-800 dark:text-neutral-200" />
       </motion.div>
     </motion.div>
   );

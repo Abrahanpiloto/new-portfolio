@@ -146,28 +146,33 @@
   transform: translateY(0);
 }
 
-/* ---------- Cambio de colores de la barra scroll ------- */
-/* Para Firefox: thumb amarillo, track negro */
+/* ---------- Scrollbar adaptativo light/dark ------- */
 html {
   font-family: var(--font-sans);
-  scrollbar-color: #fff6b4 #000000; /* Primer color: thumb (amarillo) | Segundo: track (negro) */
-  /* Opcional: hace la barra más delgada */
+  scrollbar-color: #ff5500 #d4d4d4;
 }
 
-/* Para Chrome, Edge, Brave, Safari, etc. (WebKit/Chromium) */
+.dark html {
+  scrollbar-color: #ff5500 #171717;
+}
+
 ::-webkit-scrollbar {
-  width: 8px; /* Ancho de la barra vertical (ajusta si quieres más gruesa) */
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #171717; /* Fondo negro del track */
+  background: #d4d4d4;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #171717;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ff5500; /* Amarillo para la parte que se mueve (usa Tailwind: yellow-400) */
-  border-radius: 4px; /* Bordes redondeados opcionales */
+  background: #ff5500;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff5500; /* Amarillo más oscuro al hover (yellow-500) para feedback */
+  background: #ff5500;
 }

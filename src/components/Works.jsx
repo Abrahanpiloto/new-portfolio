@@ -3,7 +3,7 @@ import React from "react";
 
 const WorksPage = () => {
   return (
-    <section className="min-h-screen bg-neutral-950 text-neutral-100">
+    <section className="min-h-screen bg-[#E8E8E8] dark:bg-[#21262A] text-neutral-900 dark:text-neutral-100">
       <div className="absolute top-4 right-6 font-bold text-xl dark:hover:text-[#FF4100] hover:text-blue-600 z-10">
         <Link to="/">Inicio</Link>
       </div>
@@ -21,10 +21,10 @@ const WorksPage = () => {
           {/* <h1 className="text-3xl lg:text-5xl mb-8 text-center">
             Algunos de mis trabajos
           </h1> */}
-          <h2 className="text-2xl lg:text-7xl mb-4 text-[#FF4100]">
+          <h2 className="text-2xl lg:text-7xl mb-4 text-[#FF4100] font-lt-wave">
             Próximamente...
           </h2>
-          <p className="text-gray-400 text-lg max-w-md text-center mb-8 italic">
+          <p className="text-neutral-500 dark:text-gray-400 text-lg max-w-md text-center mb-8 italic">
             Estoy preparando nuevos proyectos para mostrarte. ¡Vuelve pronto!
           </p>
           {/* <ButtonCta /> */}

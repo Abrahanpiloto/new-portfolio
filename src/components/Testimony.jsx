@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 
 const Testimony = () => {
   return (
-    <section className="min-h-screen bg-neutral-950 text-neutral-100 px-4 py-12">
+    <section className="min-h-screen bg-[#E8E8E8] dark:bg-[#21262A] text-neutral-900 dark:text-neutral-100 px-4 py-12">
       {/* Botón de volver al inicio */}
       <div className="absolute text-xl top-4 right-6 font-bold dark:hover:text-[#FF4100] hover:text-blue-600">
         <Link to="/">Inicio</Link>
@@ -14,7 +14,7 @@ const Testimony = () => {
       <h1 className="text-3xl lg:text-5xl mb-12 text-center">Testimonios</h1>
 
       {/* Testimonio */}
-      <div className="max-w-2xl mx-auto bg-neutral-800 rounded-xl shadow-lg p-6 md:p-8 transition-colors duration-500 border border-gray-200">
+      <div className="max-w-2xl mx-auto bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-6 md:p-8 transition-colors duration-500 border border-neutral-200 dark:border-gray-200">
         {/* Parte superior: imagen, info y estrellas */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
           {/* Foto + nombre y cargo */}
@@ -23,12 +23,12 @@ const Testimony = () => {
             <img
               src="/ceoflowinggo.jpg"
               alt="Alain Piloto"
-              className="w-30 h-30 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-neutral-200 dark:border-neutral-600"
+              className="w-30 h-30 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-neutral-300 dark:border-neutral-600"
             />
             {/* Info */}
             <div className="text-center sm:text-left">
               <p className="font-semibold text-lg">Alain Piloto</p>
-              <p className="text-sm text-neutral-500 text-neutral-400">
+              <p className="text-sm text-neutral-500 dark:text-neutral-400">
                 CEO & Fundador de Flowinggo
               </p>
             </div>

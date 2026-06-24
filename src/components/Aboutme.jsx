@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-    <section className="overflow-x-hidden overflow-y-hidden pt-12  bg-neutral-950  text-neutral-100 px-4  flex items-center justify-center">
-      <div className="absolute text-xl top-4 right-6 font-bold hover:text-[#FF4100] text-white">
+    <section className="overflow-x-hidden overflow-y-hidden pt-12 bg-[#E8E8E8] dark:bg-[#21262A] text-neutral-900 dark:text-neutral-100 px-4 flex items-center justify-center">
+      <div className="absolute text-xl top-4 right-6 font-bold hover:text-[#FF4100] text-neutral-900 dark:text-white">
         <Link to="/">Inicio</Link>
       </div>
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6 lg:gap-16 max-w-6xl">
@@ -38,7 +38,7 @@ const AboutMe = () => {
           <img
             src="/yo.jpg"
             alt="Foto de Abrahan"
-            className="w-60 h-60 lg:w-90 lg:h-80 rounded-full lg:rounded-sm object-cover border-2 border-neutral-100 dark:border-neutral-100 lg:rotate-[15deg] dark:shadow-[0_10px_30px_rgba(255,255,255,0.1)]"
+            className="w-60 h-60 lg:w-90 lg:h-80 rounded-full lg:rounded-sm object-cover border-2 border-neutral-300 dark:border-neutral-100 lg:rotate-[15deg] shadow-[0_10px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_30px_rgba(255,255,255,0.1)]"
           />
         </div>
       </div>

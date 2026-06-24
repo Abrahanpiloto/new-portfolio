@@ -17,7 +17,7 @@ const CardPrice = ({
   priceUsd,
 }) => {
   return (
-    <div className=" bg-neutral-900 shadow-lg dark:shadow-gray-500 flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full relative">
+    <div className="bg-white dark:bg-neutral-900 shadow-lg dark:shadow-gray-500 flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full relative">
       {/* ----- Etiqueta superior (nuevo) ----- */}
       {label && (
         <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-[#FF4100] text-black px-9 py-2  text-xl whitespace-nowrap z-10 shadow-md">
@@ -38,7 +38,7 @@ const CardPrice = ({
       <div className="flex flex-col justify-end p-6">
         <div>
           <h2 className="lg:text-2xl text-xl mb-3">{title}</h2>
-          <p className="text-gray-300 mb-6 text-md">{description}</p>
+          <p className="text-neutral-500 dark:text-gray-300 mb-6 text-md">{description}</p>
 
           {/* Listado de características */}
           {included.length > 0 && (
@@ -48,7 +48,7 @@ const CardPrice = ({
                 {included.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-center gap-2 text-sm text-gray-400"
+                    className="flex items-center gap-2 text-sm text-neutral-500 dark:text-gray-400"
                   >
                     <FaCheck className="text-green-500 text-xs flex-shrink-0" />
                     <span>{item}</span>
@@ -66,7 +66,7 @@ const CardPrice = ({
                 {useCases.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-center gap-2 text-sm text-gray-400"
+                    className="flex items-center gap-2 text-sm text-neutral-500 dark:text-gray-400"
                   >
                     <LuDot className="text-2xl" />
                     <span>{item}</span>
@@ -81,7 +81,7 @@ const CardPrice = ({
             <p className="text-xl text-[#FF4100] flex flex-col gap-1">
               S/ {price}
               {priceUsd && (
-                <span className="text-sm text-gray-600 font-medium">
+                <span className="text-sm text-neutral-500 dark:text-gray-600 font-medium">
                   O si prefieres pagar en dólares:{" "}
                   <span className="font-semibold">USD {priceUsd}</span>
                 </span>
@@ -92,7 +92,7 @@ const CardPrice = ({
           {ad && (
             <span className="text-xs text-red-400 italic mb-4 flex items-center gap-1">
               {ad}
-              <MdConstruction className="text-xl text-white" />
+              <MdConstruction className="text-xl text-neutral-900 dark:text-white" />
             </span>
           )}
         </div>
@@ -108,7 +108,7 @@ const CardPrice = ({
               Lo quiero, conversemos
             </a>
           ) : (
-            <div className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-600 font-semibold text-lg">
+            <div className="inline-flex items-center gap-2 text-neutral-500 dark:text-gray-600 font-semibold text-lg">
               <MdAccessTime className="text-2xl" />
               Próximamente...
             </div>

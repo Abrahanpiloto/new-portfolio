@@ -42,7 +42,7 @@ const Switch = () => {
 const StyledWrapper = styled.div`
   /* The switch - the box around the slider */
   .switch {
-    font-size: 17px;
+    font-size: 12px;
     position: relative;
     display: inline-block;
     width: 3.5em;
@@ -102,11 +102,11 @@ const StyledWrapper = styled.div`
 
   input:checked ~ .decoration {
     transform: translateX(-20px);
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     background: white;
-    box-shadow: -12px 0 0 white, -6px 0 0 1.6px white, 5px 15px 0 1px white,
-      1px 17px 0 white, 10px 17px 0 white;
+    box-shadow: -10px 0 0 white, -5px 0 0 1px white, 4px 12px 0 0.5px white,
+      1px 14px 0 0.5px white, 8px 14px 0 0.5px white;
   }
 
   input:checked + .slider {
