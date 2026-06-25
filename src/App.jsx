@@ -9,6 +9,7 @@ import Contactpage from "./pages/Contactpage";
 import Testimonialspage from "./pages/Testimonialspage";
 import EmailPage from "./pages/EmailPage";
 import Footer from "./components/Footer";
+// import ThemeToggle from "./components/ThemeToggle";
 import { sendPageView } from "./analytics";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   }, [location]);
   return (
     <div>
+      {/* <ThemeToggle /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre-mi" element={<Aboutmepage />} />
