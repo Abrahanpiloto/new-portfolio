@@ -7,7 +7,7 @@ const ThemeToggle = () => {
   // const showHomeLink = pathname !== "/";
 
   return (
-    <div className="fixed top-4 right-6 z-50">
+    <div className="absolute top-4 right-6 z-50">
       <Switch />
     </div>
   );

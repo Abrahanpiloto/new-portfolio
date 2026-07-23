@@ -1,11 +1,11 @@
 import React from "react";
-import FormEmail from "../components/FormEmail";
+import FormEmail2 from "../components/FormEmail2";
 import { Analytics } from "@vercel/analytics/react";
 
 const EmailPage = () => {
   return (
     <div>
-      <FormEmail />
+      <FormEmail2 />
       <Analytics />
     </div>
   );

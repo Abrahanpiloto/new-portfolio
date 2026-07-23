@@ -20,7 +20,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-[#FF4100] font-mono text-sm tracking-widest uppercase mb-4"
+              className="text-[#FF4100] font-sans text-sm tracking-widest uppercase mb-4"
             >
               Desarrollo de software a medida.
             </motion.p>
@@ -29,7 +29,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-7xl text-neutral-800 dark:text-neutral-100 leading-tight font-lt-wave font-bold"
+              className="text-4xl sm:text-5xl lg:text-7xl text-neutral-800 dark:text-neutral-100 leading-[1]"
             >
               La forma más fácil de{" "}
               <span className="text-[#FF4100]">crear tu presencia digital</span>
@@ -55,7 +55,7 @@ const HeroSection = () => {
               className="mt-10 flex flex-wrap gap-4 justify-center lg:justify-start"
             >
               <RouterLink
-                to="/contacto"
+                to="/form-email"
                 className="group inline-flex items-center gap-2 px-6 py-3 bg-[#FF4100] text-white font-semibold rounded-lg hover:bg-[#FF6B33] transition-colors"
               >
                 Contáctame
@@ -173,7 +173,7 @@ const HoverImageLinks = () => {
           heading="Contactame"
           subheading="¿Te gustaría trabajar conmigo?"
           imgSrc="/contactame.png"
-          href="/contacto"
+          href="/form-email"
         />
         <Link
           heading="Abrahan"
@@ -250,7 +250,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-md text-neutral-900 dark:text-white transition-colors duration-500 group-hover:text-[#FF4100] font-mono">
+        <span className="relative z-10 mt-2 block text-md text-neutral-900 dark:text-white transition-colors duration-500 group-hover:text-[#FF4100] font-sans">
           {subheading}
         </span>
       </div>

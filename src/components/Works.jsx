@@ -21,7 +21,7 @@ const WorksPage = () => {
           {/* <h1 className="text-3xl lg:text-5xl mb-8 text-center">
             Algunos de mis trabajos
           </h1> */}
-          <h2 className="text-2xl lg:text-7xl mb-4 text-[#FF4100] font-lt-wave">
+          <h2 className="text-2xl lg:text-7xl mb-4 text-[#FF4100] font-sans">
             Próximamente...
           </h2>
           <p className="text-neutral-500 dark:text-gray-400 text-lg max-w-md text-center mb-8 italic">

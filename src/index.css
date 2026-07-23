@@ -1,99 +1,12 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'LT Wave Mono';
-  src: url('/fonts/LTWaveMono-Regular.otf') format('opentype');
-  font-weight: 400;
+  font-family: 'Sora';
   font-style: normal;
+  font-weight: 100 800;
   font-display: swap;
-}
-
-@font-face {
-  font-family: 'LT Wave Mono';
-  src: url('/fonts/LTWaveMono-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LT Wave Mono';
-  src: url('/fonts/LTWaveMono-Italic.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LT Wave Mono';
-  src: url('/fonts/LTWaveMono-BoldItalic.otf') format('opentype');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LT Wave';
-  src: url('/fonts/LTWave-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LT Wave';
-  src: url('/fonts/LTWave-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LT Wave';
-  src: url('/fonts/LTWave-Italic.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LT Wave';
-  src: url('/fonts/LTWave-BoldItalic.otf') format('opentype');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LT Wave';
-  src: url('/fonts/LTWave-Light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LT Wave';
-  src: url('/fonts/LTWave-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LT Wave';
-  src: url('/fonts/LTWave-Black.otf') format('opentype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LT Wave';
-  src: url('/fonts/LTWave-Thin.otf') format('opentype');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/Sora-Latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* 1. Sobrescribimos el dark variant para que responda a la clase .dark */
@@ -105,8 +18,7 @@
 @tailwind utilities;
 
 @theme {
-  --font-mono-liberation: 'LT Wave Mono', ui-monospace, monospace;
-  --font-lt-wave: 'LT Wave', ui-sans-serif, sans-serif;
+  --font-sans: 'Sora', ui-sans-serif, system-ui, sans-serif;
 
   @keyframes slide-in-left {
     from {
@@ -130,7 +42,6 @@
     }
   }
 
-  /* Definir las variables --animate- que usarás */
   --animate-slide-in-left: slide-in-left 1s ease-out forwards;
   --animate-slide-in-right: slide-in-right 1s ease-out forwards;
 }
