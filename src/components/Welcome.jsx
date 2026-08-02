@@ -11,12 +11,6 @@ const HoverImageLinks = () => {
 
       <div className="mx-auto max-w-5xl">
         <Link
-          heading="Abrahan"
-          subheading="Acerca de mí"
-          imgSrc="/yo.jpg"
-          href="/sobre-mi"
-        />
-        <Link
           heading="Servicios"
           subheading="Lo que hago y precios"
           imgSrc="/pizarras-precios.jpg"
@@ -40,6 +34,12 @@ const HoverImageLinks = () => {
           subheading="¿Te gustaría trabajar conmigo?"
           imgSrc="/contactame.png"
           href="/contacto"
+        />
+        <Link
+          heading="Abrahan"
+          subheading="Acerca de mí"
+          imgSrc="/yo.jpg"
+          href="/sobre-mi"
         />
       </div>
     </section>

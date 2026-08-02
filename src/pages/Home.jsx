@@ -1,12 +1,12 @@
 import React from "react";
-import Welcome from "../components/WelcomeTest";
+import Welcome from "../components/Welcome";
 import ThemeToggle from "../components/ThemeToggle";
 import { Analytics } from "@vercel/analytics/react";
 
 const Home = () => {
   return (
     <div>
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
       <Welcome />
       <Analytics />
     </div>

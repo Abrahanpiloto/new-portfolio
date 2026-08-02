@@ -7,6 +7,29 @@ const Services = () => {
     {
       title: "",
       description:
+        "Imagina que tienes un asistente personal que ha leído todos los documentos de tu empresa: manuales, políticas, catálogos, correos importantes, contratos, informes técnicos... y que puede responder cualquier pregunta sobre ellos en segundos, y 24/7 con la exactitud de quien memorizó cada palabra. Eso es un RAG (Retrieval-Augmented Generation), o en español: Generación Aumentada por Recuperación.",
+      included: [
+        "Integrar chat IA en la web existente",
+        "Entrenado con textos del negocio (FAQ, servicios, horarios, políticas, etc)",
+        "Adaptado a los colores y logo de tu marca",
+        "Diseño adaptable a todos los dispositivos",
+      ],
+      useCases: [
+        "Clínicas y consultorios: Pacientes preguntan sobre procedimientos, preparación para exámenes, horarios, documentos requeridos.",
+        "Empresas de servicios: Clientes consultan contratos, garantías, políticas de devolución, manuales de uso.",
+        "Instituciones educativas: Alumnos y padres buscan información de programas, requisitos, calendarios.",
+        "Legal y consultoría: Consultas rápidas sobre normativas, cláusulas contractuales, procedimientos internos.",
+        "Soporte técnico: Usuarios resuelven dudas frecuentes usando manuales y guías técnicas",
+      ],
+      price: "0",
+      priceUsd: "1",
+      image: "/rag-phone.webp",
+      label: "Chat Inteligente",
+      link: "https://wa.me/51916058633?text=Hola%20Abrahan,%20quiero%20impulsar%20mi%20negocio%20",
+    },
+    {
+      title: "",
+      description:
         "Página única diseñada estratégicamente para destacar una oferta específica y guiar al visitante hacia una acción clave, como comprar o dejar sus datos. Ideal para campañas, lanzamientos y captar nuevos clientes de forma rápida y efectiva.",
       included: [
         "Diseño original (no plantilla)",
