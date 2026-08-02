@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
+import { FaWhatsapp } from "react-icons/fa";
+import { trackEvent } from "../analytics";
 
 const FormEmail2 = () => {
   const form = useRef();
@@ -34,10 +36,11 @@ const FormEmail2 = () => {
       </div>
 
       <div className="relative w-full max-w-xl">
-        <div className="absolute inset-0 bg-black translate-x-2 translate-y-2 rounded-sm" />
-        <div className="relative bg-[#E8E8E8] dark:bg-[#21262A] p-8 md:p-12 border border-neutral-800 dark:border-neutral-600">
-          <p className="text-[#FF4100] font-bold text-xs tracking-widest uppercase mb-8">
-            Inicia un proyecto
+        <div className="absolute inset-0 bg-black translate-x-2 translate-y-2 rounded-lg" />
+        <div className="relative bg-[#E8E8E8] dark:bg-[#384148] p-8 md:p-12 border border-neutral-800 dark:border-neutral-600 rounded-lg">
+          <p className="text-white lg:text-lg text-xs tracking-widest italic mb-8">
+            Enviame un email y a la brevedad de lo posible me pondre en contacto
+            contigo.
           </p>
 
           <form ref={form} onSubmit={sendEmail} className="space-y-8">
@@ -134,12 +137,31 @@ const FormEmail2 = () => {
               />
             </div>
 
-            <button
-              type="submit"
-              className="relative bg-[#FF4100] hover:bg-[#FF6B33] text-white font-bold text-xs tracking-widest uppercase px-8 py-4 cursor-pointer transition-all duration-100 translate-x-1 translate-y-1 shadow-[4px_4px_0_0_#171717] dark:shadow-[4px_4px_0_0_#000] active:translate-x-0 active:translate-y-0 active:shadow-none active:scale-95"
-            >
-              Enviar
-            </button>
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <button
+                type="submit"
+                className="relative bg-[#FF4100] hover:bg-[#FF6B33] text-white font-bold text-xs tracking-widest uppercase px-8 py-4 cursor-pointer transition-all duration-100 translate-x-1 translate-y-1 shadow-[4px_4px_0_0_#171717] dark:shadow-[4px_4px_0_0_#000] active:translate-x-0 active:translate-y-0 active:shadow-none active:scale-95 rounded-lg"
+              >
+                Enviar
+              </button>
+
+              <a
+                href="https://wa.me/51916058633?text=Hola%20Abrahan,%20quiero%20impulsar%20mi%20negocio%20"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() =>
+                  trackEvent({
+                    action: "click_whatsapp",
+                    category: "contact",
+                    label: "form_email",
+                  })
+                }
+                className="relative flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold text-xs tracking-widest uppercase px-8 py-4 cursor-pointer transition-all duration-100 translate-x-1 translate-y-1 shadow-[4px_4px_0_0_#171717] dark:shadow-[4px_4px_0_0_#000] active:translate-x-0 active:translate-y-0 active:shadow-none active:scale-95 rounded-lg"
+              >
+                <FaWhatsapp className="text-lg" />
+                WhatsApp
+              </a>
+            </div>
           </form>
         </div>
       </div>

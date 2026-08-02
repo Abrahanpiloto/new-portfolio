@@ -33,7 +33,7 @@ const HoverImageLinks = () => {
           heading="Contactame"
           subheading="¿Te gustaría trabajar conmigo?"
           imgSrc="/contactame.png"
-          href="/contacto"
+          href="/form-email"
         />
         <Link
           heading="Abrahan"
