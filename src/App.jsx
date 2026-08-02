@@ -11,6 +11,7 @@ import EmailPage from "./pages/EmailPage";
 import Footer from "./components/Footer";
 // import ThemeToggle from "./components/ThemeToggle";
 import { sendPageView } from "./analytics";
+import { Toaster } from "sileo";
 
 function App() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function App() {
   return (
     <div>
       {/* <ThemeToggle /> */}
+      <Toaster position="top-right" theme="light" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre-mi" element={<Aboutmepage />} />

@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 import { trackEvent } from "../analytics";
+import { sileo } from "sileo";
 
 const FormEmail2 = () => {
   const form = useRef();
@@ -19,11 +20,18 @@ const FormEmail2 = () => {
       )
       .then(
         () => {
-          alert("Gracias! mensaje enviado con éxito");
+          sileo.success({
+            title: "Mensaje enviado",
+            description: "Gracias! te responderé a la brevedad.",
+          });
           form.current.reset();
         },
         (error) => {
-          alert("Ocurrió un error al enviar");
+          sileo.error({
+            title: "Error al enviar",
+            description: "Inténtalo de nuevo o escríbeme por WhatsApp.",
+          });
+
           console.error(error);
         },
       );
