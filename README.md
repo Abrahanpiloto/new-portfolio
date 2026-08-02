@@ -1,34 +1,98 @@
-# React + Vite
+# Abrahan Soluciones Digitales – Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com)
+[![pnpm](https://img.shields.io/badge/pnpm-F69220?logo=pnpm&logoColor=white)](https://pnpm.io)
 
-Currently, two official plugins are available:
+Portfolio personal de **Abrahan** para presentar servicios de diseño y desarrollo de sitios web modernos, landing pages de alta conversión y tiendas ecommerce rápidas y seguras. Aplicación de una sola página (SPA) construida con React y Vite, con contenido y rutas en español.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## Expanding the ESLint configuration
+- **Modo oscuro / claro** por clase en `<html>`, con persistencia en `localStorage` (clave `theme`).
+- **Animaciones de scroll-reveal** con IntersectionObserver (`src/hooks/animationScroll.js`).
+- **Rutas en español**: `/sobre-mi`, `/servicios`, `/proyectos`, `/contacto`, `/testimonios`, `/form-email`.
+- **Formulario de contacto** que envía emails mediante EmailJS.
+- **Botón de WhatsApp** para contacto directo.
+- **Analítica**: Google Analytics 4 (`G-P50479CQB3`) + Vercel Analytics en cada página.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologías
 
-abrahan@fedora:~/Documentos/new-portfolio$ pnpm dev
-✓ Lockfile passes supply-chain policies (verified 22m ago)
-Lockfile is up to date, resolution step is skipped
-Already up to date
-[ERR_PNPM_IGNORED_BUILDS] Ignored build scripts: @swc/core@1.15.41, esbuild@0.27.7
+- React 19
+- Vite 7
+- Tailwind CSS v4 (plugin `@tailwindcss/vite`, sin `tailwind.config.js`)
+- styled-components (usado en el componente `Switch.jsx`)
+- react-router-dom 7
+- framer-motion
+- react-icons
+- @emailjs/browser
+- @vercel/analytics
 
-Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
-[ERROR] Command failed with exit code 1: '/home/abrahan/.local/share/pnpm/store/v11/links/@pnpm/exe/11.6.0/ea313a5bbbb86abbee24bb32f80f2cf948d9710f1b676d3d20718178c25b0deb/node_modules/@pnpm/exe/pnpm' install
+## Rutas
 
-pnpm: Command failed with exit code 1: '/home/abrahan/.local/share/pnpm/store/v11/links/@pnpm/exe/11.6.0/ea313a5bbbb86abbee24bb32f80f2cf948d9710f1b676d3d20718178c25b0deb/node_modules/@pnpm/exe/pnpm' install
-at getFinalError (file:///home/abrahan/.local/share/pnpm/store/v11/links/@pnpm/exe/11.6.0/ea313a5bbbb86abbee24bb32f80f2cf948d9710f1b676d3d20718178c25b0deb/node_modules/@pnpm/exe/dist/pnpm.mjs:34053:14)
-at makeError (file:///home/abrahan/.local/share/pnpm/store/v11/links/@pnpm/exe/11.6.0/ea313a5bbbb86abbee24bb32f80f2cf948d9710f1b676d3d20718178c25b0deb/node_modules/@pnpm/exe/dist/pnpm.mjs:36360:21)
-at getSyncResult (file:///home/abrahan/.local/share/pnpm/store/v11/links/@pnpm/exe/11.6.0/ea313a5bbbb86abbee24bb32f80f2cf948d9710f1b676d3d20718178c25b0deb/node_modules/@pnpm/exe/dist/pnpm.mjs:38204:10)
-at spawnSubprocessSync (file:///home/abrahan/.local/share/pnpm/store/v11/links/@pnpm/exe/11.6.0/ea313a5bbbb86abbee24bb32f80f2cf948d9710f1b676d3d20718178c25b0deb/node_modules/@pnpm/exe/dist/pnpm.mjs:38164:14)
-at execaCoreSync (file:///home/abrahan/.local/share/pnpm/store/v11/links/@pnpm/exe/11.6.0/ea313a5bbbb86abbee24bb32f80f2cf948d9710f1b676d3d20718178c25b0deb/node_modules/@pnpm/exe/dist/pnpm.mjs:38094:23)
-at callBoundExeca (file:///home/abrahan/.local/share/pnpm/store/v11/links/@pnpm/exe/11.6.0/ea313a5bbbb86abbee24bb32f80f2cf948d9710f1b676d3d20718178c25b0deb/node_modules/@pnpm/exe/dist/pnpm.mjs:40622:23)
-at boundExeca (file:///home/abrahan/.local/share/pnpm/store/v11/links/@pnpm/exe/11.6.0/ea313a5bbbb86abbee24bb32f80f2cf948d9710f1b676d3d20718178c25b0deb/node_modules/@pnpm/exe/dist/pnpm.mjs:40599:49)
-at sync (file:///home/abrahan/.local/share/pnpm/store/v11/links/@pnpm/exe/11.6.0/ea313a5bbbb86abbee24bb32f80f2cf948d9710f1b676d3d20718178c25b0deb/node_modules/@pnpm/exe/dist/pnpm.mjs:40758:10)
-at runPnpmCli (file:///home/abrahan/.local/share/pnpm/store/v11/links/@pnpm/exe/11.6.0/ea313a5bbbb86abbee24bb32f80f2cf948d9710f1b676d3d20718178c25b0deb/node_modules/@pnpm/exe/dist/pnpm.mjs:244489:5)
-at runDepsStatusCheck (file:///home/abrahan/.local/share/pnpm/store/v11/links/@pnpm/exe/11.6.0/ea313a5bbbb86abbee24bb32f80f2cf948d9710f1b676d3d20718178c25b0deb/node_modules/@pnpm/exe/dist/pnpm.mjs:246225:7)
-abrahan@fedora:~/Documentos/new-portfolio$
+| Ruta             | Página        |
+| ---------------- | ------------- |
+| `/`              | Inicio        |
+| `/sobre-mi`      | Sobre mí      |
+| `/servicios`     | Servicios     |
+| `/proyectos`     | Proyectos     |
+| `/contacto`      | Contacto      |
+| `/testimonios`   | Testimonios   |
+| `/form-email`    | Formulario    |
+
+## Estructura del proyecto
+
+```
+├── public/                 # Estáticos (imágenes, PDFs, favicon, robots.txt)
+├── src/
+│   ├── components/         # Welcome, Footer, Cards, Services, Switch, Contact, FormEmail2, etc.
+│   ├── pages/              # Home, Aboutmepage, ServicesPage, Workspage, Contactpage, ...
+│   ├── hooks/              # animationScroll.js (scroll-reveal)
+│   ├── analytics.js        # GA4
+│   ├── App.jsx             # Rutas
+│   └── main.jsx            # Entry point
+├── index.html
+├── vercel.json
+└── package.json
+```
+
+## Instalación y desarrollo
+
+Se usa **pnpm** como gestor de paquetes.
+
+```bash
+pnpm install   # instala dependencias
+pnpm dev       # servidor de desarrollo Vite
+pnpm build     # build de producción → dist/
+pnpm lint      # ESLint (flat config, ESLint 9)
+pnpm preview   # previsualiza el build de producción
+```
+
+No hay suite de tests ni typecheck.
+
+## Variables de entorno
+
+El formulario de contacto usa EmailJS. Crea un archivo `.env` en la raíz (ignorado por git) con:
+
+| Variable                     | Descripción                          |
+| ---------------------------- | ------------------------------------ |
+| `VITE_EMAILJS_SERVICE_ID`    | ID del servicio de EmailJS           |
+| `VITE_EMAILJS_TEMPLATE_ID`   | ID de la plantilla de EmailJS        |
+| `VITE_EMAILJS_PUBLIC_KEY`    | Clave pública de EmailJS             |
+
+## Despliegue
+
+Desplegado en **Vercel**. El archivo `vercel.json` reescribe todas las rutas hacia `/` para soportar el enrutamiento de la SPA:
+
+```json
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
+```
+
+Ramas de trabajo: `development` (desarrollo) y `main` (producción).
+
+## Autor
+
+Abrahan – Soluciones Digitales
