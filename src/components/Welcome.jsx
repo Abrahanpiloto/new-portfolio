@@ -14,7 +14,7 @@ const HoverImageLinks = () => {
           heading="Servicios"
           subheading="Lo que hago y precios"
           imgSrc="/pizarras-precios.jpg"
-          href="/servicios"
+          href="/servicios2"
         />
         <Link
           heading="Trabajos"

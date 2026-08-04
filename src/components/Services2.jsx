@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
-import React from "react";
-import CardPrice from "./CardPrice";
+import React, { useState } from "react";
+import CardPrice2 from "./CardPrice2";
+import ModalService from "./ModalService";
 
-const Services = () => {
+const Services2 = () => {
+  const [selectedService, setSelectedService] = useState(null);
+
   const services = [
     {
       title: "",
@@ -58,10 +61,8 @@ const Services = () => {
     },
     {
       title: "",
-
       description:
         "Imagina que un cliente escucha hablar de ti y te busca en internet. Si no encuentra nada sólido y consistente, la confianza se rompe. Pero si llega a tu sitio web, ve tu historia, tus servicios, testimonios, tus valores y cómo contactarte, sentirá que tu negocio es real y confiable. Un sitio web es esa casa digital que abre la puerta a nuevas oportunidades.",
-
       included: [
         "Diseño original (no plantilla)",
         "Adaptado a los colores y logo de tu marca",
@@ -73,7 +74,6 @@ const Services = () => {
         "Dominio y servidor/alojamiento por 1 año",
         "Certificado SSL",
       ],
-
       useCases: [
         "Presentar información completa del negocio o marca",
         "Mostrar galería de imágenes/videos, portafolio de trabajos o proyectos",
@@ -89,7 +89,6 @@ const Services = () => {
         "Exponer preguntas frecuentes (FAQ)",
         "Fortalecer branding e imagen profesional",
       ],
-
       price: "1000",
       priceUsd: "265",
       image: "/service-sitio-web.jpg",
@@ -116,6 +115,7 @@ const Services = () => {
       label: "Ecommerce (tienda virtual)",
     },
   ];
+
   return (
     <section className="min-h-screen bg-[#E8E8E8] dark:bg-[#21262A] text-neutral-900 dark:text-white px-4 py-12">
       <div className="absolute top-4 right-6 font-bold text-xl dark:hover:text-[#FF4100] hover:text-blue-600">
@@ -130,7 +130,7 @@ const Services = () => {
           {services.map((service, index) => (
             <React.Fragment key={index}>
               <div className="flex justify-center">
-                <CardPrice
+                <CardPrice2
                   image={service.image}
                   title={service.title}
                   description={service.description}
@@ -142,14 +142,23 @@ const Services = () => {
                   label={service.label}
                   price={service.price}
                   priceUsd={service.priceUsd}
+                  onVerMas={() => setSelectedService(service)}
                 />
               </div>
             </React.Fragment>
           ))}
         </div>
       </div>
+
+      {/* Modal */}
+      {selectedService && (
+        <ModalService
+          service={selectedService}
+          onClose={() => setSelectedService(null)}
+        />
+      )}
     </section>
   );
 };
 
-export default Services;
+export default Services2;
