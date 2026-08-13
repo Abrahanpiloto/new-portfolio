@@ -26,7 +26,7 @@ const Services2 = () => {
       ],
       price: "800",
       priceUsd: "220",
-      image: "/rag.webp",
+      image: "/ragapp/rag.webp",
       label: "Chat Inteligente (RAG)",
       link: "https://wa.me/51916058633?text=Hola%20Abrahan,%20quiero%20impulsar%20mi%20negocio%20",
     },

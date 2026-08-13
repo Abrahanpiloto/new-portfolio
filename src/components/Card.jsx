@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Card = ({ image, title, description, link, code, ad }) => {
   return (
     <StyledWrapper>
       <div className="card">
-        <img src={image} className="card_image" alt="work_linkbridge" />
+        <img
+          src="/ragapp/Macbook-Air2.webp"
+          className="card_image"
+          alt="work_linkbridge"
+        />
         <div className="card__content">
           <p className="card__title">{title}</p>
           <p className="card__description">{description}</p>
@@ -14,7 +19,8 @@ const Card = ({ image, title, description, link, code, ad }) => {
             rel="noopener noreferrer"
             className="card__button"
           >
-            Ir al sitio
+            Ver Demo
+            <FaExternalLinkAlt className="text-xs" />
           </a>
           <p className="ad">{ad}</p>
         </div>
@@ -24,10 +30,14 @@ const Card = ({ image, title, description, link, code, ad }) => {
 };
 
 const StyledWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
   .card {
     padding: 4px;
     position: relative;
-    width: 100%;
+    width: 70%;
     aspect-ratio: 16/9;
     background-color: #ffffff;
     border-radius: 5px;
@@ -36,15 +46,21 @@ const StyledWrapper = styled.div`
     justify-content: center;
     overflow: hidden;
     perspective: 1000px;
-    box-shadow: 0 0 0 5px #ffffff80;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     min-height: 260px; /* altura base */
   }
 
-  .card svg {
+  .card > svg {
     width: 48px;
     fill: #333;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .card__button svg {
+    width: auto;
+    height: 1em;
+    fill: currentColor;
+    transition: none;
   }
 
   .card_image {
@@ -65,7 +81,7 @@ const StyledWrapper = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 30px;
     box-sizing: border-box;
     background-color: #ffffff;
     transform: rotateX(-90deg);
@@ -85,15 +101,16 @@ const StyledWrapper = styled.div`
     font-weight: 700;
   }
 
-  .card:hover svg {
+  .card:hover > svg {
     scale: 0;
   }
 
   .card__description {
     margin: 8px 8px 8px 0px;
     font-size: 14px;
-    color: #777;
+    color: #000606;
     line-height: 1.2;
+    white-space: pre-line;
   }
 
   .card__button {
@@ -101,12 +118,16 @@ const StyledWrapper = styled.div`
     // margin-left: 15px;
     padding: 6px 36px;
     border-radius: 5px;
-    background: #777;
+    background: #000606;
     border: none;
     color: white;
     cursor: pointer;
     font-size: 12px;
     font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
   }
 
   .card__button:hover {
@@ -127,6 +148,7 @@ const StyledWrapper = styled.div`
   }
   @media (max-width: 640px) {
     .card {
+      width: 95%;
       flex-direction: column;
       aspect-ratio: auto;
       height: auto;
@@ -152,7 +174,7 @@ const StyledWrapper = styled.div`
     }
 
     .card__description {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-bottom: 1rem;
     }
 
@@ -161,7 +183,7 @@ const StyledWrapper = styled.div`
       margin-right: 10px;
     }
 
-    .card svg {
+    .card > svg {
       display: none;
     }
   }

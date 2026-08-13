@@ -8,7 +8,11 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex justify-center gap-4 items-center text-center ">
         <p className="mb-2 md:mb-0 text-neutral-900 dark:text-white text-md">
           Creado por{" "}
-          <span className="text-md text-[#FF4100]">Abrahan Piloto</span>{" "}
+          <img
+            src="/pixeldev-logo.png"
+            alt="PixelDev"
+            className="inline-block h-4 w-auto align-baseline"
+          />{" "}
         </p>
         <div className="flex gap-4 ">
           <a
