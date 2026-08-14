@@ -14,7 +14,7 @@ const Footer = () => {
             className="inline-block h-4 w-auto align-baseline"
           />{" "}
         </p>
-        <div className="flex gap-4 ">
+        <div className="flex gap-4 -mt-4 md:mt-0 ">
           <a
             href="https://www.instagram.com/abrahan.freelancer"
             target="_blank"
@@ -31,7 +31,7 @@ const Footer = () => {
             aria-label="Threads"
             className="transition-colors"
           >
-            <FaThreads className="text-xl text-neutral-900 dark:text-white hover:text-[#FF6B33] cursor-pointer" />
+            <FaThreads className="text-lg text-neutral-900 dark:text-white hover:text-[#FF6B33] cursor-pointer" />
           </a>
         </div>
       </div>

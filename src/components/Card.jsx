@@ -1,7 +1,10 @@
 import styled from "styled-components";
+import { useState } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Card = ({ image, title, description, link, code, ad }) => {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <StyledWrapper>
       <div className="card">
@@ -12,7 +15,18 @@ const Card = ({ image, title, description, link, code, ad }) => {
         />
         <div className="card__content">
           <p className="card__title">{title}</p>
-          <p className="card__description">{description}</p>
+          <div
+            className={`card__description-wrap ${expanded ? "expanded" : ""}`}
+          >
+            <p className="card__description">{description}</p>
+          </div>
+          <button
+            type="button"
+            className="card__toggle"
+            onClick={() => setExpanded((prev) => !prev)}
+          >
+            {expanded ? "Leer menos" : "Leer más"}
+          </button>
           <a
             href={link}
             target="_blank"
@@ -134,8 +148,12 @@ const StyledWrapper = styled.div`
     background: blue;
   }
 
+  .card__toggle {
+    display: none;
+  }
+
   .ad {
-    color: blue;
+    color: gray;
     line-height: 1;
     margin-top: 8px;
     font-size: 12px;
@@ -173,9 +191,48 @@ const StyledWrapper = styled.div`
       margin-bottom: 0.5rem;
     }
 
+    .card__description-wrap {
+      display: grid;
+      grid-template-rows: 3.6em;
+      transition: grid-template-rows 0.6s ease;
+      margin-bottom: 0.75rem;
+    }
+
+    .card__description-wrap.expanded {
+      grid-template-rows: 1fr;
+    }
+
+    .card__description-wrap .card__description {
+      overflow: hidden;
+      min-height: 0;
+      margin: 0;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+
+    .card__description-wrap.expanded .card__description {
+      -webkit-line-clamp: unset;
+    }
+
     .card__description {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .card__toggle {
+      display: block;
+      margin-bottom: 0.75rem;
+      padding: 0;
+      border: none;
+      background: none;
+      font-size: 0.9rem;
+      font-style: italic;
+      color: blue;
+      cursor: pointer;
+    }
+
+    .card__toggle:hover {
+      text-decoration: underline;
     }
 
     .card__button {
