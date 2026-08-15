@@ -36,9 +36,9 @@ const HoverImageLinks = () => {
           href="/form-email"
         />
         <Link
-          heading="PixelDev"
-          subheading="Que es"
-          imgSrc="/pixeldev-logo.jpg"
+          heading="Abrahan"
+          subheading="Quien soy"
+          imgSrc="/yo.jpg"
           href="/sobre-mi"
         />
       </div>

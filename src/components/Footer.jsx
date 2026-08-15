@@ -8,13 +8,16 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex justify-center gap-4 items-center text-center ">
         <p className="mb-2 md:mb-0 text-neutral-900 dark:text-white text-md">
           Creado por{" "}
-          <img
+          <span className="italic text-[#FF4100] font-signature text-lg ">
+            Abrahan Piloto
+          </span>
+          {/* <img
             src="/pixeldev-logo.png"
             alt="PixelDev"
             className="inline-block h-4 w-auto align-baseline"
-          />{" "}
+          />{" "} */}
         </p>
-        <div className="flex gap-4 -mt-4 md:mt-0 ">
+        {/* <div className="flex gap-4 -mt-4 md:-mt-2 ">
           <a
             href="https://www.instagram.com/abrahan.freelancer"
             target="_blank"
@@ -33,7 +36,7 @@ const Footer = () => {
           >
             <FaThreads className="text-lg text-neutral-900 dark:text-white hover:text-[#FF6B33] cursor-pointer" />
           </a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

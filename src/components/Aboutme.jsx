@@ -10,19 +10,15 @@ const AboutMe = () => {
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6 lg:gap-16 max-w-6xl">
         <div className="lg:w-1/2 animate-[var(--animate-slide-in-left)]">
           <h1 className="lg:text-5xl text-3xl mb-4 text-center lg:text-left">
-            Sobre{" "}
-            <img
-              src="/pixeldev-logo.png"
-              alt="PixelDev"
-              className="inline-block h-9 lg:h-14 w-auto align-middle"
-            />
+            Sobre <br />
+            <span className="font-signature italic text-[#FF4100]">
+              Abrahan Piloto
+            </span>
           </h1>
           <p className="max-w-md text-center lg:text-left leading-relaxed text-lg">
-            <span className="font-bold">PixelDev</span> es un estudio de
-            desarrollo web fundado por{" "}
-            <span className="font-bold">Abrahan Piloto</span>. Ayudamos a
+            Hola me llamo Abrahan y soy desarrollador de software. Ayudo a
             negocios y emprendedores a destacar en internet con sitios rápidos,
-            seguros y efectivos. <br /> <br /> Creamos{" "}
+            seguros y efectivos. <br /> <br /> Desarrollo{" "}
             <span className="font-bold">
               ecommerce, landing pages y sitios web a medida
             </span>{" "}
@@ -36,7 +32,7 @@ const AboutMe = () => {
         {/* Logo a la derecha */}
         <div className="lg:w-1/2 flex justify-center lg:mt-16 animate-[var(--animate-slide-in-right)]">
           <img
-            src="/pixeldev-logo.jpg"
+            src="/yo.jpg"
             alt="Logo de PixelDev"
             className="w-64 lg:w-80 object-contain"
           />

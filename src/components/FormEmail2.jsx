@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
@@ -7,9 +7,11 @@ import { sileo } from "sileo";
 
 const FormEmail2 = () => {
   const form = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     emailjs
       .sendForm(
@@ -34,7 +36,8 @@ const FormEmail2 = () => {
 
           console.error(error);
         },
-      );
+      )
+      .finally(() => setIsSubmitting(false));
   };
 
   return (
@@ -112,16 +115,17 @@ const FormEmail2 = () => {
                   (presupuesto aproximado)
                 </span>
               </label>
-              <select
-                name="engagement"
-                id="engagement"
-                className="w-full bg-transparent border-b border-neutral-800 dark:border-neutral-600 py-2 text-neutral-900 dark:text-neutral-100 outline-none focus:border-[#FF4100] transition-colors font-sans appearance-none cursor-pointer"
-              >
-                <option value="">— Selecciona uno —</option>
+               <select
+                 name="engagement"
+                 id="engagement"
+                 defaultValue=""
+                 className="p-4 bg-gray-500 border-neutral-800  py-2 dark:text-neutral-100 outline-none focus:border-[#FF4100] transition-colors font-sans appearance-none cursor-pointer"
+               >
+                 <option value="" disabled hidden>Selecciona uno</option>
                 <option value="landing">Landing Page</option>
                 <option value="website">Sitio Web</option>
-                <option value="ecommerce">E-commerce</option>
-                <option value="otro">Otro</option>
+                {/* <option value="ecommerce">E-commerce</option> */}
+                <option value="otro">Chat IA</option>
               </select>
             </div>
 
@@ -148,9 +152,19 @@ const FormEmail2 = () => {
             <div className="flex flex-wrap items-center justify-between gap-4">
               <button
                 type="submit"
-                className="relative bg-[#FF4100] hover:bg-[#FF6B33] text-white font-bold text-xs tracking-widest uppercase px-8 py-4 cursor-pointer transition-all duration-100 translate-x-1 translate-y-1 shadow-[4px_4px_0_0_#171717] dark:shadow-[4px_4px_0_0_#000] active:translate-x-0 active:translate-y-0 active:shadow-none active:scale-95 rounded-lg"
+                disabled={isSubmitting}
+                className="relative bg-[#FF4100] hover:bg-[#FF6B33] text-white font-bold text-xs tracking-widest uppercase px-8 py-4 cursor-pointer transition-all duration-100 translate-x-1 translate-y-1 shadow-[4px_4px_0_0_#171717] dark:shadow-[4px_4px_0_0_#000] active:translate-x-0 active:translate-y-0 active:shadow-none active:scale-95 rounded-lg disabled:opacity-75 disabled:cursor-not-allowed disabled:hover:bg-[#FF4100] disabled:translate-x-1 disabled:translate-y-1"
               >
-                Enviar
+                {isSubmitting ? (
+                  <span className="flex items-center gap-0.5">
+                    Enviando
+                    <span className="animate-[loading-dot_1.4s_ease-in-out_infinite]">.</span>
+                    <span className="animate-[loading-dot_1.4s_ease-in-out_0.16s_infinite]">.</span>
+                    <span className="animate-[loading-dot_1.4s_ease-in-out_0.32s_infinite]">.</span>
+                  </span>
+                ) : (
+                  "Enviar"
+                )}
               </button>
 
               <a
