@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-const Card = ({ image, title, description, link, code, ad }) => {
+const Card = ({ title, description, link }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -36,7 +36,6 @@ const Card = ({ image, title, description, link, code, ad }) => {
             Ver Demo
             <FaExternalLinkAlt className="text-xs" />
           </a>
-          <p className="ad">{ad}</p>
         </div>
       </div>
     </StyledWrapper>

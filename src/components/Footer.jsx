@@ -1,6 +1,4 @@
 import React from "react";
-import { SiInstagram } from "react-icons/si";
-import { FaThreads } from "react-icons/fa6";
 
 const Footer = () => {
   return (

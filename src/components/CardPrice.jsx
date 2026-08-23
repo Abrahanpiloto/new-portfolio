@@ -3,7 +3,7 @@ import { FaCheck, FaChevronDown } from "react-icons/fa";
 import { MdConstruction, MdAccessTime } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import { LuDot } from "react-icons/lu";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 const CardPrice = ({
   image,

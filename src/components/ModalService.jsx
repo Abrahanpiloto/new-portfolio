@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { FaCheck, FaTimes } from "react-icons/fa";
 import { MdConstruction, MdAccessTime } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";

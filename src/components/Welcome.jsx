@@ -2,13 +2,10 @@ import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { Link as RouterLink } from "react-router-dom";
-// import Switch from "./Switch";
 
 const HoverImageLinks = () => {
   return (
     <section className="bg-[#E8E8E8] dark:bg-[#21262A] p-4 py-8 md:p-8 min-h-screen transition-colors duration-500 font-sans">
-      <div className="flex justify-end">{/* <Switch /> */}</div>
-
       <div className="mx-auto max-w-5xl">
         <Link
           heading="Servicios"
