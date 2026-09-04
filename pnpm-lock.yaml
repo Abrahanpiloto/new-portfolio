@@ -11,6 +11,9 @@ importers:
       '@emailjs/browser':
         specifier: ^4.4.1
         version: 4.4.1
+      '@marcomattes/epaper-components':
+        specifier: ^1.2.0
+        version: 1.2.0
       '@tailwindcss/vite':
         specifier: ^4.1.11
         version: 4.3.1(vite@7.3.5(jiti@2.7.0)(lightningcss@1.32.0))
@@ -305,6 +308,10 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@marcomattes/epaper-components@1.2.0':
+    resolution: {integrity: sha512-N5ez3Vo60Jb5r7KjO1a8oSa2r/uDSu+8en9CqYhBdvZ9NsZy9n49NOWSed0KARxG9gaNgaywyqZGWUOO0AVYZA==}
+    engines: {node: '>=20'}
 
   '@rolldown/pluginutils@1.0.0-beta.27':
     resolution: {integrity: sha512-+d0F4MKMCbeVUJwG96uQ4SgAznZNSq93I3V+9NHA4OpvqG8mRCpGdKmK8l/dl02h2CCDHwW2FqilnTyDcAnqjA==}
@@ -1438,6 +1445,8 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@marcomattes/epaper-components@1.2.0': {}
 
   '@rolldown/pluginutils@1.0.0-beta.27': {}
 
