@@ -207,15 +207,8 @@ html {
   min-height: 38px;
 }
 
-/* Home: en táctil (sin hover) se muestra miniatura y flecha estáticas. */
-.epaper-touch-thumb {
-  display: none;
-}
-
+/* Home: en táctil (sin hover) no se muestra imagen ni flecha: solo texto. */
 @media (hover: none) {
-  .epaper-touch-thumb {
-    display: block;
-  }
   .epaper-hover-only {
     display: none !important;
   }

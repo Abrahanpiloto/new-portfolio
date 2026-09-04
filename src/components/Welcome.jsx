@@ -145,15 +145,6 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
         alt={`Image representing a link for ${heading}`}
       />
 
-      {/* Miniatura estática solo para táctil (sin hover) */}
-      <img
-        src={imgSrc}
-        alt=""
-        aria-hidden="true"
-        loading="lazy"
-        className="epaper-photo epaper-touch-thumb relative z-10 h-20 w-24 border-2 border-[#111111] object-cover"
-      />
-
       <motion.div
         variants={{
           initial: {
@@ -170,14 +161,6 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       >
         <FiArrowRight className="text-5xl text-[#111111]" />
       </motion.div>
-
-      {/* Flecha estática solo para táctil (sin hover) */}
-      <div
-        aria-hidden="true"
-        className="epaper-touch-thumb relative z-10 border-2 border-[#111111] p-4"
-      >
-        <FiArrowRight className="text-5xl text-[#111111]" />
-      </div>
     </motion.div>
   );
 };
