@@ -34,9 +34,16 @@ function App() {
         <Route path="/testimonios" element={<Testimonialspage />} />
         <Route path="/form-email" element={<EmailPage />} />
       </Routes>
-      {/* En /sobre-mi y /servicios2 se usa pie e-paper local */}
-      {location.pathname !== "/sobre-mi" &&
-        location.pathname !== "/servicios2" && <Footer />}
+      {/* En las rutas e-paper se usa pie local de cada página */}
+      {![
+        "/",
+        "/sobre-mi",
+        "/servicios2",
+        "/testimonios",
+        "/proyectos",
+        "/contacto",
+        "/form-email",
+      ].includes(location.pathname) && <Footer />}
     </div>
   );
 }

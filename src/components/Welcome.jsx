@@ -1,12 +1,26 @@
-import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
+import {
+  useMotionValue,
+  motion,
+  useSpring,
+  useTransform,
+  MotionConfig,
+} from "framer-motion";
 import React, { useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { Link as RouterLink } from "react-router-dom";
 
+// NOTA: esta sección queda fuera de `.ink-page` a propósito: el reset de
+// epaper-components anula transiciones/animaciones dentro de ese scope y aquí
+// las animaciones se conservan por decisión del dueño del sitio.
 const HoverImageLinks = () => {
   return (
-    <section className="bg-[#E8E8E8] dark:bg-[#21262A] p-4 py-8 md:p-8 min-h-screen transition-colors duration-500 font-sans">
-      <div className="mx-auto max-w-5xl">
+    <MotionConfig reducedMotion="user">
+      <section className="epaper-grain bg-[#FDFBF7] text-[#111111] p-4 py-8 md:p-8 min-h-screen font-sans">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-[11px] font-bold tracking-[0.18em] uppercase mb-2">
+            Índice Nº 00
+          </p>
+          <e-divider variant="solid" />
         <Link
           heading="Servicios"
           subheading="Lo que hago y precios"
@@ -39,7 +53,8 @@ const HoverImageLinks = () => {
           href="/sobre-mi"
         />
       </div>
-    </section>
+      </section>
+    </MotionConfig>
   );
 };
 
@@ -78,7 +93,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-1 border-[#FF6B33] py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
+      className="group relative flex items-center justify-between border-b-2 border-[#111111] py-4 md:py-8"
     >
       <RouterLink to={href} className="absolute inset-0 z-20" />
       <div>
@@ -92,7 +107,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-4xl font-bold text-neutral-800 dark:text-neutral-200 transition-colors duration-500 dark:group-hover:text-neutral-50 md:text-6xl"
+          className="epaper-accent-underline relative z-10 block text-4xl font-bold text-[#111111] md:text-6xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -108,7 +123,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-lg text-neutral-900 dark:text-white transition-colors duration-500 group-hover:text-[#FF4100]">
+        <span className="relative z-10 mt-2 block text-lg text-[#111111] group-hover:text-[#FF4100]">
           {subheading}
         </span>
       </div>
@@ -126,8 +141,17 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
         }}
         transition={{ type: "spring" }}
         src={imgSrc}
-        className="absolute z-0 h-44 w-62 rounded-lg object-contain md:h-48 md:w-64"
+        className="epaper-photo epaper-hover-only absolute z-0 h-44 w-62 border-2 border-[#111111] object-contain md:h-48 md:w-64"
         alt={`Image representing a link for ${heading}`}
+      />
+
+      {/* Miniatura estática solo para táctil (sin hover) */}
+      <img
+        src={imgSrc}
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        className="epaper-photo epaper-touch-thumb relative z-10 h-20 w-24 border-2 border-[#111111] object-cover"
       />
 
       <motion.div
@@ -142,10 +166,18 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
           },
         }}
         transition={{ type: "spring" }}
-        className="relative z-10 p-4"
+        className="epaper-hover-only relative z-10 border-2 border-[#111111] p-4"
       >
-        <FiArrowRight className="text-5xl text-neutral-800 dark:text-neutral-200" />
+        <FiArrowRight className="text-5xl text-[#111111]" />
       </motion.div>
+
+      {/* Flecha estática solo para táctil (sin hover) */}
+      <div
+        aria-hidden="true"
+        className="epaper-touch-thumb relative z-10 border-2 border-[#111111] p-4"
+      >
+        <FiArrowRight className="text-5xl text-[#111111]" />
+      </div>
     </motion.div>
   );
 };

@@ -7,64 +7,142 @@ import {
   FaFileDownload,
   FaEnvelope,
 } from "react-icons/fa";
-import ButtonCta from "./ButtonCta";
+import { trackEvent } from "../analytics";
+
+const WHATSAPP_URL =
+  "https://wa.me/51916058633?text=Hola%20Abrahan,%20quiero%20impulsar%20mi%20negocio%20";
+
+const channels = [
+  {
+    label: "GitHub",
+    href: "https://github.com/Abrahanpiloto",
+    external: true,
+    icon: <FaGithub className="text-2xl" aria-hidden="true" />,
+  },
+  {
+    label: "Descargar CV",
+    href: "/abrahan_piloto_cv.pdf",
+    download: true,
+    icon: <FaFileDownload className="text-2xl" aria-hidden="true" />,
+  },
+  {
+    label: "Enviar Email",
+    href: "/form-email",
+    internal: true,
+    icon: <FaEnvelope className="text-2xl" aria-hidden="true" />,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/abrahan-piloto-a683a0129",
+    external: true,
+    icon: <FaLinkedin className="text-2xl" aria-hidden="true" />,
+  },
+];
+
+// Tarjeta CTA e-paper con el mismo destino y evento GA4 que ButtonCta.
+const ContactCta = () => {
+  const handleClick = () => {
+    trackEvent({
+      action: "click_whatsapp",
+      category: "contact",
+      label: "contact_epaper",
+    });
+  };
+
+  return (
+    <div className="w-full max-w-6xl mx-auto px-4 mt-10">
+      <e-card eyebrow="AVISO" title="Hablemos de tu negocio">
+        <div className="flex flex-col items-center text-center">
+          <e-text kind="prose" as="p">
+            Cuéntame tu idea por WhatsApp y la convertimos en un sitio rápido,
+            seguro y efectivo.
+          </e-text>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleClick}
+            aria-label="Hablar por WhatsApp sobre tu negocio"
+            className="inline-flex min-h-[48px] items-center mt-4 focus-visible:outline-3"
+          >
+            <e-button variant="primary" className="epaper-btn-orange">
+              HABLEMOS POR WHATSAPP →
+            </e-button>
+          </a>
+          <e-text kind="small" as="p">
+            Respuesta directa. Sin formularios largos.
+          </e-text>
+        </div>
+      </e-card>
+    </div>
+  );
+};
 
 const Contact = () => {
   return (
-    <section className="min-h-screen bg-[#E8E8E8] dark:bg-[#21262A] text-neutral-900 dark:text-neutral-100 px-4 py-12 flex flex-col items-center">
-      {/* Botón de volver al inicio */}
-      <div className="absolute top-4 right-6 font-bold text-xl dark:hover:text-[#FF4100] hover:text-blue-600">
-        <Link to="/">Inicio</Link>
+    <section className="ink-page ink-page-contact epaper-grain overflow-x-hidden px-4 pt-1.5 pb-16 flex flex-col items-center">
+      <div className="w-full max-w-6xl mx-auto">
+        {/* Barra superior: navegación siempre visible, sin hover-only */}
+        <div className="flex justify-end mb-6">
+          <Link
+            to="/"
+            aria-label="Volver al inicio"
+            className="inline-flex min-h-[48px] items-center focus-visible:outline-3"
+          >
+            <e-button variant="secondary">← ÍNDICE</e-button>
+          </Link>
+        </div>
+
+        <e-text kind="label" as="p">
+          CAPÍTULO 05 — CONTACTO
+        </e-text>
+        <e-title level="1">Contacto</e-title>
+
+        <e-divider variant="solid" />
+
+        {/* Canales de contacto */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto">
+          {channels.map(({ label, href, external, internal, download, icon }) => {
+            const content = (
+              <e-button variant="secondary">
+                <span className="inline-flex items-center gap-3">
+                  {icon}
+                  {label.toUpperCase()}
+                </span>
+              </e-button>
+            );
+            const cls =
+              "inline-flex min-h-[48px] items-center justify-center focus-visible:outline-3";
+            if (internal) {
+              return (
+                <Link
+                  key={label}
+                  to={href}
+                  aria-label={label}
+                  className={cls}
+                >
+                  {content}
+                </Link>
+              );
+            }
+            return (
+              <a
+                key={label}
+                href={href}
+                target={external ? "_blank" : undefined}
+                rel={external ? "noopener noreferrer" : undefined}
+                download={download || undefined}
+                aria-label={label}
+                className={cls}
+              >
+                {content}
+              </a>
+            );
+          })}
+        </div>
       </div>
 
-      {/* Título */}
-      <h1 className="text-3xl lg:text-5xl  mb-12 text-center">Contacto</h1>
-
-      {/* Botones de contacto */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex gap-6 mb-8 p-8 rounded">
-        {/* GitHub */}
-        <a
-          href="https://github.com/Abrahanpiloto"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-3 bg-white dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition hover:bg-neutral-100 dark:hover:bg-neutral-700"
-        >
-          <FaGithub className="text-2xl" />
-
-          <span>GitHub</span>
-        </a>
-
-        {/* Descargar CV */}
-        <a
-          href="/abrahan_piloto_cv.pdf" // asegúrate de poner este archivo en la carpeta `public`
-          download
-          className="flex items-center gap-3 bg-white dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition hover:bg-neutral-100 dark:hover:bg-neutral-700"
-        >
-          <FaFileDownload className="text-2xl" />
-          <span>Descargar CV</span>
-        </a>
-
-        {/* Enviar Email */}
-        <Link
-          to="/form-email"
-          className="flex items-center gap-3 bg-white dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition hover:bg-neutral-100 dark:hover:bg-neutral-700"
-        >
-          <FaEnvelope className="text-2xl" />
-          <span>Enviar Email</span>
-        </Link>
-
-        {/* LinkedIn */}
-        <a
-          href="https://www.linkedin.com/in/abrahan-piloto-a683a0129"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-3 bg-white dark:bg-neutral-800 px-6 py-4 rounded-lg shadow-md hover:shadow-xl transition hover:bg-neutral-100 dark:hover:bg-neutral-700"
-        >
-          <FaLinkedin className="text-2xl" />
-          <span>LinkedIn</span>
-        </a>
-      </div>
-      <ButtonCta />
+      <ContactCta />
     </section>
   );
 };

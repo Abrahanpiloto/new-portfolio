@@ -135,6 +135,30 @@ html {
   font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Testimonios, trabajos y contacto: mismo papel claro y pila Sora. */
+.ink-page-testimonios,
+.ink-page-works,
+.ink-page-contact,
+.ink-page-email {
+  --ink-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --ink-bg: #fdfbf7;
+  --ink-fg: #111111;
+  --ink-accent: #ff4100;
+  background-color: #fdfbf7 !important;
+  color: #111111 !important;
+  font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Campos nativos del formulario: foco y error en tinta, sin color único. */
+.ink-page-email .epaper-field:focus-visible {
+  outline: 3px solid #111111;
+  outline-offset: 2px;
+}
+
+.ink-page-email .epaper-field[aria-invalid="true"] {
+  border-bottom-width: 3px;
+}
+
 /* Grano de papel muy tenue: no interfiere con la legibilidad. */
 .epaper-grain {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
@@ -174,4 +198,25 @@ html {
 /* Botón primario con texto naranja (redundante: el significado va en la etiqueta). */
 .epaper-btn-orange .ink-btn--primary {
   color: #ff4100;
+}
+
+/* Variante ~10px más compacta para acciones secundarias (Ver más / Leer más). */
+.epaper-btn-sm .ink-btn {
+  font-size: 14px;
+  padding: 7px 14px;
+  min-height: 38px;
+}
+
+/* Home: en táctil (sin hover) se muestra miniatura y flecha estáticas. */
+.epaper-touch-thumb {
+  display: none;
+}
+
+@media (hover: none) {
+  .epaper-touch-thumb {
+    display: block;
+  }
+  .epaper-hover-only {
+    display: none !important;
+  }
 }

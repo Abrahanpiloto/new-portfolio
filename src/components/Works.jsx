@@ -8,31 +8,27 @@ const WorksPage = () => {
 
   const link = "https://ragapp-rosy.vercel.app/";
   return (
-    <section className="min-h-screen bg-[#E8E8E8] dark:bg-[#21262A] text-neutral-900 dark:text-neutral-100">
-      <div className="absolute top-4 right-6 font-bold text-xl dark:hover:text-[#FF4100] hover:text-blue-600 z-10">
-        <Link to="/">Inicio</Link>
-      </div>
-
-      <div className="flex flex-col lg:flex-row min-h-screen">
-        <div className="lg:w-2/5 h-[50vh] lg:h-screen">
-          <img
-            src="/wait3.jpg"
-            alt="Próximamente"
-            className="w-full h-full object-cover"
-          />
+    <section className="ink-page ink-page-works epaper-grain overflow-x-hidden px-4 pt-1.5 pb-16">
+      <div className="w-full max-w-6xl mx-auto">
+        {/* Barra superior: navegación siempre visible, sin hover-only */}
+        <div className="flex justify-end mb-6">
+          <Link
+            to="/"
+            aria-label="Volver al inicio"
+            className="inline-flex min-h-[48px] items-center focus-visible:outline-3"
+          >
+            <e-button variant="secondary">← ÍNDICE</e-button>
+          </Link>
         </div>
 
-        <div className="lg:w-3/4 flex flex-col items-center justify-center px-8 py-12">
-          <h1 className="text-3xl lg:text-5xl mb-8 text-center">
-            Algunos de mis trabajos
-          </h1>
-          {/* <h2 className="text-2xl lg:text-7xl mb-4 text-[#FF4100] font-sans">
-            Próximamente...
-          </h2>
-          <p className="text-neutral-500 dark:text-gray-400 text-lg max-w-md text-center mb-8 italic">
-            Estoy preparando nuevos proyectos para mostrarte. ¡Vuelve pronto!
-          </p> */}
-          {/* <ButtonCta /> */}
+        <e-text kind="label" as="p">
+          CAPÍTULO 04 — PORTAFOLIO
+        </e-text>
+        <e-title level="1">Algunos de mis trabajos</e-title>
+
+        <e-divider variant="solid" />
+
+        <div className="max-w-2xl mx-auto">
           <Card description={description} link={link} />
         </div>
       </div>

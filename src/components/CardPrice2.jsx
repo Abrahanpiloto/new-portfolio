@@ -27,7 +27,7 @@ const CardPrice2 = ({ image, description, link, label, onVerMas, num }) => {
 
       {/* ----- Botón Ver más, siempre visible ----- */}
       <div className="mt-4">
-        <e-button variant="secondary" onClick={onVerMas}>
+        <e-button variant="secondary" className="epaper-btn-sm" onClick={onVerMas}>
           VER MÁS →
         </e-button>
       </div>
