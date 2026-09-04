@@ -124,6 +124,17 @@ html {
   font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Catálogo de servicios: mismo papel claro y pila Sora. */
+.ink-page-servicios {
+  --ink-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --ink-bg: #fdfbf7;
+  --ink-fg: #111111;
+  --ink-accent: #ff4100;
+  background-color: #fdfbf7 !important;
+  color: #111111 !important;
+  font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
+}
+
 /* Grano de papel muy tenue: no interfiere con la legibilidad. */
 .epaper-grain {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");

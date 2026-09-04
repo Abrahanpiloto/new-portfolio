@@ -34,8 +34,9 @@ function App() {
         <Route path="/testimonios" element={<Testimonialspage />} />
         <Route path="/form-email" element={<EmailPage />} />
       </Routes>
-      {/* En /sobre-mi se usa el pie e-paper local de Aboutmepage */}
-      {location.pathname !== "/sobre-mi" && <Footer />}
+      {/* En /sobre-mi y /servicios2 se usa pie e-paper local */}
+      {location.pathname !== "/sobre-mi" &&
+        location.pathname !== "/servicios2" && <Footer />}
     </div>
   );
 }

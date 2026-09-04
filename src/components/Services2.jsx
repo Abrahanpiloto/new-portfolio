@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import { useState } from "react";
 import CardPrice2 from "./CardPrice2";
 import ModalService from "./ModalService";
 
@@ -117,40 +117,44 @@ const Services2 = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-[#E8E8E8] dark:bg-[#21262A] text-neutral-900 dark:text-white px-4 py-12">
-      <div className="absolute top-4 right-6 font-bold text-xl dark:hover:text-[#FF4100] hover:text-blue-600">
-        <Link to="/">Inicio</Link>
-      </div>
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl lg:text-5xl mt-12 mb-22 text-center">
-          Precios y servicios
-        </h1>
+    <section className="ink-page ink-page-servicios epaper-grain overflow-x-hidden px-4 pt-1.5 pb-16">
+      <div className="w-full max-w-6xl mx-auto">
+        {/* Barra superior: navegación siempre visible, sin hover-only */}
+        <div className="flex justify-end mb-6">
+          <Link
+            to="/"
+            aria-label="Volver al inicio"
+            className="inline-flex min-h-[48px] items-center focus-visible:outline-3"
+          >
+            <e-button variant="secondary">← ÍNDICE</e-button>
+          </Link>
+        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 gap-y-12 mb-12 items-start">
+        <e-text kind="label" as="p">
+          CAPÍTULO 02 — CATÁLOGO
+        </e-text>
+        <e-title level="1">Precios y servicios</e-title>
+
+        <e-divider variant="solid" />
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-12 items-start">
           {services.map((service, index) => (
-            <React.Fragment key={index}>
-              <div className="flex justify-center">
-                <CardPrice2
-                  image={service.image}
-                  title={service.title}
-                  description={service.description}
-                  included={service.included}
-                  useCases={service.useCases}
-                  link={service.link}
-                  code={service.code}
-                  ad={service.ad}
-                  label={service.label}
-                  price={service.price}
-                  priceUsd={service.priceUsd}
-                  onVerMas={() => setSelectedService(service)}
-                />
-              </div>
-            </React.Fragment>
+            <div key={index} className="flex justify-center">
+              <CardPrice2
+                image={service.image}
+                title={service.title}
+                description={service.description}
+                link={service.link}
+                label={service.label}
+                num={index + 1}
+                onVerMas={() => setSelectedService(service)}
+              />
+            </div>
           ))}
         </div>
       </div>
 
-      {/* Modal */}
+      {/* Diálogo e-paper instantáneo, sin animaciones */}
       {selectedService && (
         <ModalService
           service={selectedService}
