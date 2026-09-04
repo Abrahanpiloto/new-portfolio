@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-    <section className="ink-page ink-page-sobre-mi epaper-grain overflow-x-hidden px-4 pt-12 pb-16 flex items-center justify-center">
+    <section className="ink-page ink-page-sobre-mi epaper-grain overflow-x-hidden px-4 pt-1.5 pb-16 flex items-center justify-center">
       <div className="w-full max-w-6xl">
         {/* Barra superior: navegación siempre visible, sin hover-only */}
         <div className="flex justify-end mb-6">

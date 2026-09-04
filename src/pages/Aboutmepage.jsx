@@ -66,7 +66,7 @@ const AboutFooter = () => {
 
 const Aboutmepage = () => {
   return (
-    <div className="ink-page ink-page-sobre-mi epaper-grain pt-16 pb-0 min-h-screen flex flex-col">
+    <div className="ink-page ink-page-sobre-mi epaper-grain pt-16 max-lg:pt-9 pb-0 min-h-screen flex flex-col">
       <Aboutme />
       <AboutCta />
       <AboutFooter />

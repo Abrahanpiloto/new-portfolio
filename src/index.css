@@ -158,7 +158,6 @@ html {
 
 .epaper-seal {
   border: 2px solid #111111;
-  box-shadow: inset 0 -6px 0 #ff4100;
 }
 
 /* Botón primario con texto naranja (redundante: el significado va en la etiqueta). */
