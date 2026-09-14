@@ -165,7 +165,7 @@ const FormEmail2 = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="min-h-[48px] bg-[#FF4100] text-[#111111] font-bold text-xs tracking-widest uppercase px-8 cursor-pointer border-2 border-[#111111] shadow-[4px_4px_0_0_#111111] disabled:opacity-75 disabled:cursor-not-allowed"
+                  className="min-h-[48px] bg-[#ff5500] text-[#111111] font-bold text-xs tracking-widest uppercase px-8 cursor-pointer border-2 border-[#111111] shadow-[4px_4px_0_0_#111111] disabled:opacity-75 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? "Enviando…" : "Enviar"}
                 </button>

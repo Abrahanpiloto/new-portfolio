@@ -26,7 +26,7 @@ const CardPrice = ({
     <div className="bg-white dark:bg-neutral-900 shadow-lg dark:shadow-gray-500 flex flex-col transition-transform hover:scale-[1.02] max-w-md w-full relative">
       {/* ----- Etiqueta superior ----- */}
       {label && (
-        <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#FF4100] text-white px-9 py-2 text-xl whitespace-nowrap z-10 shadow-md">
+        <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#ff5500] text-white px-9 py-2 text-xl whitespace-nowrap z-10 shadow-md">
           {label}
         </span>
       )}
@@ -58,7 +58,7 @@ const CardPrice = ({
         {hasExpandableContent && (
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="flex items-center gap-1.5 text-sm text-[#FF4100] hover:text-[#E03A00] dark:text-[#FF6B35] dark:hover:text-[#FF4100] transition-colors mt-3 self-end group italic cursor-pointer"
+            className="flex items-center gap-1.5 text-sm text-[#ff5500] hover:text-[#ff5500] dark:text-[#ff5500] dark:hover:text-[#ff5500] transition-colors mt-3 self-end group italic cursor-pointer"
           >
             <span>{isExpanded ? "Ver menos" : "Ver más"}</span>
             <motion.span
@@ -120,7 +120,7 @@ const CardPrice = ({
 
                 {/* Precios */}
                 {price && (
-                  <p className="text-xl text-[#FF4100] flex flex-col gap-1 mb-4">
+                  <p className="text-xl text-[#ff5500] flex flex-col gap-1 mb-4">
                     S/ {price}
                     {priceUsd && (
                       <span className="text-sm text-neutral-500 dark:text-gray-600 font-medium">

@@ -20,7 +20,7 @@ const AboutCta = () => {
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 mt-10">
-      <e-card eyebrow="AVISO Nº 02" title="Hablemos de tu negocio">
+      <e-card eyebrow="" title="Hablemos de tu negocio">
         <div className="flex flex-col items-center text-center">
           <e-text kind="prose" as="p">
             Cuéntame tu idea por WhatsApp y la convertimos en un sitio rápido,

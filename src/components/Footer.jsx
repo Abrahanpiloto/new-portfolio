@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex justify-center gap-4 items-center text-center ">
         <p className="mb-2 md:mb-0 text-neutral-900 dark:text-white text-md">
           Creado por{" "}
-          <span className="italic text-[#FF4100] font-signature text-lg ">
+          <span className="italic text-[#ff5500] font-signature text-lg ">
             Abrahan Piloto
           </span>
           {/* <img
@@ -23,7 +23,7 @@ const Footer = () => {
             aria-label="Instagram"
             className="transition-colors"
           >
-            <SiInstagram className="text-lg text-neutral-900 dark:text-white hover:text-[#FF6B33] cursor-pointer" />
+            <SiInstagram className="text-lg text-neutral-900 dark:text-white hover:text-[#ff5500] cursor-pointer" />
           </a>
           <a
             href="https://www.threads.net/@abrahan.freelancer"
@@ -32,7 +32,7 @@ const Footer = () => {
             aria-label="Threads"
             className="transition-colors"
           >
-            <FaThreads className="text-lg text-neutral-900 dark:text-white hover:text-[#FF6B33] cursor-pointer" />
+            <FaThreads className="text-lg text-neutral-900 dark:text-white hover:text-[#ff5500] cursor-pointer" />
           </a>
         </div> */}
       </div>

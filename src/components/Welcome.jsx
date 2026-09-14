@@ -17,9 +17,9 @@ const HoverImageLinks = () => {
     <MotionConfig reducedMotion="user">
       <section className="epaper-grain bg-[#FDFBF7] text-[#111111] p-4 py-8 md:p-8 min-h-screen font-sans">
         <div className="mx-auto max-w-5xl">
-          <p className="text-[11px] font-bold tracking-[0.18em] uppercase mb-2">
+          {/* <p className="text-[11px] font-bold tracking-[0.18em] uppercase mb-2">
             Índice Nº 00
-          </p>
+          </p> */}
           <e-divider variant="solid" />
         <Link
           heading="Servicios"
@@ -123,7 +123,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-lg text-[#111111] group-hover:text-[#FF4100]">
+        <span className="relative z-10 mt-2 block text-lg text-[#111111] group-hover:text-[#ff5500]">
           {subheading}
         </span>
       </div>

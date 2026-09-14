@@ -118,7 +118,7 @@ html {
   --ink-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
   --ink-bg: #fdfbf7;
   --ink-fg: #111111;
-  --ink-accent: #ff4100;
+  --ink-accent: #ff5500;
   background-color: #fdfbf7 !important;
   color: #111111 !important;
   font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
@@ -129,7 +129,7 @@ html {
   --ink-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
   --ink-bg: #fdfbf7;
   --ink-fg: #111111;
-  --ink-accent: #ff4100;
+  --ink-accent: #ff5500;
   background-color: #fdfbf7 !important;
   color: #111111 !important;
   font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
@@ -143,7 +143,7 @@ html {
   --ink-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
   --ink-bg: #fdfbf7;
   --ink-fg: #111111;
-  --ink-accent: #ff4100;
+  --ink-accent: #ff5500;
   background-color: #fdfbf7 !important;
   color: #111111 !important;
   font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
@@ -186,7 +186,7 @@ html {
 /* Acento naranja redundante: subraya sin ser el único canal de significado. */
 .epaper-accent-underline {
   text-decoration: underline;
-  text-decoration-color: #ff4100;
+  text-decoration-color: #ff5500;
   text-decoration-thickness: 4px;
   text-underline-offset: 6px;
 }
@@ -197,7 +197,7 @@ html {
 
 /* Botón primario con texto naranja (redundante: el significado va en la etiqueta). */
 .epaper-btn-orange .ink-btn--primary {
-  color: #ff4100;
+  color: #ff5500;
 }
 
 /* Variante ~10px más compacta para acciones secundarias (Ver más / Leer más). */
