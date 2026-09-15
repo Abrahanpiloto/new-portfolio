@@ -1,6 +1,5 @@
 import React from "react";
 import Services2 from "../components/Services2";
-import { Analytics } from "@vercel/analytics/react";
 
 // Pie e-paper local: solo para /servicios2, mismo patrón que Sobre mí.
 const ServicesFooter = () => {
@@ -23,7 +22,6 @@ const ServicesPage2 = () => {
     <div className="ink-page ink-page-servicios epaper-grain pt-16 max-lg:pt-9 pb-0 min-h-screen flex flex-col">
       <Services2 />
       <ServicesFooter />
-      <Analytics />
     </div>
   );
 };

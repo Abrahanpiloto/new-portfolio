@@ -1,6 +1,7 @@
 import Welcome from "./components/Welcome";
 import React, { useEffect } from "react";
 import { useLocation, Routes, Route } from "react-router-dom";
+import posthog from "posthog-js";
 import Aboutmepage from "./pages/Aboutmepage";
 import Home from "./pages/Home";
 import ServicesPage from "./pages/ServicesPage";
@@ -11,15 +12,16 @@ import Testimonialspage from "./pages/Testimonialspage";
 import EmailPage from "./pages/EmailPage";
 import Footer from "./components/Footer";
 // import ThemeToggle from "./components/ThemeToggle";
-import { sendPageView } from "./analytics";
 import { Toaster } from "sileo";
 
 function App() {
   const location = useLocation();
 
+  // PostHog: captura pageview en cada cambio de ruta (SPA)
   useEffect(() => {
-    sendPageView(location.pathname + location.search);
+    posthog.capture("$pageview");
   }, [location]);
+
   return (
     <div>
       {/* <ThemeToggle /> */}

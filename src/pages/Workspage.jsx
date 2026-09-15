@@ -1,6 +1,5 @@
 import React from "react";
 import Works from "../components/Works";
-import { Analytics } from "@vercel/analytics/react";
 
 // Pie e-paper local: solo para /proyectos, mismo patrón que las demás rutas.
 const WorksFooter = () => {
@@ -23,7 +22,6 @@ const Workspage = () => {
     <div className="ink-page ink-page-works epaper-grain pt-16 max-lg:pt-9 pb-0 min-h-screen flex flex-col">
       <Works />
       <WorksFooter />
-      <Analytics />
     </div>
   );
 };

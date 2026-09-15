@@ -21,7 +21,7 @@ No test suite, no typecheck, no formatter.
 - **Pages**: `src/pages/` — Home, Aboutmepage, ServicesPage, Workspage, Contactpage, Testimonialspage, EmailPage
 - **Components**: `src/components/` — Welcome, Footer, Cards, Services, Switch, Contact, etc.
 - **Hooks**: `src/hooks/animationScroll.js` — IntersectionObserver scroll-reveal (uses `.reveal`/`.show` CSS in `index.css`)
-- **Analytics**: GA4 via `src/analytics.js` (ID: `G-P50479CQB3`) + `@vercel/analytics/react` component on every page
+
 
 ## Key Gotchas
 
@@ -51,7 +51,6 @@ Contains build allow-list for `@swc/core` and `esbuild`. NOT a monorepo workspac
 
 - **framer-motion**: used only in `Welcome.jsx` (mouse-tracking parallax)
 - **react-icons**: used across components (Fa, Fi, Si, Md, Bs, Lu, Fa6)
-- **@vercel/analytics**: `<Analytics />` rendered on every page (imported individually)
 - **@emailjs/browser**: listed in `package.json` but not imported in current code
 
 ## Files of note

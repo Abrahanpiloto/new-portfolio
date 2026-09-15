@@ -1,6 +1,5 @@
 import React from "react";
 import Testimony from "../components/Testimony";
-import { Analytics } from "@vercel/analytics/react";
 
 // Pie e-paper local: solo para /testimonios, mismo patrón que las demás rutas.
 const TestimonyFooter = () => {
@@ -23,7 +22,6 @@ const Testimonialspage = () => {
     <div className="ink-page ink-page-testimonios epaper-grain pt-16 max-lg:pt-9 pb-0 min-h-screen flex flex-col">
       <Testimony />
       <TestimonyFooter />
-      <Analytics />
     </div>
   );
 };

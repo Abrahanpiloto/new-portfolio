@@ -1,6 +1,5 @@
 import React from "react";
 import Welcome from "../components/Welcome";
-import { Analytics } from "@vercel/analytics/react";
 
 // Pie e-paper local: solo para /, mismo patrón que las demás rutas.
 const HomeFooter = () => {
@@ -23,7 +22,6 @@ const Home = () => {
     <div className="bg-[#FDFBF7] min-h-screen flex flex-col">
       <Welcome />
       <HomeFooter />
-      <Analytics />
     </div>
   );
 };

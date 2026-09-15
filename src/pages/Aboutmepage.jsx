@@ -1,8 +1,5 @@
 import React from "react";
 import Aboutme from "../components/Aboutme";
-import { Analytics } from "@vercel/analytics/react";
-
-import { trackEvent } from "../analytics";
 
 const WHATSAPP_URL =
   "https://wa.me/51916058633?text=Hola%20Abrahan,%20quiero%20impulsar%20mi%20negocio%20";
@@ -10,14 +7,6 @@ const WHATSAPP_URL =
 // CTA e-paper: solo para /sobre-mi. Mismo destino y evento GA4 que ButtonCta,
 // pero con marco tinta, sin colores semánticos ni animaciones.
 const AboutCta = () => {
-  const handleClick = () => {
-    trackEvent({
-      action: "click_whatsapp",
-      category: "contact",
-      label: "about_epaper",
-    });
-  };
-
   return (
     <div className="w-full max-w-6xl mx-auto px-4 mt-10">
       <e-card eyebrow="" title="Hablemos de tu negocio">
@@ -30,7 +19,6 @@ const AboutCta = () => {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={handleClick}
             aria-label="Hablar por WhatsApp sobre tu negocio"
             className="inline-flex min-h-[48px] items-center mt-4 focus-visible:outline-3"
           >
@@ -70,7 +58,6 @@ const Aboutmepage = () => {
       <Aboutme />
       <AboutCta />
       <AboutFooter />
-      <Analytics />
     </div>
   );
 };

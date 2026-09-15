@@ -1,6 +1,5 @@
 import React from "react";
 import FormEmail2 from "../components/FormEmail2";
-import { Analytics } from "@vercel/analytics/react";
 
 // Pie e-paper local: solo para /form-email, mismo patrón que las demás rutas.
 const EmailFooter = () => {
@@ -23,7 +22,6 @@ const EmailPage = () => {
     <div className="ink-page ink-page-email epaper-grain pt-16 max-lg:pt-9 pb-0 min-h-screen flex flex-col">
       <FormEmail2 />
       <EmailFooter />
-      <Analytics />
     </div>
   );
 };

@@ -1,8 +1,6 @@
 import React from "react";
 import Contact from "../components/Contact";
 
-import { Analytics } from "@vercel/analytics/react";
-
 // Pie e-paper local: solo para /contacto, mismo patrón que las demás rutas.
 const ContactFooter = () => {
   return (
@@ -24,7 +22,6 @@ const Contactpage = () => {
     <div className="ink-page ink-page-contact epaper-grain pt-16 max-lg:pt-9 pb-0 min-h-screen flex flex-col">
       <Contact />
       <ContactFooter />
-      <Analytics />
     </div>
   );
 };

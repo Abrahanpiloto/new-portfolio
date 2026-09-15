@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
-import { trackEvent } from "../analytics";
 import { sileo } from "sileo";
 
 const FormEmail2 = () => {
@@ -174,13 +173,6 @@ const FormEmail2 = () => {
                   href="https://wa.me/51916058633?text=Hola%20Abrahan,%20quiero%20impulsar%20mi%20negocio%20"
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() =>
-                    trackEvent({
-                      action: "click_whatsapp",
-                      category: "contact",
-                      label: "form_email",
-                    })
-                  }
                   aria-label="Hablar por WhatsApp sobre tu negocio"
                   className="inline-flex min-h-[48px] items-center focus-visible:outline-3"
                 >

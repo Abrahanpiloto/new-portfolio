@@ -7,7 +7,6 @@ import {
   FaFileDownload,
   FaEnvelope,
 } from "react-icons/fa";
-import { trackEvent } from "../analytics";
 
 const WHATSAPP_URL =
   "https://wa.me/51916058633?text=Hola%20Abrahan,%20quiero%20impulsar%20mi%20negocio%20";
@@ -41,14 +40,6 @@ const channels = [
 
 // Tarjeta CTA e-paper con el mismo destino y evento GA4 que ButtonCta.
 const ContactCta = () => {
-  const handleClick = () => {
-    trackEvent({
-      action: "click_whatsapp",
-      category: "contact",
-      label: "contact_epaper",
-    });
-  };
-
   return (
     <div className="w-full max-w-6xl mx-auto px-4 mt-10">
       <e-card eyebrow="AVISO" title="Hablemos de tu negocio">
@@ -61,7 +52,6 @@ const ContactCta = () => {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={handleClick}
             aria-label="Hablar por WhatsApp sobre tu negocio"
             className="inline-flex min-h-[48px] items-center mt-4 focus-visible:outline-3"
           >
