@@ -15,7 +15,7 @@ Portfolio personal de **Abrahan** para presentar servicios de diseño y desarrol
 - **Rutas en español**: `/sobre-mi`, `/servicios`, `/proyectos`, `/contacto`, `/testimonios`, `/form-email`.
 - **Formulario de contacto** que envía emails mediante EmailJS.
 - **Botón de WhatsApp** para contacto directo.
-- **Analítica**: Google Analytics 4 (`G-P50479CQB3`) + Vercel Analytics en cada página.
+- **Analítica**: PostHog (`posthog-js`) — pageviews por ruta, origen y sesiones.
 
 ## Tecnologías
 
@@ -27,7 +27,7 @@ Portfolio personal de **Abrahan** para presentar servicios de diseño y desarrol
 - framer-motion
 - react-icons
 - @emailjs/browser
-- @vercel/analytics
+- posthog-js
 
 ## Rutas
 
@@ -49,8 +49,7 @@ Portfolio personal de **Abrahan** para presentar servicios de diseño y desarrol
 │   ├── components/         # Welcome, Footer, Cards, Services, Switch, Contact, FormEmail2, etc.
 │   ├── pages/              # Home, Aboutmepage, ServicesPage, Workspage, Contactpage, ...
 │   ├── hooks/              # animationScroll.js (scroll-reveal)
-│   ├── analytics.js        # GA4
-│   ├── App.jsx             # Rutas
+│   ├── App.jsx             # Rutas (+ captura $pageview PostHog)
 │   └── main.jsx            # Entry point
 ├── index.html
 ├── vercel.json
@@ -80,6 +79,8 @@ El formulario de contacto usa EmailJS. Crea un archivo `.env` en la raíz (ignor
 | `VITE_EMAILJS_SERVICE_ID`    | ID del servicio de EmailJS           |
 | `VITE_EMAILJS_TEMPLATE_ID`   | ID de la plantilla de EmailJS        |
 | `VITE_EMAILJS_PUBLIC_KEY`    | Clave pública de EmailJS             |
+| `VITE_POSTHOG_KEY`           | Project token de PostHog (`phc_...`) |
+| `VITE_POSTHOG_HOST`          | Host de PostHog (`us` o `eu`)        |
 
 ## Despliegue
 

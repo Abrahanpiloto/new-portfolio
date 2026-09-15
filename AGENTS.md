@@ -52,8 +52,10 @@ Contains build allow-list for `@swc/core` and `esbuild`. NOT a monorepo workspac
 - **framer-motion**: used only in `Welcome.jsx` (mouse-tracking parallax)
 - **react-icons**: used across components (Fa, Fi, Si, Md, Bs, Lu, Fa6)
 - **@emailjs/browser**: listed in `package.json` but not imported in current code
+- **posthog-js**: web analytics (pageviews, origin, sessions). Init in `src/main.jsx`, manual `$pageview` per route in `src/App.jsx`. Requires `VITE_POSTHOG_KEY` + `VITE_POSTHOG_HOST` in `.env` (and Vercel env vars). No GA4, no `@vercel/analytics`.
 
 ## Files of note
 
-- `index.html` — loads Google Fonts (Dancing Script, Montserrat), GA4 tag, `.dark` class, `lang="en"`
+- `index.html` — loads Google Fonts (Dancing Script, Montserrat), `.dark` class, `lang="en"` (no analytics scripts)
+- `.env.example` — template for PostHog vars (`VITE_POSTHOG_KEY`, `VITE_POSTHOG_HOST`)
 - `public/` — static assets (images, PDFs, favicon, robots.txt)

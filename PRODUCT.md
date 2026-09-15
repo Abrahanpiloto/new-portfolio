@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-React 19 + Vite 7, Tailwind CSS v4 (plugin `@tailwindcss/vite`, sin `tailwind.config.js`), react-router-dom 7, styled-components (solo `Switch.jsx`), framer-motion (solo `Welcome.jsx`), react-icons, @emailjs/browser, @vercel/analytics + GA4 (`G-P50479CQB3`). Deploy en Vercel. Contenido, rutas y comentarios en español.
+React 19 + Vite 7, Tailwind CSS v4 (plugin `@tailwindcss/vite`, sin `tailwind.config.js`), react-router-dom 7, styled-components (solo `Switch.jsx`), framer-motion (solo `Welcome.jsx`), react-icons, @emailjs/browser, posthog-js (analítica web). Deploy en Vercel. Contenido, rutas y comentarios en español.
 
 ## Users
 
@@ -25,7 +25,7 @@ Diseño original a medida (no plantillas) con foco en conversión: sitios y land
 
 ## Operating Context
 
-El visitante llega por Google, redes sociales o referidos, navega servicios y precios, revisa proyectos y testimonios para validar confianza, y contacta por botón de WhatsApp (+51 916 058 633) o formulario (EmailJS). El propietario administra el contenido en una SPA con rutas en español y analítica GA4 + Vercel.
+El visitante llega por Google, redes sociales o referidos, navega servicios y precios, revisa proyectos y testimonios para validar confianza, y contacta por botón de WhatsApp (+51 916 058 633) o formulario (EmailJS). El propietario administra el contenido en una SPA con rutas en español y analítica PostHog.
 
 ## Capabilities and Constraints
 

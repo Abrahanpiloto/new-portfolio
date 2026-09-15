@@ -13,7 +13,7 @@ The project is a modern, high-performance personal portfolio website for **Abrah
 - **Build Tool:** Vite 7 (using `@vitejs/plugin-react-swc` for fast SWC-based HMR)
 - **Styling:** Tailwind CSS v4 (configured via `@tailwindcss/vite` plugin) + `styled-components` (legacy/mixed)
 - **Animations:** `framer-motion` (for advanced interactive animations) and custom CSS IntersectionObserver scroll reveals
-- **Analytics:** Google Analytics 4 (GA4) + Vercel Analytics
+- **Analytics:** PostHog (`posthog-js`) — pageviews, origen, sesiones
 - **Package Manager:** `pnpm`
 - **Deployment Platform:** Vercel
 
@@ -26,7 +26,7 @@ The project is a modern, high-performance personal portfolio website for **Abrah
 ├── AGENTS.md                    # Pre-existing context summary for agents
 ├── GEMINI.md                    # THIS FILE — Foundational workspace guidelines (Priority)
 ├── eslint.config.js             # ESLint 9 configuration (Flat config)
-├── index.html                   # HTML Entry point with Google Fonts, GA4 tracking scripts
+├── index.html                   # HTML Entry point with Google Fonts (no analytics scripts)
 ├── package.json                 # Dependency definitions and scripts
 ├── pnpm-workspace.yaml          # pnpm build policies (build allow-list for SWC/esbuild)
 ├── vercel.json                  # SPA routing rules for Vercel
@@ -36,7 +36,7 @@ The project is a modern, high-performance personal portfolio website for **Abrah
     ├── main.jsx                 # Client entry point
     ├── App.jsx                  # Main router and component layout
     ├── index.css                # Global stylesheet containing Tailwind v4 imports, custom animations
-    ├── analytics.js             # GA4 custom tracking functions
+    ├── .env.example             # Template for PostHog vars (VITE_POSTHOG_KEY, VITE_POSTHOG_HOST)
     ├── components/              # Reusable layout and interactive elements
     │   ├── Welcome.jsx          # Interactive homepage with Framer Motion hover link effect
     │   ├── Switch.jsx           # Theme toggle component using styled-components
@@ -71,7 +71,7 @@ Always use `pnpm` as the package manager for this project.
 ### 4.1 Routing Structure
 All application routing is handled in `src/App.jsx` using `react-router-dom` (v7).
 - All paths are defined in **Spanish**:
-  - `/` → Home (`Home.jsx` rendering `<Welcome />` & `<Analytics />`)
+  - `/` → Home (`Home.jsx` rendering `<Welcome />`)
   - `/sobre-mi` → About Page (`Aboutmepage.jsx`)
   - `/servicios` → Services Page (`ServicesPage.jsx`)
   - `/proyectos` → Works/Projects Page (`Workspage.jsx`)
@@ -100,9 +100,8 @@ The application is styled with a dual-theme system that **defaults to Dark Mode*
 - Transition animations are defined in `src/index.css` using `transition: all 0.9s ease`.
 
 ### 4.5 Analytics Integration
-- **GA4:** Configured via custom tracking in `src/analytics.js` with Tracking ID `G-P50479CQB3`. Injected initially via inline `<script>` tags in `index.html`.
-- **Vercel Analytics:** Uses `@vercel/analytics` and renders `<Analytics />` from `@vercel/analytics/react` on pages like `Home.jsx` to monitor usage.
-- **Page Views:** Tracked globally via a `useEffect` hook in `src/App.jsx` listening to path changes from `useLocation` and firing `sendPageView()`.
+- **PostHog:** `posthog-js` initialized in `src/main.jsx` with `VITE_POSTHOG_KEY` + `VITE_POSTHOG_HOST` (from `.env` and Vercel env vars). `capture_pageview: false` + manual `posthog.capture("$pageview")` per route in `src/App.jsx` (SPA with react-router). `opt_out_capturing_by_default` on localhost. No GA4, no `@vercel/analytics`.
+- **Origin tracking:** `$referring_domain` + `utm_source`/`utm_medium` auto-captured. Social bios use UTM links (e.g. `?utm_source=instagram&utm_medium=social`) to distinguish Instagram vs Threads.
 
 ---
 
